@@ -4,7 +4,7 @@
 
 </p>
 # [Leetcode Solutions Swift](https://leetcode.com)
-Leetcode solutions with Swift
+Leetcode solutions in Swift
 
 ##[String](Sources/String)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
