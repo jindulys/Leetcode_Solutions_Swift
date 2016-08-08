@@ -1,3 +1,8 @@
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/jindulys/Leetcode_Solutions_Swift/master/Images/Logo.png" alt="LeetcodeSolutions" title="LeetcodeSolutions" width="1200"/>
+
+</p>
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions with Swift
 
