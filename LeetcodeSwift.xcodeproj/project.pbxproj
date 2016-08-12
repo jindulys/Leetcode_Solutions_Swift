@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E5EADC51D5D61DD008E79B4 /* 242_ValidAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EADC41D5D61DD008E79B4 /* 242_ValidAnagram.swift */; };
 		0E6FAD551D5811BE00C8D71D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FAD541D5811BE00C8D71D /* AppDelegate.swift */; };
 		0E6FAD571D5811BE00C8D71D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FAD561D5811BE00C8D71D /* ViewController.swift */; };
 		0E6FAD5A1D5811BE00C8D71D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E6FAD581D5811BE00C8D71D /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E5EADC41D5D61DD008E79B4 /* 242_ValidAnagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 242_ValidAnagram.swift; sourceTree = "<group>"; };
 		0E6FAD511D5811BE00C8D71D /* LeetcodeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetcodeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6FAD541D5811BE00C8D71D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E6FAD561D5811BE00C8D71D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			children = (
 				0E6FADAC1D58171900C8D71D /* 205_IsomorphicString.swift */,
 				0E6FADAD1D58171900C8D71D /* 290_WordPattern.swift */,
+				0E5EADC41D5D61DD008E79B4 /* 242_ValidAnagram.swift */,
 				0E6FADAE1D58171900C8D71D /* 344_ReverseString.swift */,
 				0E6FADAF1D58171900C8D71D /* 345_ReverseVowelsOfAString.swift */,
 			);
@@ -338,6 +341,7 @@
 				0E6FADB11D58171900C8D71D /* 290_WordPattern.swift in Sources */,
 				0E6FADCA1D58172200C8D71D /* 112_PathSum.swift in Sources */,
 				0E6FADC71D58172200C8D71D /* 106_ConstructBinaryTreeFromInorderAndPostorderTraversal.swift in Sources */,
+				0E5EADC51D5D61DD008E79B4 /* 242_ValidAnagram.swift in Sources */,
 				0E6FADC31D58172200C8D71D /* 101_SymmetricTree.swift in Sources */,
 				0E6FADC51D58172200C8D71D /* 104_MaximumDepthOfBinaryTree.swift in Sources */,
 				0E6FADCD1D58172200C8D71D /* 337_HouseRobberIII.swift in Sources */,
