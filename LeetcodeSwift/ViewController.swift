@@ -13,6 +13,9 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    let solution = LongestCommonPrefix_Solution()
+    let result = solution.longestCommonPrefix([])
+    print(result)
   }
 
   override func didReceiveMemoryWarning() {
