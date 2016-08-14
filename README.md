@@ -9,6 +9,7 @@ Leetcode solutions in Swift
 ##[String](Sources/String)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
+[28 Implement strStr]( https://leetcode.com/problems/implement-strstr/) |  String |  Easy |  O(n) |  O(mn) 
 [205 Isomorphic Strings]( https://leetcode.com/problems/isomorphic-strings/) |  String |  Easy |  O(n) |  O(n) 
 [242 Valid Anagram]( https://leetcode.com/problems/valid-anagram/) |  String |  Easy |  O(n) |  O(n) 
 [290 Word Pattern]( https://leetcode.com/problems/word-pattern/) |  String |  Easy |  O(n) |  O(n)
