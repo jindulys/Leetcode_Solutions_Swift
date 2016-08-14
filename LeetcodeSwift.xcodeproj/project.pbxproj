@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E5EADC51D5D61DD008E79B4 /* 242_ValidAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EADC41D5D61DD008E79B4 /* 242_ValidAnagram.swift */; };
+		0E5EADC71D5D6A78008E79B4 /* 28_ImplementStrStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EADC61D5D6A78008E79B4 /* 28_ImplementStrStr.swift */; };
 		0E6FAD551D5811BE00C8D71D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FAD541D5811BE00C8D71D /* AppDelegate.swift */; };
 		0E6FAD571D5811BE00C8D71D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FAD561D5811BE00C8D71D /* ViewController.swift */; };
 		0E6FAD5A1D5811BE00C8D71D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E6FAD581D5811BE00C8D71D /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		0E5EADC41D5D61DD008E79B4 /* 242_ValidAnagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 242_ValidAnagram.swift; sourceTree = "<group>"; };
+		0E5EADC61D5D6A78008E79B4 /* 28_ImplementStrStr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 28_ImplementStrStr.swift; sourceTree = "<group>"; };
 		0E6FAD511D5811BE00C8D71D /* LeetcodeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetcodeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6FAD541D5811BE00C8D71D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E6FAD561D5811BE00C8D71D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		0E6FADAA1D5816EB00C8D71D /* String */ = {
 			isa = PBXGroup;
 			children = (
+				0E5EADC61D5D6A78008E79B4 /* 28_ImplementStrStr.swift */,
 				0E6FADAC1D58171900C8D71D /* 205_IsomorphicString.swift */,
 				0E6FADAD1D58171900C8D71D /* 290_WordPattern.swift */,
 				0E5EADC41D5D61DD008E79B4 /* 242_ValidAnagram.swift */,
@@ -352,6 +355,7 @@
 				0E6FADC41D58172200C8D71D /* 102_BinaryTreeLevelOrderTraversal.swift in Sources */,
 				0E6FADC81D58172200C8D71D /* 110_BalancedBinaryTree.swift in Sources */,
 				0E6FADCF1D58172B00C8D71D /* LeetCodeKit.swift in Sources */,
+				0E5EADC71D5D6A78008E79B4 /* 28_ImplementStrStr.swift in Sources */,
 				0E6FADB31D58171900C8D71D /* 345_ReverseVowelsOfAString.swift in Sources */,
 				0E6FADC21D58172200C8D71D /* 100_SameTree.swift in Sources */,
 				0E6FAD571D5811BE00C8D71D /* ViewController.swift in Sources */,
