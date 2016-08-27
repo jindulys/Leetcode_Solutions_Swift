@@ -24,6 +24,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [349 Intersection of two arrays]( https://leetcode.com/problems/intersection-of-two-arrays/) |  Array |  Easy |  O(n) |  O(n) 
+[350 Intersection of two arrays II]( https://leetcode.com/problems/intersection-of-two-arrays-ii/) |  Array |  Easy |  O(n) |  O(n)
 
 ##[Tree](Sources/Tree)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
