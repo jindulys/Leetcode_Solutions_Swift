@@ -35,6 +35,7 @@
 		0E6FADCC1D58172200C8D71D /* 226_InvertBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FADBF1D58172200C8D71D /* 226_InvertBinaryTree.swift */; };
 		0E6FADCD1D58172200C8D71D /* 337_HouseRobberIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FADC01D58172200C8D71D /* 337_HouseRobberIII.swift */; };
 		0E6FADCF1D58172B00C8D71D /* LeetCodeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FADCE1D58172B00C8D71D /* LeetCodeKit.swift */; };
+		0EEF2D541D71CC6B00A85EAA /* 3_LongestSubStringWithoutRepeatingCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF2D531D71CC6B00A85EAA /* 3_LongestSubStringWithoutRepeatingCharacters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		0E6FADBF1D58172200C8D71D /* 226_InvertBinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 226_InvertBinaryTree.swift; sourceTree = "<group>"; };
 		0E6FADC01D58172200C8D71D /* 337_HouseRobberIII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 337_HouseRobberIII.swift; sourceTree = "<group>"; };
 		0E6FADCE1D58172B00C8D71D /* LeetCodeKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeetCodeKit.swift; sourceTree = "<group>"; };
+		0EEF2D531D71CC6B00A85EAA /* 3_LongestSubStringWithoutRepeatingCharacters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 3_LongestSubStringWithoutRepeatingCharacters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 		0E6FADAA1D5816EB00C8D71D /* String */ = {
 			isa = PBXGroup;
 			children = (
+				0EEF2D531D71CC6B00A85EAA /* 3_LongestSubStringWithoutRepeatingCharacters.swift */,
 				0E61C9721D60CCF60014C2D2 /* 14_LongestCommonPrefix.swift */,
 				0E5EADC61D5D6A78008E79B4 /* 28_ImplementStrStr.swift */,
 				0E6FADAC1D58171900C8D71D /* 205_IsomorphicString.swift */,
@@ -358,6 +361,7 @@
 				0E6FADC41D58172200C8D71D /* 102_BinaryTreeLevelOrderTraversal.swift in Sources */,
 				0E6FADC81D58172200C8D71D /* 110_BalancedBinaryTree.swift in Sources */,
 				0E6FADCF1D58172B00C8D71D /* LeetCodeKit.swift in Sources */,
+				0EEF2D541D71CC6B00A85EAA /* 3_LongestSubStringWithoutRepeatingCharacters.swift in Sources */,
 				0E5EADC71D5D6A78008E79B4 /* 28_ImplementStrStr.swift in Sources */,
 				0E6FADB31D58171900C8D71D /* 345_ReverseVowelsOfAString.swift in Sources */,
 				0E6FADC21D58172200C8D71D /* 100_SameTree.swift in Sources */,
