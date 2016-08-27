@@ -10,7 +10,7 @@ import Foundation
 
 /**
 	Title:290 Word Pattern
-	URL: https://leetcode.com/problems/word-pattern/
+	URL: 7
 	Space: O(n)
 	Time: O(n)
  */
