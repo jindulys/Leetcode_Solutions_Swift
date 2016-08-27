@@ -39,6 +39,7 @@
 		0EEF2D561D71D8D100A85EAA /* 383_RansomNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF2D551D71D8D100A85EAA /* 383_RansomNote.swift */; };
 		0EEF2D581D72103A00A85EAA /* 58_LengthOfLastWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF2D571D72103A00A85EAA /* 58_LengthOfLastWord.swift */; };
 		0EEF2D5B1D72167200A85EAA /* 349_IntersectionOfTwoArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF2D5A1D72167200A85EAA /* 349_IntersectionOfTwoArrays.swift */; };
+		0EEF2D5D1D7222AE00A85EAA /* 350_IntersectionOfTwoArraysII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF2D5C1D7222AE00A85EAA /* 350_IntersectionOfTwoArraysII.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		0EEF2D551D71D8D100A85EAA /* 383_RansomNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 383_RansomNote.swift; sourceTree = "<group>"; };
 		0EEF2D571D72103A00A85EAA /* 58_LengthOfLastWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 58_LengthOfLastWord.swift; sourceTree = "<group>"; };
 		0EEF2D5A1D72167200A85EAA /* 349_IntersectionOfTwoArrays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 349_IntersectionOfTwoArrays.swift; sourceTree = "<group>"; };
+		0EEF2D5C1D7222AE00A85EAA /* 350_IntersectionOfTwoArraysII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 350_IntersectionOfTwoArraysII.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				0EEF2D5A1D72167200A85EAA /* 349_IntersectionOfTwoArrays.swift */,
+				0EEF2D5C1D7222AE00A85EAA /* 350_IntersectionOfTwoArraysII.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				0E6FADC91D58172200C8D71D /* 111_MinimumDepthOfBinaryTree.swift in Sources */,
 				0E6FADC61D58172200C8D71D /* 105_ConstructBinaryTreeFromPreorderAndInorderTraversal.swift in Sources */,
 				0E6FADB01D58171900C8D71D /* 205_IsomorphicString.swift in Sources */,
+				0EEF2D5D1D7222AE00A85EAA /* 350_IntersectionOfTwoArraysII.swift in Sources */,
 				0E6FADCC1D58172200C8D71D /* 226_InvertBinaryTree.swift in Sources */,
 				0E6FADC41D58172200C8D71D /* 102_BinaryTreeLevelOrderTraversal.swift in Sources */,
 				0EEF2D581D72103A00A85EAA /* 58_LengthOfLastWord.swift in Sources */,
