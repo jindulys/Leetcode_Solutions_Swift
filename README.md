@@ -9,6 +9,7 @@ Leetcode solutions in Swift
 ##[String](Sources/String)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
+[3 Longest Substring without repeating characters]( https://leetcode.com/problems/longest-substring-without-repeating-characters/) |  String |  Medium |  O(n) |  O(n) 
 [14 Longest Common Prefix]( https://leetcode.com/problems/longest-common-prefix/) |  String |  Easy |  O(nm) |  O(mn) 
 [28 Implement strStr]( https://leetcode.com/problems/implement-strstr/) |  String |  Easy |  O(n) |  O(mn) 
 [205 Isomorphic Strings]( https://leetcode.com/problems/isomorphic-strings/) |  String |  Easy |  O(n) |  O(n) 
