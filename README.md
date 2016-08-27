@@ -23,6 +23,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 ##[Array](Sources/Array)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
+[217 Contains Duplicate]( https://leetcode.com/problems/contains-duplicate/) |  Array |  Easy |  O(n) |  O(n) 
 [349 Intersection of two arrays]( https://leetcode.com/problems/intersection-of-two-arrays/) |  Array |  Easy |  O(n) |  O(n) 
 [350 Intersection of two arrays II]( https://leetcode.com/problems/intersection-of-two-arrays-ii/) |  Array |  Easy |  O(n) |  O(n)
 
