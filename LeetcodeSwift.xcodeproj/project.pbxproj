@@ -40,6 +40,7 @@
 		0EEF2D581D72103A00A85EAA /* 58_LengthOfLastWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF2D571D72103A00A85EAA /* 58_LengthOfLastWord.swift */; };
 		0EEF2D5B1D72167200A85EAA /* 349_IntersectionOfTwoArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF2D5A1D72167200A85EAA /* 349_IntersectionOfTwoArrays.swift */; };
 		0EEF2D5D1D7222AE00A85EAA /* 350_IntersectionOfTwoArraysII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF2D5C1D7222AE00A85EAA /* 350_IntersectionOfTwoArraysII.swift */; };
+		0EEF2D5F1D72266900A85EAA /* 217_ContainsDuplicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF2D5E1D72266900A85EAA /* 217_ContainsDuplicate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		0EEF2D571D72103A00A85EAA /* 58_LengthOfLastWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 58_LengthOfLastWord.swift; sourceTree = "<group>"; };
 		0EEF2D5A1D72167200A85EAA /* 349_IntersectionOfTwoArrays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 349_IntersectionOfTwoArrays.swift; sourceTree = "<group>"; };
 		0EEF2D5C1D7222AE00A85EAA /* 350_IntersectionOfTwoArraysII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 350_IntersectionOfTwoArraysII.swift; sourceTree = "<group>"; };
+		0EEF2D5E1D72266900A85EAA /* 217_ContainsDuplicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 217_ContainsDuplicate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 		0EEF2D591D7215B500A85EAA /* Array */ = {
 			isa = PBXGroup;
 			children = (
+				0EEF2D5E1D72266900A85EAA /* 217_ContainsDuplicate.swift */,
 				0EEF2D5A1D72167200A85EAA /* 349_IntersectionOfTwoArrays.swift */,
 				0EEF2D5C1D7222AE00A85EAA /* 350_IntersectionOfTwoArraysII.swift */,
 			);
@@ -373,6 +376,7 @@
 				0E5EADC51D5D61DD008E79B4 /* 242_ValidAnagram.swift in Sources */,
 				0E6FADC31D58172200C8D71D /* 101_SymmetricTree.swift in Sources */,
 				0E6FADC51D58172200C8D71D /* 104_MaximumDepthOfBinaryTree.swift in Sources */,
+				0EEF2D5F1D72266900A85EAA /* 217_ContainsDuplicate.swift in Sources */,
 				0E6FADCD1D58172200C8D71D /* 337_HouseRobberIII.swift in Sources */,
 				0E6FADC91D58172200C8D71D /* 111_MinimumDepthOfBinaryTree.swift in Sources */,
 				0E6FADC61D58172200C8D71D /* 105_ConstructBinaryTreeFromPreorderAndInorderTraversal.swift in Sources */,
