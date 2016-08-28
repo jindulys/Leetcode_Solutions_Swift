@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *28*
+Current Finished: *29*
 
 ##[String](Sources/String)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -25,6 +25,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 ##[Array](Sources/Array)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
+[1 Two Sum]( https://leetcode.com/problems/two-sum/) |  Array |  Easy |  O(n) |  O(n)
 [27 Remove Element]( https://leetcode.com/problems/remove-element/) |  Array |  Easy |  O(1) |  O(n)
 [217 Contains Duplicate]( https://leetcode.com/problems/contains-duplicate/) |  Array |  Easy |  O(n) |  O(n) 
 [283 Move Zeroes]( https://leetcode.com/problems/move-zeroes/) |  Array |  Easy |  O(1) |  O(n)
