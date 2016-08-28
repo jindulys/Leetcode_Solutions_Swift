@@ -947,6 +947,16 @@ public class LinkedList<T> {
     }
     count -= 1
   }
+  
+  /// Cool, notice how the `T`, `C` generic type works, and where clause.
+  class func generateLinkedListFromSequence<C: CollectionType where C.Generator.Element == T>(sequence: C) ->
+    LinkedList<T> {
+    let result = LinkedList<T>()
+    for element in sequence {
+      result.append(element)
+    }
+    return result
+  }
 }
 
 extension LinkedList: CustomStringConvertible {

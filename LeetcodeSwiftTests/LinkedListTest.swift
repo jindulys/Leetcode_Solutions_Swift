@@ -113,4 +113,10 @@ class LinkedListTest: XCTestCase {
     XCTAssert(testLinkedList.description == "Empty")
     XCTAssert(testLinkedList.count == 0)
   }
+  
+  func testLinkedListGeneration() {
+    let array: [Int] = [2, 3]
+    let testLinkedList = LinkedList.generateLinkedListFromSequence(array)
+    XCTAssert(testLinkedList.description == "Node(v:2)->Node(v:3)->NULL")
+  }
 }
