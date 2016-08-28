@@ -295,8 +295,6 @@ public struct Array2D<T> {
 
 // TODO: Count Occurrences (7)
 
-// TODO: Linked List (8)
-
 // TODO: Boyer-Moore String Search (9)
 
 // TODO: Hash Table (10)
@@ -758,67 +756,18 @@ extension Queue: CollectionType {
   }
 }
 
-
-/**
- LinkedListQueue
- */
-public class LinkedListQueue<Element: CustomStringConvertible> {
-  private var head: ListNode<Element>
-  private var end: ListNode<Element>
-  public var count: Int
-  
-  public init() {
-    // dumped node stands for head
-    head = ListNode<Element>()
-    end = head
-    count = 0
-  }
-  
-  public func enqueue(element: Element) {
-    let newNode = ListNode(element)
-    end.next = newNode
-    newNode.pre = end
-    end = newNode
-    count += 1
-  }
-  
-  public func dequeue() -> Element? {
-    if isEmpty() {
-      return nil
-    }
-    let retVal = head.next!.value!
-    if let nextHead = head.next!.next {
-      head.next = nextHead
-      nextHead.pre = head
-    } else {
-      end = head
-    }
-    count -= 1
-    return retVal
-  }
-  
-  public func isEmpty() -> Bool {
-    return head === end
-  }
-  
-  public func description() {
-    print(head)
-  }
-}
-
-
 /**
  *   ListNode Class
  */
-public class ListNode<T: CustomStringConvertible>{
-  var value: T?
+public class ListNode<T>{
+  var value: T
   var next: ListNode?
-  var pre: ListNode?
+  // NOTE: weak here to prevent retain cycle.
+  weak var pre: ListNode?
   
-  public init() {}
+  public typealias Element = T
   
-  public convenience init(_ value: T) {
-    self.init()
+  public init(_ value: T) {
     self.value = value
   }
   
@@ -833,7 +782,7 @@ public class ListNode<T: CustomStringConvertible>{
     var prev: ListNode? = nil
     var head = node
     while head != nil {
-      let newHead = ListNode(head!.value!)
+      let newHead = ListNode(head!.value)
       let tmp = head!.next
       newHead.next = prev
       prev = newHead
@@ -847,17 +796,165 @@ public class ListNode<T: CustomStringConvertible>{
 extension ListNode: CustomStringConvertible {
   public var description:String {
     if let next = next {
-      if let value = value {
-        return "Node(v:\(value)) -> \(next)"
-      } else {
-        return "Node(v: NULL) -> \(next)"
-      }
+      return "Node(v:\(value))->\(next)"
     } else {
-      if let value = value {
-        return "Node(v:\(value)) -> NULL"
-      } else {
-        return "Node(v: NULL) -> NULL"
+      return "Node(v:\(value))->NULL"
+    }
+  }
+}
+
+/**
+ *   Linked List Class
+ */
+
+public class LinkedList<T> {
+
+  public typealias Node = ListNode<T>
+
+  /// head of this linked list.
+  private var head: Node?
+  
+  /// tail of this linked list.
+  private var tail: Node?
+  
+  /// The count of elements in this linked list.
+  public var count: Int = 0
+  
+  /// Whether or not this LinkedList is empty.
+  public var isEmpty: Bool {
+    return head == nil
+  }
+  
+  /// The first element of this Linked list.
+  public var first: Node? {
+    return head
+  }
+  
+  /// The last element of this linked list.
+  public var last: Node? {
+    return tail
+  }
+  
+  /// Insert an element at The head of this double linked list.
+  public func insertAtHead(value: T) {
+    let newHead = ListNode(value)
+    if let node = head {
+      node.pre = newHead
+      newHead.next = node
+      head = newHead
+    } else {
+      head = newHead
+      tail = newHead
+    }
+    count += 1
+  }
+  
+  /// Append an element at the tail of this double linked list.
+  public func append(value: T) {
+    let newTail = ListNode(value)
+    if let node = tail {
+      node.next = newTail
+      newTail.pre = node
+      tail = newTail
+    } else {
+      head = newTail
+      tail = newTail
+    }
+    count += 1
+  }
+  
+  /// Return the node at specified index.
+  public func nodeAtIndex(index: Int) -> Node? {
+    if index >= 0 {
+      var node = head
+      var i = index
+      while node != nil {
+        if i == 0 {
+          return node
+        }
+        i -= 1
+        node = node?.next
       }
+    }
+    return nil
+  }
+  
+  public subscript(index: Int) -> T {
+    assert(index < count)
+    let node = nodeAtIndex(index)
+    return node!.value
+  }
+  
+  /// Helper function return the element before and after that index.
+  public func beforAndAfterElementAt(index: Int) -> (Node?, Node?) {
+    assert(index < count)
+    var searchCount = index
+    var currentNode = head
+    while searchCount > 0 {
+      currentNode = currentNode?.next
+      searchCount -= 1
+    }
+    return (currentNode?.pre, currentNode?.next)
+  }
+  
+  /// Remove element at `index`, return the element's value.
+  public func removeElementAt(index: Int) {
+    assert(index < count)
+    let (nodeBefore, nodeAfter) = beforAndAfterElementAt(index)
+    switch (nodeBefore, nodeAfter) {
+    case (.None, .Some(let node)):
+      node.pre = nil
+      head = node
+    case (.Some(let node), .None):
+      node.next = nil
+      tail = node
+    case (.Some(let beforeNode), .Some(let afterNode)):
+      beforeNode.next = afterNode
+      afterNode.pre = beforeNode
+    case (.None, .None):
+      head = nil
+      tail = nil
+    }
+    count -= 1
+  }
+  
+  /// Remove last element of this linked list
+  public func removeLastElement() {
+    guard count > 0 else {
+      return
+    }
+    if let preNode = tail?.pre {
+      preNode.next = nil
+      tail = preNode
+    } else {
+      head = nil
+      tail = nil
+    }
+    count -= 1
+  }
+  
+  /// Remove first element of this linked list
+  public func removeFirstElement() {
+    guard count > 0 else {
+      return
+    }
+    if let nextNode = head?.next {
+      nextNode.pre = nil
+      head = nextNode
+    } else {
+      head = nil
+      tail = nil
+    }
+    count -= 1
+  }
+}
+
+extension LinkedList: CustomStringConvertible {
+  public var description: String {
+    if let headDescription = head?.description {
+      return headDescription
+    } else {
+      return "Empty"
     }
   }
 }
