@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     let twoSum = TwoSum_Solution()
     let twoSum_result = twoSum.twoSum([0, 4 , 3, 0], 0)
     print(twoSum_result)
+    let rotateArray = RotateArray_Solution()
+    rotateArray.test()
   }
 
   override func didReceiveMemoryWarning() {
