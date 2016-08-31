@@ -757,13 +757,13 @@ extension Queue: CollectionType {
 }
 
 /**
- *   ListNode Class
+ *   DoubleListNode Class
  */
-public class ListNode<T>{
+public class DoubleListNode<T>{
   var value: T
-  var next: ListNode?
+  var next: DoubleListNode?
   // NOTE: weak here to prevent retain cycle.
-  weak var pre: ListNode?
+  weak var pre: DoubleListNode?
   
   public typealias Element = T
   
@@ -772,17 +772,17 @@ public class ListNode<T>{
   }
   
   /**
-   Reverse a ListNode return a new ListNode with reversed order
+   Reverse a DoubleListNode return a new DoubleListNode with reversed order
    
    - parameter node: node to be reversed
    
    - returns: a brand new node with reversed elements
    */
-  public static func reverse(node: ListNode?) -> ListNode? {
-    var prev: ListNode? = nil
+  public static func reverse(node: DoubleListNode?) -> DoubleListNode? {
+    var prev: DoubleListNode? = nil
     var head = node
     while head != nil {
-      let newHead = ListNode(head!.value)
+      let newHead = DoubleListNode(head!.value)
       let tmp = head!.next
       newHead.next = prev
       prev = newHead
@@ -793,7 +793,7 @@ public class ListNode<T>{
   
 }
 
-extension ListNode: CustomStringConvertible {
+extension DoubleListNode: CustomStringConvertible {
   public var description:String {
     if let next = next {
       return "Node(v:\(value))->\(next)"
@@ -809,7 +809,7 @@ extension ListNode: CustomStringConvertible {
 
 public class LinkedList<T> {
 
-  public typealias Node = ListNode<T>
+  public typealias Node = DoubleListNode<T>
 
   /// head of this linked list.
   private var head: Node?
@@ -837,7 +837,7 @@ public class LinkedList<T> {
   
   /// Insert an element at The head of this double linked list.
   public func insertAtHead(value: T) {
-    let newHead = ListNode(value)
+    let newHead = DoubleListNode(value)
     if let node = head {
       node.pre = newHead
       newHead.next = node
@@ -851,7 +851,7 @@ public class LinkedList<T> {
   
   /// Append an element at the tail of this double linked list.
   public func append(value: T) {
-    let newTail = ListNode(value)
+    let newTail = DoubleListNode(value)
     if let node = tail {
       node.next = newTail
       newTail.pre = node
