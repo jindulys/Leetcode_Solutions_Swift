@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *30*
+Current Finished: *31*
 
 ##[String](Sources/String)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -14,6 +14,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [3 Longest Substring without repeating characters]( https://leetcode.com/problems/longest-substring-without-repeating-characters/) |  String |  Medium |  O(n) |  O(n) 
 [14 Longest Common Prefix]( https://leetcode.com/problems/longest-common-prefix/) |  String |  Easy |  O(nm) |  O(mn) 
 [28 Implement strStr]( https://leetcode.com/problems/implement-strstr/) |  String |  Easy |  O(n) |  O(mn) 
+[36 Valid Sudoku]( https://leetcode.com/problems/valid-sudoku/) |  Array |  Easy |  O(1) |  O(1)
 [58 Length of Last Word]( https://leetcode.com/problems/length-of-last-word/) |  String |  Easy |  O(n) |  O(n) 
 [205 Isomorphic Strings]( https://leetcode.com/problems/isomorphic-strings/) |  String |  Easy |  O(n) |  O(n) 
 [242 Valid Anagram]( https://leetcode.com/problems/valid-anagram/) |  String |  Easy |  O(n) |  O(n) 
