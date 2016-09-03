@@ -34,6 +34,8 @@ class ViewController: UIViewController {
     valid.isValidSudoku([array1, array2, array3, array4, array5, array6, array7, array8, array9])
     let searchInRotatedArray = SearchInRotatedSortedArrayII_Solution()
     searchInRotatedArray.test()
+    let mySqrt = Sqrt_Solution()
+    mySqrt.test()
   }
 
   override func didReceiveMemoryWarning() {

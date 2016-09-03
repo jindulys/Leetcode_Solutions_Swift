@@ -324,6 +324,7 @@ public func ceilIndex<T: Comparable>(inputs:[T], l: Int, r: Int, key: T) -> Int 
   return localR
 }
 
+//MARK: MEMOIZATION
 /**
  Swift implementation of memoization
  
