@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *32*
+Current Finished: *34*
 
 ##[String](Sources/String)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -55,4 +55,5 @@ Problem         |    Category           |    Difficulty   |    Space           |
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [33 Search in rotated sorted array]( https://leetcode.com/problems/search-in-rotated-sorted-array/) |  Search |  Hard |  O(1) |  O(lgn)
+[81 Search in rotated sorted array II]( https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) |  Search |  Medium |  O(1) |  O(n)
 [162 Find Peak Element]( https://leetcode.com/problems/find-peak-element/) |  Search |  Medium |  O(1) |  O(lgn)
