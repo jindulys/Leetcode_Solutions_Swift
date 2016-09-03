@@ -11,13 +11,13 @@ import Foundation
 /**
 	Title:162 Find Peak Element
 	URL: https://leetcode.com/problems/find-peak-element/
-	Space: O(n)
-	Time: O(n)
+	Space: O(1)
+	Time: O(lgn)
  */
 
 class FindPeakElement_Solution {
   // My solution loop through.
-  func findPeakElement(nums: [Int]) -> Int {
+  func MyfindPeakElement(nums: [Int]) -> Int {
     guard nums.count > 1 else {
       return nums.count == 1 ? 0 : -1
     }
@@ -33,5 +33,29 @@ class FindPeakElement_Solution {
       }
     }
     return -1
+  }
+  
+  func findPeakElement(nums: [Int]) -> Int {
+    guard nums.count > 1 else {
+      return nums.count == 1 ? 0 : -1
+    }
+    var left = 0
+    var right = nums.count - 1
+    while left + 1 < right {
+      let mid = left + (right - left) / 2
+      if nums[mid] > nums[mid - 1] && nums[mid] > nums[mid + 1] {
+        return mid
+      }
+      if nums[mid] > nums[mid + 1] {
+        right = mid
+      } else {
+        left = mid
+      }
+    }
+    if nums[left] > nums[right] {
+      return left
+    } else {
+      return right
+    }
   }
 }
