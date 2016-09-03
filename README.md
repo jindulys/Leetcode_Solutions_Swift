@@ -54,4 +54,5 @@ Problem         |    Category           |    Difficulty   |    Space           |
 ##[Search](Sources/Search)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
-[162 Find Peak Element]( https://leetcode.com/problems/find-peak-element/) |  Search |  Medium |  O(n) |  O(n)
+[33 Search in rotated sorted array]( https://leetcode.com/problems/search-in-rotated-sorted-array/) |  Search |  Hard |  O(1) |  O(lgn)
+[162 Find Peak Element]( https://leetcode.com/problems/find-peak-element/) |  Search |  Medium |  O(1) |  O(lgn)
