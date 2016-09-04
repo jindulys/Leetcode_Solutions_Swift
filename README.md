@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *37*
+Current Finished: *38*
 
 ##[String](Sources/String)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -55,6 +55,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [33 Search in rotated sorted array]( https://leetcode.com/problems/search-in-rotated-sorted-array/) |  Search |  Hard |  O(1) |  O(lgn)
+[34 Search for a Range]( https://leetcode.com/problems/search-for-a-range/) |  Search |  Medium |  O(1) |  O(lgn)
 [35 Search Insert Position]( https://leetcode.com/problems/search-insert-position/) |  Search |  Medium |  O(1) |  O(lgn)
 [81 Search in rotated sorted array II]( https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) |  Search |  Medium |  O(1) |  O(n)
 [153 Find Minimum in Rotated Sorted Array]( https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) |  Search |  Medium |  O(1) |  O(lgn)
