@@ -51,16 +51,13 @@ class ViewController: UIViewController {
     testRight.left = testRightLeft
     testRight.right = testRightRight
     
-    let node100 = TreeNode(100)
-    testRightRight.right = node100
-    print(testTreeNode)
+    let LCA = LowestCommonAncestorOfABinarySearchTree_Solution()
+    LCA.test()
   }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-
-
 }
 
