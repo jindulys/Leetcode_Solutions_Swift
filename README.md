@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *46*
+Current Finished: *47*
 
 ##[String](Sources/String)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -81,5 +81,6 @@ Problem         |    Category           |    Difficulty   |    Space           |
 --------------- |  -------------------- | --------------- | -------------------|--------
 [7 Reverse Integer]( https://leetcode.com/problems/reverse-integer/) |  Math |  Easy |  O(1) |  O(1)
 [9 Palindrome Number]( https://leetcode.com/problems/palindrome-number/) |  Math |  Easy |  O(1) |  O(1)
+[258 Add Digits]( https://leetcode.com/problems/add-digits/) |  Math |  Easy |  O(1) |  O(1)
 
 
