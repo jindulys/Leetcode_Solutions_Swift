@@ -795,6 +795,20 @@ extension Queue: CollectionType {
 }
 
 /**
+ *  ListNode
+ *  This class is used by Leetcode.
+ */
+
+public class ListNode {
+  public var val: Int
+  public var next: ListNode?
+  public init(_ val: Int) {
+    self.val = val
+    self.next = nil
+  }
+}
+
+/**
  *   DoubleListNode Class
  */
 public class DoubleListNode<T>{
