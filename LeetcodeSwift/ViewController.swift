@@ -56,6 +56,9 @@ class ViewController: UIViewController {
     
     let treeSum = BinaryTreeMaximumPathSum_Solution()
     treeSum.test()
+    
+    let compareVersion = CompareVersionNumbers_Solution()
+    compareVersion.test()
   }
 
   override func didReceiveMemoryWarning() {
