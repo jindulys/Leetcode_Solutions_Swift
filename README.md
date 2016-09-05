@@ -69,3 +69,8 @@ Problem         |    Category           |    Difficulty   |    Space           |
 --------------- |  -------------------- | --------------- | -------------------|--------
 [2 Add Two Numbers]( https://leetcode.com/submissions/detail/73064342/) |  LinkedList |  Medium |  O(n) |  O(n)
 
+##[DynamicProgramming](Sources/DynamicProgramming)
+Problem         |    Category           |    Difficulty   |    Space           | Time        
+--------------- |  -------------------- | --------------- | -------------------|--------
+[5 Longest Palindromic Substring]( https://leetcode.com/problems/longest-palindromic-substring/) |  DP |  Medium |  O(n^2) |  O(n^2)
+
