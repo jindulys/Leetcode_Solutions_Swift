@@ -153,13 +153,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Sources/String/165_CompareVersionNumbers.swift"
-            timestampString = "494806128.590849"
+            filePath = "Sources/Search/278_FirstBadVersion.swift"
+            timestampString = "494812008.936054"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "test()"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "solution(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

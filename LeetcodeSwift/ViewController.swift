@@ -59,6 +59,9 @@ class ViewController: UIViewController {
     
     let compareVersion = CompareVersionNumbers_Solution()
     compareVersion.test()
+    
+    let firstBadVersion = FirstBadVersion_Solution()
+    firstBadVersion.test()
   }
 
   override func didReceiveMemoryWarning() {
