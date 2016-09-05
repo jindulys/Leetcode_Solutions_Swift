@@ -21,6 +21,43 @@ public class TreeNode {
   }
 }
 
+extension TreeNode: CustomStringConvertible {
+  public var description: String {
+    let currentLevelDescription = "|__\(val)\n"
+    var leftDescription: String = ""
+    if let left = self.left {
+      let currentLeftDescription = left.description
+      currentLeftDescription.characters.split("\n").forEach{
+        leftDescription += "   " + String($0) + "\n"
+      }
+    } else {
+      leftDescription = "   |_(NULL)\n"
+    }
+    var rightDescription: String = ""
+    if let right = self.right {
+      let currentRightDescription = right.description
+      currentRightDescription.characters.split("\n").forEach{
+        rightDescription += "   " + String($0) + "\n"
+      }
+    } else {
+      rightDescription = "   |_(NULL)\n"
+    }
+    var finalLeft: String = ""
+    for (index, element) in leftDescription.characters.split("\n").enumerate() {
+      if index == 0 {
+        finalLeft += String(element) + "\n"
+      } else {
+        var processingCharacters = element
+        processingCharacters.removeFirst()
+        var processingString = String(processingCharacters)
+        processingString.insert("|", atIndex: processingString.startIndex.advancedBy(3))
+        finalLeft += processingString + "\n"
+      }
+    }
+    return currentLevelDescription + finalLeft + rightDescription
+  }
+}
+
 /// HashableTreeNode is a wrapper around TreeNode, to facilitate Hash.
 public class HashableTreeNode {
   public var val: Int

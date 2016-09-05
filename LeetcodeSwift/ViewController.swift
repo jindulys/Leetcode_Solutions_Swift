@@ -36,6 +36,24 @@ class ViewController: UIViewController {
     searchInRotatedArray.test()
     let mySqrt = Sqrt_Solution()
     mySqrt.test()
+    
+    let testTreeNode = TreeNode(10)
+    let testLeft = TreeNode(6)
+    let testRight = TreeNode(19)
+    testTreeNode.left = testLeft
+    testTreeNode.right = testRight
+    let testLeftLeft = TreeNode(1)
+    let testLeftRight = TreeNode(9)
+    testLeft.left = testLeftLeft
+    testLeft.right = testLeftRight
+    let testRightLeft = TreeNode(12)
+    let testRightRight = TreeNode(29)
+    testRight.left = testRightLeft
+    testRight.right = testRightRight
+    
+    let node100 = TreeNode(100)
+    testRightRight.right = node100
+    print(testTreeNode)
   }
 
   override func didReceiveMemoryWarning() {
