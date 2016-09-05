@@ -12,7 +12,7 @@ import Foundation
 	Title:278 First Bad Version
 	URL: https://leetcode.com/problems/first-bad-version/
 	Space: O(1)
-	Time: O(lan)
+	Time: O(lgn)
  */
 
 class FirstBadVersion_Solution {
