@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *44*
+Current Finished: *45*
 
 ##[String](Sources/String)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -68,6 +68,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [2 Add Two Numbers]( https://leetcode.com/submissions/detail/73064342/) |  LinkedList |  Medium |  O(n) |  O(n)
+[24 Swap Nodes in Pairs]( https://leetcode.com/problems/swap-nodes-in-pairs/) |  Linked List |  Easy |  O(1) |  O(n)
 
 ##[DynamicProgramming](Sources/DynamicProgramming)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
