@@ -53,6 +53,9 @@ class ViewController: UIViewController {
     
     let LCA = LowestCommonAncestorOfABinarySearchTree_Solution()
     LCA.test()
+    
+    let treeSum = BinaryTreeMaximumPathSum_Solution()
+    treeSum.test()
   }
 
   override func didReceiveMemoryWarning() {
