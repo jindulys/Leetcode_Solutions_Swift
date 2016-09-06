@@ -62,6 +62,9 @@ class ViewController: UIViewController {
     
     let firstBadVersion = FirstBadVersion_Solution()
     firstBadVersion.test()
+    
+    let findTheDifference = FindTheDifference_Solution()
+    findTheDifference.test()
   }
 
   override func didReceiveMemoryWarning() {
