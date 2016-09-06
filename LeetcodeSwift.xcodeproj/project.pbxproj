@@ -56,6 +56,7 @@
 		0EB7AD641D7E402100278C48 /* 389_FindTheDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7AD631D7E402100278C48 /* 389_FindTheDifference.swift */; };
 		0EB7AD661D7E471100278C48 /* 136_SingleNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7AD651D7E471100278C48 /* 136_SingleNumber.swift */; };
 		0EB7AD681D7E485B00278C48 /* 231_PowerOfTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7AD671D7E485B00278C48 /* 231_PowerOfTwo.swift */; };
+		0EB7AD6A1D7E4C7D00278C48 /* 326_PowerOfThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7AD691D7E4C7D00278C48 /* 326_PowerOfThree.swift */; };
 		0EBC87F91D7CAE12003DE97A /* 35_SearchInsertPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBC87F81D7CAE12003DE97A /* 35_SearchInsertPosition.swift */; };
 		0EBC87FB1D7CBFD1003DE97A /* 34_SearchForARange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBC87FA1D7CBFD1003DE97A /* 34_SearchForARange.swift */; };
 		0EBC87FD1D7CCA57003DE97A /* 235_LowestCommonAncestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBC87FC1D7CCA57003DE97A /* 235_LowestCommonAncestor.swift */; };
@@ -143,6 +144,7 @@
 		0EB7AD631D7E402100278C48 /* 389_FindTheDifference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 389_FindTheDifference.swift; sourceTree = "<group>"; };
 		0EB7AD651D7E471100278C48 /* 136_SingleNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 136_SingleNumber.swift; sourceTree = "<group>"; };
 		0EB7AD671D7E485B00278C48 /* 231_PowerOfTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 231_PowerOfTwo.swift; sourceTree = "<group>"; };
+		0EB7AD691D7E4C7D00278C48 /* 326_PowerOfThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 326_PowerOfThree.swift; sourceTree = "<group>"; };
 		0EBC87F81D7CAE12003DE97A /* 35_SearchInsertPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 35_SearchInsertPosition.swift; sourceTree = "<group>"; };
 		0EBC87FA1D7CBFD1003DE97A /* 34_SearchForARange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 34_SearchForARange.swift; sourceTree = "<group>"; };
 		0EBC87FC1D7CCA57003DE97A /* 235_LowestCommonAncestor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 235_LowestCommonAncestor.swift; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 				0EB7AD5F1D7E273A00278C48 /* 258_AddDigits.swift */,
 				0EB7AD651D7E471100278C48 /* 136_SingleNumber.swift */,
 				0EB7AD671D7E485B00278C48 /* 231_PowerOfTwo.swift */,
+				0EB7AD691D7E4C7D00278C48 /* 326_PowerOfThree.swift */,
 			);
 			path = Math;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				0EEF2D611D7227F300A85EAA /* 283_MoveZeros.swift in Sources */,
 				0E6FADC61D58172200C8D71D /* 105_ConstructBinaryTreeFromPreorderAndInorderTraversal.swift in Sources */,
 				0E6FADB01D58171900C8D71D /* 205_IsomorphicString.swift in Sources */,
+				0EB7AD6A1D7E4C7D00278C48 /* 326_PowerOfThree.swift in Sources */,
 				0EEF2D5D1D7222AE00A85EAA /* 350_IntersectionOfTwoArraysII.swift in Sources */,
 				0E6FADCC1D58172200C8D71D /* 226_InvertBinaryTree.swift in Sources */,
 				0E6FADC41D58172200C8D71D /* 102_BinaryTreeLevelOrderTraversal.swift in Sources */,
