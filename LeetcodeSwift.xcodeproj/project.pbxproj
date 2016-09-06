@@ -55,6 +55,7 @@
 		0EB7AD621D7E393900278C48 /* 278_FirstBadVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7AD611D7E393900278C48 /* 278_FirstBadVersion.swift */; };
 		0EB7AD641D7E402100278C48 /* 389_FindTheDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7AD631D7E402100278C48 /* 389_FindTheDifference.swift */; };
 		0EB7AD661D7E471100278C48 /* 136_SingleNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7AD651D7E471100278C48 /* 136_SingleNumber.swift */; };
+		0EB7AD681D7E485B00278C48 /* 231_PowerOfTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7AD671D7E485B00278C48 /* 231_PowerOfTwo.swift */; };
 		0EBC87F91D7CAE12003DE97A /* 35_SearchInsertPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBC87F81D7CAE12003DE97A /* 35_SearchInsertPosition.swift */; };
 		0EBC87FB1D7CBFD1003DE97A /* 34_SearchForARange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBC87FA1D7CBFD1003DE97A /* 34_SearchForARange.swift */; };
 		0EBC87FD1D7CCA57003DE97A /* 235_LowestCommonAncestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBC87FC1D7CCA57003DE97A /* 235_LowestCommonAncestor.swift */; };
@@ -141,6 +142,7 @@
 		0EB7AD611D7E393900278C48 /* 278_FirstBadVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 278_FirstBadVersion.swift; sourceTree = "<group>"; };
 		0EB7AD631D7E402100278C48 /* 389_FindTheDifference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 389_FindTheDifference.swift; sourceTree = "<group>"; };
 		0EB7AD651D7E471100278C48 /* 136_SingleNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 136_SingleNumber.swift; sourceTree = "<group>"; };
+		0EB7AD671D7E485B00278C48 /* 231_PowerOfTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 231_PowerOfTwo.swift; sourceTree = "<group>"; };
 		0EBC87F81D7CAE12003DE97A /* 35_SearchInsertPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 35_SearchInsertPosition.swift; sourceTree = "<group>"; };
 		0EBC87FA1D7CBFD1003DE97A /* 34_SearchForARange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 34_SearchForARange.swift; sourceTree = "<group>"; };
 		0EBC87FC1D7CCA57003DE97A /* 235_LowestCommonAncestor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 235_LowestCommonAncestor.swift; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 				0EB7AD591D7E0B4B00278C48 /* 9_PalindromeNumber.swift */,
 				0EB7AD5F1D7E273A00278C48 /* 258_AddDigits.swift */,
 				0EB7AD651D7E471100278C48 /* 136_SingleNumber.swift */,
+				0EB7AD671D7E485B00278C48 /* 231_PowerOfTwo.swift */,
 			);
 			path = Math;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				0E6FADB31D58171900C8D71D /* 345_ReverseVowelsOfAString.swift in Sources */,
 				0E6FADC21D58172200C8D71D /* 100_SameTree.swift in Sources */,
 				0E9C91F91D7B5CEF0022BC93 /* 33_SearchInRotatedSortedArray.swift in Sources */,
+				0EB7AD681D7E485B00278C48 /* 231_PowerOfTwo.swift in Sources */,
 				0E6FAD571D5811BE00C8D71D /* ViewController.swift in Sources */,
 				0EB7AD621D7E393900278C48 /* 278_FirstBadVersion.swift in Sources */,
 				0EB7AD641D7E402100278C48 /* 389_FindTheDifference.swift in Sources */,
