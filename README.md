@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *48*
+Current Finished: *49*
 
 ##[String](Sources/String)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
