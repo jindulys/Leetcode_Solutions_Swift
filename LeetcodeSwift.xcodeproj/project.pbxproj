@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E5D15591D7F9468001EB24C /* 15_3Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5D15581D7F9468001EB24C /* 15_3Sum.swift */; };
+		0E5D155B1D7FBB7C001EB24C /* 8_StringToInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5D155A1D7FBB7C001EB24C /* 8_StringToInteger.swift */; };
 		0E5EADC51D5D61DD008E79B4 /* 242_ValidAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EADC41D5D61DD008E79B4 /* 242_ValidAnagram.swift */; };
 		0E5EADC71D5D6A78008E79B4 /* 28_ImplementStrStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EADC61D5D6A78008E79B4 /* 28_ImplementStrStr.swift */; };
 		0E61C9731D60CCF60014C2D2 /* 14_LongestCommonPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E61C9721D60CCF60014C2D2 /* 14_LongestCommonPrefix.swift */; };
@@ -93,6 +94,7 @@
 
 /* Begin PBXFileReference section */
 		0E5D15581D7F9468001EB24C /* 15_3Sum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 15_3Sum.swift; sourceTree = "<group>"; };
+		0E5D155A1D7FBB7C001EB24C /* 8_StringToInteger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 8_StringToInteger.swift; sourceTree = "<group>"; };
 		0E5EADC41D5D61DD008E79B4 /* 242_ValidAnagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 242_ValidAnagram.swift; sourceTree = "<group>"; };
 		0E5EADC61D5D6A78008E79B4 /* 28_ImplementStrStr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 28_ImplementStrStr.swift; sourceTree = "<group>"; };
 		0E61C9721D60CCF60014C2D2 /* 14_LongestCommonPrefix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 14_LongestCommonPrefix.swift; sourceTree = "<group>"; };
@@ -336,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				0EB7AD571D7DF5B000278C48 /* 7_ReverseInteger.swift */,
+				0E5D155A1D7FBB7C001EB24C /* 8_StringToInteger.swift */,
 				0EB7AD591D7E0B4B00278C48 /* 9_PalindromeNumber.swift */,
 				0EB7AD6B1D7E5B7500278C48 /* 13_RomanToInteger.swift */,
 				0EB7AD5F1D7E273A00278C48 /* 258_AddDigits.swift */,
@@ -495,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EB7AD5C1D7E0F8B00278C48 /* 24_SwapNodesInPairs.swift in Sources */,
+				0E5D155B1D7FBB7C001EB24C /* 8_StringToInteger.swift in Sources */,
 				0E6FADCB1D58172200C8D71D /* 113_PathSumII.swift in Sources */,
 				0E6FADB11D58171900C8D71D /* 290_WordPattern.swift in Sources */,
 				0E6FADCA1D58172200C8D71D /* 112_PathSum.swift in Sources */,

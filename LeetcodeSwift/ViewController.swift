@@ -68,6 +68,9 @@ class ViewController: UIViewController {
     
     let findThreeSum = ThreeSum_Solution()
     findThreeSum.test()
+    
+    let myStringToInt = StringToInteger_Solution()
+    myStringToInt.test()
   }
 
   override func didReceiveMemoryWarning() {
