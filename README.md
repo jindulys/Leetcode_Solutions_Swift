@@ -28,6 +28,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [1 Two Sum]( https://leetcode.com/problems/two-sum/) |  Array |  Easy |  O(n) |  O(n)
+[15 3Sum]( https://leetcode.com/problems/3sum/) |  Array |  Medium |  O(n) |  O(n^2)
 [27 Remove Element]( https://leetcode.com/problems/remove-element/) |  Array |  Easy |  O(1) |  O(n)
 [36 Valid Sudoku]( https://leetcode.com/problems/valid-sudoku/) |  Array |  Easy |  O(1) |  O(1)
 [189 Rotate Array]( https://leetcode.com/problems/rotate-array/) |  Array |  Easy |  O(1) |  O(n)
