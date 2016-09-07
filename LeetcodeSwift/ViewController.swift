@@ -65,6 +65,9 @@ class ViewController: UIViewController {
     
     let findTheDifference = FindTheDifference_Solution()
     findTheDifference.test()
+    
+    let findThreeSum = ThreeSum_Solution()
+    findThreeSum.test()
   }
 
   override func didReceiveMemoryWarning() {
