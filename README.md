@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *52*
+Current Finished: *53*
 
 ##[String](Sources/String)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -86,6 +86,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [136 Single Number]( https://leetcode.com/problems/single-number/) |  Math |  Easy |  O(1) |  O(n)
 [231 Power of Two]( https://leetcode.com/problems/power-of-two/) |  Math |  Easy |  O(1) |  O(1)
 [258 Add Digits]( https://leetcode.com/problems/add-digits/) |  Math |  Easy |  O(1) |  O(1)
+[263 Ugly Number]( https://leetcode.com/problems/ugly-number/) |  Math |  Easy |  O(1) |  O(1)
 [326 Power of Three]( https://leetcode.com/problems/power-of-three/) |  Math |  Easy |  O(1) |  O(1)
 
 
