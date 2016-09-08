@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *53*
+Current Finished: *56*
 
 ##[String](Sources/String)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -33,6 +33,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [36 Valid Sudoku]( https://leetcode.com/problems/valid-sudoku/) |  Array |  Easy |  O(1) |  O(1)
 [189 Rotate Array]( https://leetcode.com/problems/rotate-array/) |  Array |  Easy |  O(1) |  O(n)
 [217 Contains Duplicate]( https://leetcode.com/problems/contains-duplicate/) |  Array |  Easy |  O(n) |  O(n) 
+[228 Summary Ranges]( https://leetcode.com/problems/summary-ranges/) |  Array |  Medium |  O(n) |  O(n)
 [283 Move Zeroes]( https://leetcode.com/problems/move-zeroes/) |  Array |  Easy |  O(1) |  O(n)
 [349 Intersection of two arrays]( https://leetcode.com/problems/intersection-of-two-arrays/) |  Array |  Easy |  O(n) |  O(n) 
 [350 Intersection of two arrays II]( https://leetcode.com/problems/intersection-of-two-arrays-ii/) |  Array |  Easy |  O(n) |  O(n)
