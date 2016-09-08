@@ -28,7 +28,7 @@ class SummaryRanges_Solution {
       nums[walkingIndex] + 1 != nums[walkingIndex + 1]) ||
         walkingIndex == nums.count - 1 {
         if walkingIndex == startIndex {
-          ret.append(String(nums[walkingIndex]))
+          ret.append("\(nums[startIndex])")
         } else {
           ret.append("\(nums[startIndex])->\(nums[walkingIndex])")
         }

@@ -83,6 +83,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [7 Reverse Integer]( https://leetcode.com/problems/reverse-integer/) |  Math |  Easy |  O(1) |  O(1)
+[8 String to Integer(atoi)]( https://leetcode.com/problems/string-to-integer-atoi/) |  Math String |  Easy |  O(n) |  O(1)
 [9 Palindrome Number]( https://leetcode.com/problems/palindrome-number/) |  Math |  Easy |  O(1) |  O(1)
 [136 Single Number]( https://leetcode.com/problems/single-number/) |  Math |  Easy |  O(1) |  O(n)
 [231 Power of Two]( https://leetcode.com/problems/power-of-two/) |  Math |  Easy |  O(1) |  O(1)
