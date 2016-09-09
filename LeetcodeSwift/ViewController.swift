@@ -50,6 +50,7 @@ class ViewController: UIViewController {
     let testRightRight = TreeNode(29)
     testRight.left = testRightLeft
     testRight.right = testRightRight
+    print(testTreeNode)
     
     let LCA = LowestCommonAncestorOfABinarySearchTree_Solution()
     LCA.test()
