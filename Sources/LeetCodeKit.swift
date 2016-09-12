@@ -626,6 +626,14 @@ public extension SequenceType {
   }
 }
 
+extension SequenceType where Generator.Element: Equatable {
+  func subtract(toRemove: [Generator.Element]) -> [Generator.Element] {
+    return self.filter {
+      !toRemove.contains($0)
+    }
+  }
+}
+
 public extension String {
   /**
    Check whether this string contains all the English Characters, this method treat upper case and lower case the same

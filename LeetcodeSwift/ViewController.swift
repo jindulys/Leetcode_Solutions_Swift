@@ -72,6 +72,9 @@ class ViewController: UIViewController {
     
     let myStringToInt = StringToInteger_Solution()
     myStringToInt.test()
+    
+    let wordBreakTest = WordBreak_Solution()
+    wordBreakTest.test()
   }
 
   override func didReceiveMemoryWarning() {
