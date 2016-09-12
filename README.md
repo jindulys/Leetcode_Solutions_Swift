@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *56*
+Current Finished: *57*
 
 ##[String](Sources/String)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -31,6 +31,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [15 3Sum]( https://leetcode.com/problems/3sum/) |  Array |  Medium |  O(n) |  O(n^2)
 [27 Remove Element]( https://leetcode.com/problems/remove-element/) |  Array |  Easy |  O(1) |  O(n)
 [36 Valid Sudoku]( https://leetcode.com/problems/valid-sudoku/) |  Array |  Easy |  O(1) |  O(1)
+[48 Rotate Image]( https://leetcode.com/problems/rotate-image/) |  Array |  Medium |  O(1) |  O(n^2)
 [189 Rotate Array]( https://leetcode.com/problems/rotate-array/) |  Array |  Easy |  O(1) |  O(n)
 [217 Contains Duplicate]( https://leetcode.com/problems/contains-duplicate/) |  Array |  Easy |  O(n) |  O(n) 
 [228 Summary Ranges]( https://leetcode.com/problems/summary-ranges/) |  Array |  Medium |  O(n) |  O(n)
