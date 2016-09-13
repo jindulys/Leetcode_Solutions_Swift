@@ -80,6 +80,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [5 Longest Palindromic Substring]( https://leetcode.com/problems/longest-palindromic-substring/) |  DP |  Medium |  O(n^2) |  O(n^2)
+[139 Word Break]( https://leetcode.com/problems/word-break/) |  DP |  Medium |  O(n) |  O(nL^2)
 
 ##[Math](Sources/Math)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
