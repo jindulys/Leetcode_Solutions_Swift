@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E5622411D897A5900D069D5 /* 279_PerfectSquares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5622401D897A5900D069D5 /* 279_PerfectSquares.swift */; };
 		0E58FD2F1D80E49400239011 /* 228_SummaryRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E58FD2E1D80E49400239011 /* 228_SummaryRange.swift */; };
 		0E58FD311D80EDC900239011 /* 48_RotateImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E58FD301D80EDC900239011 /* 48_RotateImage.swift */; };
 		0E5D15591D7F9468001EB24C /* 15_3Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5D15581D7F9468001EB24C /* 15_3Sum.swift */; };
@@ -98,6 +99,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E5622401D897A5900D069D5 /* 279_PerfectSquares.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 279_PerfectSquares.swift; sourceTree = "<group>"; };
 		0E58FD2E1D80E49400239011 /* 228_SummaryRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 228_SummaryRange.swift; sourceTree = "<group>"; };
 		0E58FD301D80EDC900239011 /* 48_RotateImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 48_RotateImage.swift; sourceTree = "<group>"; };
 		0E5D15581D7F9468001EB24C /* 15_3Sum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 15_3Sum.swift; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 				0EA852B71D87980F00721FE2 /* 62_UniquePaths.swift */,
 				0EA852B91D87AB5200721FE2 /* 63_UniquePaths.swift */,
 				0E93F9701D86594C0050995D /* 139_WordBreak.swift */,
+				0E5622401D897A5900D069D5 /* 279_PerfectSquares.swift */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				0EB7AD661D7E471100278C48 /* 136_SingleNumber.swift in Sources */,
 				0E9C91FB1D7B64D20022BC93 /* 81_SearchInRotatedSortedArrayII.swift in Sources */,
 				0E9C91F01D753A090022BC93 /* 189_RotateArray.swift in Sources */,
+				0E5622411D897A5900D069D5 /* 279_PerfectSquares.swift in Sources */,
 				0EEF2D611D7227F300A85EAA /* 283_MoveZeros.swift in Sources */,
 				0E6FADC61D58172200C8D71D /* 105_ConstructBinaryTreeFromPreorderAndInorderTraversal.swift in Sources */,
 				0E6FADB01D58171900C8D71D /* 205_IsomorphicString.swift in Sources */,
