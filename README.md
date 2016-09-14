@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *60*
+Current Finished: *61*
 
 ##[String](Sources/String)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -83,6 +83,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [62 Unique Paths]( https://leetcode.com/problems/unique-paths/) |  DP |  Medium |  O(mn) |  O(mn)
 [63 Unique Paths II]( https://leetcode.com/problems/unique-paths-ii/) |  DP |  Medium |  O(mn) |  O(mn)
 [139 Word Break]( https://leetcode.com/problems/word-break/) |  DP |  Medium |  O(n) |  O(nL^2)
+[63 Unique Paths II]( https://leetcode.com/problems/perfect-squares/) |  DP |  Medium |  O(n) |  O(n^2)
 
 ##[Math](Sources/Math)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
