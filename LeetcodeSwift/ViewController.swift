@@ -75,6 +75,9 @@ class ViewController: UIViewController {
     
     let wordBreakTest = WordBreak_Solution()
     wordBreakTest.test()
+    
+    let coinChangeTest = CoinChange_Solution()
+    coinChangeTest.test()
   }
 
   override func didReceiveMemoryWarning() {
