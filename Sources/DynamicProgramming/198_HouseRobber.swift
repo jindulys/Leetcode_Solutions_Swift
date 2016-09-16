@@ -22,19 +22,15 @@ class HouseRobber_Solution {
     }
     // NOTE: The maximum value by robbing current room.
     var robCurrentRoom = Array(count: nums.count, repeatedValue: 0)
-    // NOTE: The maximum value by not robbing current room.
-    var noRobCurrentRoom = Array(count: nums.count, repeatedValue: 0)
     for i in 0..<nums.count {
       if i == 0 {
         robCurrentRoom[i] = nums[0]
       } else if i == 1 {
-        robCurrentRoom[i] = nums[1]
-        noRobCurrentRoom[i] = robCurrentRoom[i - 1]
+        robCurrentRoom[i] = max(nums[0], nums[1])
       } else {
-        robCurrentRoom[i] = max(robCurrentRoom[i - 2], noRobCurrentRoom[i - 2]) + nums[i]
-        noRobCurrentRoom[i] = max(robCurrentRoom[i - 1], noRobCurrentRoom[i - 1])
+        robCurrentRoom[i] = max(robCurrentRoom[i - 2] + nums[i], robCurrentRoom[i - 1])
       }
     }
-    return max(robCurrentRoom[nums.count - 1], noRobCurrentRoom[nums.count - 1])
+    return robCurrentRoom[nums.count - 1]
   }
 }
