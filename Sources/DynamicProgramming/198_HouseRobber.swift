@@ -33,4 +33,23 @@ class HouseRobber_Solution {
     }
     return robCurrentRoom[nums.count - 1]
   }
+  
+  /**
+   Title:198 House Robber
+   URL: https://leetcode.com/problems/house-robber/
+   Space: O(1)
+   Time: O(n)
+   */
+  
+  func coolRob(nums: [Int]) -> Int {
+    var robCurrent = 0
+    var robPre = 0
+    var robPrePre = 0
+    for num in nums {
+      robCurrent = max(robPre, robPrePre + num)
+      robPrePre = robPre
+      robPre = robCurrent
+    }
+    return robCurrent
+  }
 }
