@@ -47,7 +47,7 @@
 		0E93F9711D86594C0050995D /* 139_WordBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E93F9701D86594C0050995D /* 139_WordBreak.swift */; };
 		0E948BB31D8CC1B600BEB6A9 /* 213_HouseRobberII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E948BB21D8CC1B600BEB6A9 /* 213_HouseRobberII.swift */; };
 		0E9C91F01D753A090022BC93 /* 189_RotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6818C11D735AFC00C33DFB /* 189_RotateArray.swift */; };
-		0E9C91F21D7712EB0022BC93 /* 39_ValidSudoku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C91F11D7712EB0022BC93 /* 39_ValidSudoku.swift */; };
+		0E9C91F21D7712EB0022BC93 /* 36_ValidSudoku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C91F11D7712EB0022BC93 /* 36_ValidSudoku.swift */; };
 		0E9C91F71D7B09230022BC93 /* 162_FindAPeakElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C91F61D7B09230022BC93 /* 162_FindAPeakElement.swift */; };
 		0E9C91F91D7B5CEF0022BC93 /* 33_SearchInRotatedSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C91F81D7B5CEF0022BC93 /* 33_SearchInRotatedSortedArray.swift */; };
 		0E9C91FB1D7B64D20022BC93 /* 81_SearchInRotatedSortedArrayII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C91FA1D7B64D20022BC93 /* 81_SearchInRotatedSortedArrayII.swift */; };
@@ -149,7 +149,7 @@
 		0E6FADCE1D58172B00C8D71D /* LeetCodeKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeetCodeKit.swift; sourceTree = "<group>"; };
 		0E93F9701D86594C0050995D /* 139_WordBreak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 139_WordBreak.swift; sourceTree = "<group>"; };
 		0E948BB21D8CC1B600BEB6A9 /* 213_HouseRobberII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 213_HouseRobberII.swift; sourceTree = "<group>"; };
-		0E9C91F11D7712EB0022BC93 /* 39_ValidSudoku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 39_ValidSudoku.swift; sourceTree = "<group>"; };
+		0E9C91F11D7712EB0022BC93 /* 36_ValidSudoku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 36_ValidSudoku.swift; sourceTree = "<group>"; };
 		0E9C91F61D7B09230022BC93 /* 162_FindAPeakElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 162_FindAPeakElement.swift; sourceTree = "<group>"; };
 		0E9C91F81D7B5CEF0022BC93 /* 33_SearchInRotatedSortedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 33_SearchInRotatedSortedArray.swift; sourceTree = "<group>"; };
 		0E9C91FA1D7B64D20022BC93 /* 81_SearchInRotatedSortedArrayII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 81_SearchInRotatedSortedArrayII.swift; sourceTree = "<group>"; };
@@ -289,8 +289,8 @@
 				0EEF2D571D72103A00A85EAA /* 58_LengthOfLastWord.swift */,
 				0EB7AD5D1D7E1D8B00278C48 /* 165_CompareVersionNumbers.swift */,
 				0E6FADAC1D58171900C8D71D /* 205_IsomorphicString.swift */,
-				0E6FADAD1D58171900C8D71D /* 290_WordPattern.swift */,
 				0E5EADC41D5D61DD008E79B4 /* 242_ValidAnagram.swift */,
+				0E6FADAD1D58171900C8D71D /* 290_WordPattern.swift */,
 				0E6FADAE1D58171900C8D71D /* 344_ReverseString.swift */,
 				0E6FADAF1D58171900C8D71D /* 345_ReverseVowelsOfAString.swift */,
 				0EEF2D551D71D8D100A85EAA /* 383_RansomNote.swift */,
@@ -384,7 +384,7 @@
 				0E67250B1D7329A400408DA3 /* 1_TwoSum.swift */,
 				0E5D15581D7F9468001EB24C /* 15_3Sum.swift */,
 				0EEF2D621D728B3000A85EAA /* 27_RemoveElement.swift */,
-				0E9C91F11D7712EB0022BC93 /* 39_ValidSudoku.swift */,
+				0E9C91F11D7712EB0022BC93 /* 36_ValidSudoku.swift */,
 				0E58FD301D80EDC900239011 /* 48_RotateImage.swift */,
 				0E6818C11D735AFC00C33DFB /* 189_RotateArray.swift */,
 				0EEF2D5E1D72266900A85EAA /* 217_ContainsDuplicate.swift */,
@@ -540,7 +540,7 @@
 				0EB02F7D1D8B9F000033F46E /* 198_HouseRobber.swift in Sources */,
 				0E6FADC71D58172200C8D71D /* 106_ConstructBinaryTreeFromInorderAndPostorderTraversal.swift in Sources */,
 				0E5EADC51D5D61DD008E79B4 /* 242_ValidAnagram.swift in Sources */,
-				0E9C91F21D7712EB0022BC93 /* 39_ValidSudoku.swift in Sources */,
+				0E9C91F21D7712EB0022BC93 /* 36_ValidSudoku.swift in Sources */,
 				0EA852BA1D87AB5200721FE2 /* 63_UniquePaths.swift in Sources */,
 				0E6FADC31D58172200C8D71D /* 101_SymmetricTree.swift in Sources */,
 				0EB7AD551D7DEE5800278C48 /* 5_LongestPalindromicSubString.swift in Sources */,
