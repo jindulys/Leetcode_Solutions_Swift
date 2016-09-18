@@ -658,6 +658,20 @@ extension Sequence where Iterator.Element: Equatable {
   }
 }
 
+// TODO(simonli): Need further investigation.
+//extension Sequence {
+//  func subtract<S: Sequence>
+//    (_ toRemove: S,
+//    predicator:@escaping (Iterator.Element, Any) -> Bool) -> [Iterator.Element] {
+//    return self.filter { sourceElement in
+//      toRemove.contains { removeElement in
+//        //predicator($0, sourceElement)
+//        return false
+//      }
+//    }
+//  }
+//}
+
 public extension String {
   /**
    Check whether this string contains all the English Characters, this method treat upper case and lower case the same
