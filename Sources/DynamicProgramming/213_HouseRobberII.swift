@@ -10,6 +10,13 @@ import Foundation
 
 class HouseRobberII_Solution {
   func rob(_ nums: [Int]) -> Int {
+    guard nums.count > 1 else {
+      if nums.count == 1 {
+        return nums[0]
+      } else {
+        return 0
+      }
+    }
     let robFirst = robHelper(nums, left: 0, right: nums.count - 2)
     let robLast = robHelper(nums, left: 1, right: nums.count - 1)
     return max(robFirst, robLast)
