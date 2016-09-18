@@ -51,4 +51,29 @@ class HouseRobberII_Solution {
     }
     return robCurrentRoom[right - left]
   }
+  
+  func rob1(_ nums: [Int]) -> Int {
+    guard nums.count > 1 else {
+      if nums.count == 1 {
+        return nums[0]
+      } else {
+        return 0
+      }
+    }
+    let robFirst = coolRob(nums, left: 0, right: nums.count - 2)
+    let robLast = coolRob(nums, left: 1, right: nums.count - 1)
+    return max(robFirst, robLast)
+  }
+  
+  func coolRob(_ nums: [Int], left: Int, right: Int) -> Int {
+    var robCurrent = 0
+    var robPre = 0
+    var robPrePre = 0
+    for i in left...right {
+      robCurrent = max(robPre, robPrePre + nums[i])
+      robPrePre = robPre
+      robPre = robCurrent
+    }
+    return robCurrent
+  }
 }
