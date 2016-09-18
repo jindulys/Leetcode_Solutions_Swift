@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *67*
+Current Finished: *68*
 
 ##[String](Sources/String)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -85,6 +85,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [62 Unique Paths]( https://leetcode.com/problems/unique-paths/) |  DP |  Medium |  O(mn) |  O(mn)
 [63 Unique Paths II]( https://leetcode.com/problems/unique-paths-ii/) |  DP |  Medium |  O(mn) |  O(mn)
 [139 Word Break]( https://leetcode.com/problems/word-break/) |  DP |  Medium |  O(n) |  O(nL^2)
+[152 Maximum Product Subarray]( https://leetcode.com/problems/maximum-product-subarray/) |  DP |  Medium |  O(1) |  O(n)
 [198 House Robber]( https://leetcode.com/problems/house-robber/) |  DP |  Easy |  O(n) |  O(n)
 [213 House Robber II]( https://leetcode.com/problems/house-robber-ii/) |  DP |  Medium |  O(n) |  O(n)
 [279 Unique Paths II]( https://leetcode.com/problems/perfect-squares/) |  DP |  Medium |  O(n) |  O(n^2)
