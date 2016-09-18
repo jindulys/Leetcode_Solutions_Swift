@@ -16,7 +16,7 @@ import Foundation
  */
 
 class LongestCommonPrefix_Solution {
-  func longestCommonPrefix(strs: [String]) -> String {
+  func longestCommonPrefix(_ strs: [String]) -> String {
     guard strs.count > 0 else {
       return ""
     }

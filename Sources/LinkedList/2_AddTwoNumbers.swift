@@ -18,7 +18,7 @@ import Foundation
 class AddTwoNumbers_Solution {
   var currentLastNode: ListNode?
   
-  func addTwoNumbers(l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+  func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
     var currentL1 = l1
     var currentL2 = l2
     var currentCarry: Int = 0
@@ -44,7 +44,7 @@ class AddTwoNumbers_Solution {
     return result
   }
   
-  func helper(val1: Int, val2: Int, inout carray: Int, inout result: ListNode?) {
+  func helper(_ val1: Int, val2: Int, carray: inout Int, result: inout ListNode?) {
     let currentVal = (val1 + val2 + carray) % 10
     carray = (val1 + val2 + carray) / 10
     if let tmp = currentLastNode {

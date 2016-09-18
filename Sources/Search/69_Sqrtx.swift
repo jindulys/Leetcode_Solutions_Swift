@@ -16,7 +16,7 @@ import Foundation
  */
 
 class Sqrt_Solution {
-  func mySqrt(x: Int) -> Int {
+  func mySqrt(_ x: Int) -> Int {
     guard x > 1 else {
       return x >= 0 ? x : -1
     }

@@ -19,12 +19,12 @@ class PathSum_Solution {
   
   var target: Int = Int.max
   
-  func hasPathSum(root: TreeNode?, _ sum: Int) -> Bool {
+  func hasPathSum(_ root: TreeNode?, _ sum: Int) -> Bool {
     self.target = sum
     return dfsSum(root, prevSum: 0)
   }
   
-  private func dfsSum(root: TreeNode?, prevSum: Int) -> Bool {
+  fileprivate func dfsSum(_ root: TreeNode?, prevSum: Int) -> Bool {
     guard let root = root else {
       return false
     }

@@ -16,11 +16,11 @@ import Foundation
  */
 
 class CoinChange_Solution {
-  func coinChange(coins: [Int], _ amount: Int) -> Int {
-    guard let minimumDenomination = coins.minElement() where minimumDenomination <= amount else {
+  func coinChange(_ coins: [Int], _ amount: Int) -> Int {
+    guard let minimumDenomination = coins.min() , minimumDenomination <= amount else {
       return amount == 0 ? 0 : -1
     }
-    var coinsNum = Array(count: amount + 1, repeatedValue: -1)
+    var coinsNum = Array(repeating: -1, count: amount + 1)
     for i in 1...amount {
       for j in coins where j <= i {
         if j == i {

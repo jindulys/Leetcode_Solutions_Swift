@@ -16,16 +16,16 @@ import Foundation
  */
 
 class LowestCommonAncestorOfABinarySearchTree_Solution {
-  func lowestCommonAncestorForRoot(root: TreeNode,
+  func lowestCommonAncestorForRoot(_ root: TreeNode,
                                    p: TreeNode,
                                    q: TreeNode) -> TreeNode? {
     if let result = lowestCommonAncestorForRoot_Helper(root, p: p, q: q)
-      where result.val != p.val && result.val != q.val {
+      , result.val != p.val && result.val != q.val {
       return result
     }
     return nil
   }
-  func lowestCommonAncestorForRoot_Helper(root: TreeNode,
+  func lowestCommonAncestorForRoot_Helper(_ root: TreeNode,
                                           p: TreeNode,
                                           q: TreeNode) -> TreeNode? {
     if root.val == p.val || root.val == q.val {
@@ -39,7 +39,7 @@ class LowestCommonAncestorOfABinarySearchTree_Solution {
     if let right = root.right {
       rightResult = lowestCommonAncestorForRoot_Helper(right, p: p, q: q)
     }
-    if let _ = leftResult, _ = rightResult {
+    if let _ = leftResult, let _ = rightResult {
       return root
     }
     if let left = leftResult {
@@ -72,21 +72,21 @@ class LowestCommonAncestorOfABinarySearchTree_Solution {
     
     // Test1
     let test1 = lowestCommonAncestorForRoot(node6, p: node2, q: node8)
-    if let test1Result = test1 where test1Result.val == 6 {
+    if let test1Result = test1 , test1Result.val == 6 {
       print("Pass")
     } else {
       print("Failed")
     }
     // Test2
     let test2 = lowestCommonAncestorForRoot(node6, p: node0, q: node9)
-    if let test2Result = test2 where test2Result.val == 6 {
+    if let test2Result = test2 , test2Result.val == 6 {
       print("Pass")
     } else {
       print("Failed")
     }
     // Test3
     let test3 = lowestCommonAncestorForRoot(node6, p: node3, q: node5)
-    if let test3Result = test3 where test3Result.val == 4{
+    if let test3Result = test3 , test3Result.val == 4{
       print("Pass")
     } else {
       print("Failed")

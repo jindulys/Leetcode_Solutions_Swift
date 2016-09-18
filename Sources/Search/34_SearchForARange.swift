@@ -16,7 +16,7 @@ import Foundation
  */
 
 class SearchForARange_Solution {
-  func searchRange(nums: [Int], _ target: Int) -> [Int] {
+  func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
     guard nums.count > 1 else {
       if nums.count == 1 {
         if nums[0] == target {

@@ -16,14 +16,14 @@ import Foundation
  */
 
 class RotateArray_Solution {
-  func rotate(inout nums: [Int], _ k: Int) {
+  func rotate(_ nums: inout [Int], _ k: Int) {
     let k = k % nums.count
     reverse(&nums, startIndex: 0, endIndex: nums.count - 1)
     reverse(&nums, startIndex: 0, endIndex: k - 1)
     reverse(&nums, startIndex: k, endIndex: nums.count - 1)
   }
   
-  func reverse(inout nums: [Int], startIndex: Int, endIndex: Int) {
+  func reverse(_ nums: inout [Int], startIndex: Int, endIndex: Int) {
     if startIndex < 0 || endIndex >= nums.count || startIndex >= endIndex {
       return
     }

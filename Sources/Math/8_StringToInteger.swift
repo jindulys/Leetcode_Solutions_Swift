@@ -16,7 +16,7 @@ import Foundation
  */
 
 class StringToInteger_Solution {
-  func myAtoi(str: String) -> Int {
+  func myAtoi(_ str: String) -> Int {
     var ret = 0
     var flag = 1
     var index = 0

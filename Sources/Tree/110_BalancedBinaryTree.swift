@@ -16,7 +16,7 @@ import Foundation
  */
 
 class BalancedBinaryTree_Solution {
-  func isBalanced(root: TreeNode?) -> Bool {
+  func isBalanced(_ root: TreeNode?) -> Bool {
     let(ans, _) = balancedAt(root)
     return ans
   }
@@ -24,7 +24,7 @@ class BalancedBinaryTree_Solution {
   /// Detect whether a treenode is balanced, return the detection result and
   /// Depth of the treenode
   /// - parameter root: the root treenode.
-  private func balancedAt(root: TreeNode?) -> (Bool, Int) {
+  fileprivate func balancedAt(_ root: TreeNode?) -> (Bool, Int) {
     guard let root = root else {
       return (true, 0)
     }

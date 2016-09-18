@@ -7,13 +7,33 @@
 //
 
 import Foundation
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l > r
+  default:
+    return rhs < lhs
+  }
+}
+
 
 // MARK: TreeNode
 
-public class TreeNode {
-  public var val: Int
-  public var left: TreeNode?
-  public var right: TreeNode?
+open class TreeNode {
+  open var val: Int
+  open var left: TreeNode?
+  open var right: TreeNode?
   public init(_ val: Int) {
     self.val = val
     self.left = nil
@@ -27,7 +47,7 @@ extension TreeNode: CustomStringConvertible {
     var leftDescription: String = ""
     if let left = self.left {
       let currentLeftDescription = left.description
-      currentLeftDescription.characters.split("\n").forEach{
+      currentLeftDescription.characters.split(separator: "\n").forEach{
         leftDescription += "   " + String($0) + "\n"
       }
     } else {
@@ -36,21 +56,21 @@ extension TreeNode: CustomStringConvertible {
     var rightDescription: String = ""
     if let right = self.right {
       let currentRightDescription = right.description
-      currentRightDescription.characters.split("\n").forEach{
+      currentRightDescription.characters.split(separator: "\n").forEach{
         rightDescription += "   " + String($0) + "\n"
       }
     } else {
       rightDescription = "   |_(NULL)\n"
     }
     var finalLeft: String = ""
-    for (index, element) in leftDescription.characters.split("\n").enumerate() {
+    for (index, element) in leftDescription.characters.split(separator: "\n").enumerated() {
       if index == 0 {
         finalLeft += String(element) + "\n"
       } else {
         var processingCharacters = element
         processingCharacters.removeFirst()
         var processingString = String(processingCharacters)
-        processingString.insert("|", atIndex: processingString.startIndex.advancedBy(3))
+        processingString.insert("|", at: processingString.characters.index(processingString.startIndex, offsetBy: 3))
         finalLeft += processingString + "\n"
       }
     }
@@ -59,11 +79,11 @@ extension TreeNode: CustomStringConvertible {
 }
 
 /// HashableTreeNode is a wrapper around TreeNode, to facilitate Hash.
-public class HashableTreeNode {
-  public var val: Int
-  public var left: HashableTreeNode?
-  public var right: HashableTreeNode?
-  public var id: Int
+open class HashableTreeNode {
+  open var val: Int
+  open var left: HashableTreeNode?
+  open var right: HashableTreeNode?
+  open var id: Int
   
   public init(val: Int, id: Int) {
     self.val = val
@@ -71,7 +91,7 @@ public class HashableTreeNode {
   }
   
   /// Helper function to build a HashableTreeNode with TreeNode.
-  public class func buildHashableTreeWith(root: TreeNode?, id: Int = 0) -> HashableTreeNode? {
+  open class func buildHashableTreeWith(_ root: TreeNode?, id: Int = 0) -> HashableTreeNode? {
     guard let root = root else {
       return nil
     }
@@ -103,11 +123,11 @@ public func ==(lhs: HashableTreeNode, rhs: HashableTreeNode) -> Bool {
  
  - returns: execution time
  */
-public func logRunTime(@noescape executedBlock:()->()) -> NSTimeInterval {
-  let startDate = NSDate()
+public func logRunTime(_ executedBlock: ()->()) -> TimeInterval {
+  let startDate = Date()
   executedBlock()
-  let endDate = NSDate()
-  let executionTime = endDate.timeIntervalSinceDate(startDate)
+  let endDate = Date()
+  let executionTime = endDate.timeIntervalSince(startDate)
   print("ExecutionTime = \(executionTime)")
   return executionTime
 }
@@ -118,7 +138,7 @@ public func logRunTime(@noescape executedBlock:()->()) -> NSTimeInterval {
  - parameter length: the upper boundary for primes
  - returns : an array of all primes in that range
  */
-public func getBetterPrimes(length:Int) -> [Int] {
+public func getBetterPrimes(_ length:Int) -> [Int] {
   // Here the length means how many elements we have
   // This prime finder is a specific one because we want to find gap that is prime
   // so we start from 3
@@ -160,7 +180,7 @@ public func getBetterPrimes(length:Int) -> [Int] {
  
  */
 
-public func binarySearchLessOrEqualIndex(inputs:[Int], target:Int) -> Int {
+public func binarySearchLessOrEqualIndex(_ inputs:[Int], target:Int) -> Int {
   var lowerIndex = 0
   var higherIndex = inputs.count - 1
   
@@ -193,20 +213,20 @@ public func binarySearchLessOrEqualIndex(inputs:[Int], target:Int) -> Int {
  
  - returns: finded index or not
  */
-func binarySearch<T: Comparable>(a: [T], key: T, range: Range<Int>) -> Int? {
+func binarySearch<T: Comparable>(_ a: [T], key: T, range: Range<Int>) -> Int? {
   precondition(a.adjacentTest{ $0 <= $1 }, "The array should be ordered to use binary search")
-  if range.startIndex >= range.endIndex {
+  if range.lowerBound >= range.upperBound {
     // Base Case
     return nil
   }
   
-  let midIndex = range.startIndex + (range.endIndex - range.startIndex)/2
+  let midIndex = range.lowerBound + (range.upperBound - range.lowerBound)/2
   if a[midIndex] > key {
     // Check left part of array
-    return binarySearch(a, key: key, range: range.startIndex..<midIndex)
+    return binarySearch(a, key: key, range: range.lowerBound..<midIndex)
   } else if a[midIndex] < key {
     // Check right part of array
-    return binarySearch(a, key: key, range: midIndex+1..<range.endIndex)
+    return binarySearch(a, key: key, range: midIndex+1..<range.upperBound)
   } else {
     return midIndex
   }
@@ -221,24 +241,28 @@ func binarySearch<T: Comparable>(a: [T], key: T, range: Range<Int>) -> Int? {
  
  - returns: finded index or not
  */
-func iterativeBinarySearch<T: Comparable>(a: [T], key: T) -> Int? {
+func iterativeBinarySearch<T: Comparable>(_ a: [T], key: T) -> Int? {
   precondition(a.adjacentTest{ $0 <= $1 }, "The array should be ordered to use binary search")
   var range = 0..<a.count
-  while range.startIndex < range.endIndex {
-    let mid = range.startIndex + (range.endIndex - range.startIndex)/2
+  while range.lowerBound < range.upperBound {
+    let mid = range.lowerBound + (range.upperBound - range.lowerBound)/2
+    var lowerBound: Int = range.lowerBound
+    var upperBound: Int = range.upperBound
     if a[mid] == key {
       return mid
     } else if a[mid] < key {
-      range.startIndex = mid+1
+      lowerBound = mid+1
     } else {
-      range.endIndex = mid
+      upperBound = mid
     }
+    range = lowerBound..<upperBound
+
   }
   return nil
 }
 
 // TODO: Merge Sort (2)
-public func mergeSort<T: Comparable>(array: [T]) -> [T] {
+public func mergeSort<T: Comparable>(_ array: [T]) -> [T] {
   guard array.count > 1 else { return array }
   
   let mid = array.count/2
@@ -257,7 +281,7 @@ public func mergeSort<T: Comparable>(array: [T]) -> [T] {
  
  - returns: merged pile
  */
-private func merge<T: Comparable>(leftPile leftPile: [T], rightPile: [T]) -> [T] {
+private func merge<T: Comparable>(leftPile: [T], rightPile: [T]) -> [T] {
   precondition(leftPile.count>=1 && rightPile.count>=1)
   precondition(leftPile.isIncreasing && rightPile.isIncreasing)
   var leftIndex = 0
@@ -267,26 +291,26 @@ private func merge<T: Comparable>(leftPile leftPile: [T], rightPile: [T]) -> [T]
   while leftIndex < leftPile.endIndex && rightIndex < rightPile.endIndex {
     if leftPile[leftIndex] < rightPile[rightIndex] {
       retVal.append(leftPile[leftIndex])
-      leftIndex = leftIndex.successor()
+      leftIndex = (leftIndex + 1)
     } else if leftPile[leftIndex] > rightPile[rightIndex] {
       retVal.append(rightPile[rightIndex])
-      rightIndex = rightIndex.successor()
+      rightIndex = (rightIndex + 1)
     } else {
       retVal.append(leftPile[leftIndex])
       retVal.append(rightPile[rightIndex])
-      leftIndex = leftIndex.successor()
-      rightIndex = rightIndex.successor()
+      leftIndex = (leftIndex + 1)
+      rightIndex = (rightIndex + 1)
     }
   }
   
   while leftIndex < leftPile.endIndex {
     retVal.append(leftPile[leftIndex])
-    leftIndex = leftIndex.successor()
+    leftIndex = (leftIndex + 1)
   }
   
   while rightIndex < rightPile.endIndex {
     retVal.append(rightPile[rightIndex])
-    rightIndex = rightIndex.successor()
+    rightIndex = (rightIndex + 1)
   }
   
   return retVal
@@ -301,12 +325,12 @@ private func merge<T: Comparable>(leftPile leftPile: [T], rightPile: [T]) -> [T]
 public struct Array2D<T> {
   public let columns: Int
   public let rows: Int
-  private var array: [T]
+  fileprivate var array: [T]
   
   public init(rows: Int, columns: Int, initialValue: T) {
     self.columns = columns
     self.rows = rows
-    array = Array(count: self.rows * self.columns, repeatedValue: initialValue)
+    array = Array(repeating: initialValue, count: self.rows * self.columns)
   }
   
   public subscript(row: Int, col:Int) -> T {
@@ -346,7 +370,7 @@ public struct Array2D<T> {
  *  - parameter r:      right boundary
  *  - parameter key:    target to be found
  */
-public func ceilIndex<T: Comparable>(inputs:[T], l: Int, r: Int, key: T) -> Int {
+public func ceilIndex<T: Comparable>(_ inputs:[T], l: Int, r: Int, key: T) -> Int {
   var localL = l
   var localR = r
   var m = 0
@@ -369,7 +393,7 @@ public func ceilIndex<T: Comparable>(inputs:[T], l: Int, r: Int, key: T) -> Int 
  
  - returns: a closure who's input has already in a memorized way
  */
-public func memoize<T: Hashable, U>( body:((T)->U, T)->U ) -> (T)->U {
+public func memoize<T: Hashable, U>( _ body:@escaping ((T)->U, T)->U ) -> (T)->U {
   var memo = Dictionary<T, U>()
   var result: ((T)->U)!
   result = { x in
@@ -388,7 +412,7 @@ public func memoize<T: Hashable, U>( body:((T)->U, T)->U ) -> (T)->U {
  
  - returns: new array that was sorted
  */
-public func quickSortSlow<T: Comparable>(array: [T]) -> [T] {
+public func quickSortSlow<T: Comparable>(_ array: [T]) -> [T] {
   if array.count <= 1 {
     return array
   }
@@ -409,7 +433,7 @@ public func quickSortSlow<T: Comparable>(array: [T]) -> [T] {
  - parameter high: higher bound index for the array
  */
 
-public func quickSortLomuto<T: Comparable>(inout array: [T], low: Int, high: Int) {
+public func quickSortLomuto<T: Comparable>(_ array: inout [T], low: Int, high: Int) {
   if (low < high) {
     let p = partitionLomuto(&array, low: low, high: high)
     quickSortLomuto(&array, low: low, high: p-1)
@@ -420,7 +444,7 @@ public func quickSortLomuto<T: Comparable>(inout array: [T], low: Int, high: Int
 // ASCII art
 // [ values <= pivot | values > pivot | not looked at yet | pivot ]
 //  low          i       i+1     j-1    j          high-1    high
-private func partitionLomuto<T: Comparable>(inout array: [T], low: Int, high: Int) -> Int {
+private func partitionLomuto<T: Comparable>(_ array: inout [T], low: Int, high: Int) -> Int {
   let pivot = array[high]
   var i = low
   for j in low..<high {
@@ -435,7 +459,7 @@ private func partitionLomuto<T: Comparable>(inout array: [T], low: Int, high: In
   return i
 }
 
-public func quicksort<T: Comparable>(inout array: [T], low: Int, high: Int) {
+public func quicksort<T: Comparable>(_ array: inout [T], low: Int, high: Int) {
   if low < high {
     let p = partitionHoare(&array, low: low, high: high)
     quicksort(&array, low: low, high: p)
@@ -443,7 +467,7 @@ public func quicksort<T: Comparable>(inout array: [T], low: Int, high: Int) {
   }
 }
 
-private func partitionHoare<T: Comparable>(inout array: [T], low: Int, high: Int) -> Int {
+private func partitionHoare<T: Comparable>(_ array: inout [T], low: Int, high: Int) -> Int {
   let pivot = array[low]
   var i = low-1
   var j = high+1
@@ -529,7 +553,7 @@ public extension Array {
    
    - returns: true if every pair fullfill the condition, otherwise false
    */
-  func adjacentTest(oneElementArrayAllowed: Bool = true, condition: (Element, Element) -> Bool) -> Bool {
+  func adjacentTest(_ oneElementArrayAllowed: Bool = true, condition: (Element, Element) -> Bool) -> Bool {
     guard self.count > 1 else { return oneElementArrayAllowed }
     
     for i in 0..<self.count-1 {
@@ -540,7 +564,7 @@ public extension Array {
     return true
   }
   
-  func accumulate<T>(initial: T, combine:(Element, T)->T) -> [T] {
+  func accumulate<T>(_ initial: T, combine:(Element, T)->T) -> [T] {
     var result = initial
     return self.map { toCombine in
       result = combine(toCombine, result)
@@ -555,9 +579,9 @@ public extension Array {
    
    - returns: the result or nil if the array is empty
    */
-  func reduce(combine:(Element, Element)->Element) -> Element? {
+  func reduce(_ combine:(Element, Element)->Element) -> Element? {
     guard let fst = first else { return nil }
-    return self.dropFirst().reduce(fst, combine: combine)
+    return self.dropFirst().reduce(fst, combine)
   }
   
   /**
@@ -565,10 +589,10 @@ public extension Array {
    
    - parameter removeCondition: condition to remove an element.
    */
-  func removePreElementsSatisfy(removeCondition:(Element) -> Bool) -> [Element] {
+  func removePreElementsSatisfy(_ removeCondition:(Element) -> Bool) -> [Element] {
     let count = self.count
     var leftStartIndex = 0
-    for (i, e) in self.enumerate() {
+    for (i, e) in self.enumerated() {
       if !removeCondition(e) {
         break
       }
@@ -586,9 +610,9 @@ extension Array {
    
    - returns: the result or nil if the array is empty
    */
-  func reduceByMap(combine:(Element, Element)->Element) -> Element? {
+  func reduceByMap(_ combine:(Element, Element)->Element) -> Element? {
     return first.map {
-      self.dropFirst().reduce($0, combine: combine)
+      self.dropFirst().reduce($0, combine)
     }
   }
 }
@@ -603,12 +627,12 @@ public extension Array where Element: Comparable {
   }
 }
 
-public extension SequenceType where Generator.Element: Hashable {
+public extension Sequence where Iterator.Element: Hashable {
   /**
    Given a sequence of array returns unique element
    */
-  func unique() -> [Generator.Element] {
-    var seen: Set<Generator.Element> = []
+  func unique() -> [Iterator.Element] {
+    var seen: Set<Iterator.Element> = []
     return filter {
       if seen.contains($0) {
         return false
@@ -620,14 +644,14 @@ public extension SequenceType where Generator.Element: Hashable {
   }
 }
 
-public extension SequenceType {
-  public func allMatch(predicate: Generator.Element -> Bool) -> Bool {
+public extension Sequence {
+  public func allMatch(_ predicate: (Iterator.Element) -> Bool) -> Bool {
     return !self.contains { !predicate($0) }
   }
 }
 
-extension SequenceType where Generator.Element: Equatable {
-  func subtract(toRemove: [Generator.Element]) -> [Generator.Element] {
+extension Sequence where Iterator.Element: Equatable {
+  func subtract(_ toRemove: [Iterator.Element]) -> [Iterator.Element] {
     return self.filter {
       !toRemove.contains($0)
     }
@@ -645,7 +669,7 @@ public extension String {
     var englishCharacters: Set<Int> = []
     let a : Character = "a"
     for c in self.characters {
-      let lowerCs = String(c).lowercaseString.characters
+      let lowerCs = String(c).lowercased().characters
       let lowerC = lowerCs[lowerCs.startIndex]
       let index = lowerC.unicodeScalarCodePoint() - a.unicodeScalarCodePoint()
       switch index {
@@ -684,14 +708,14 @@ public extension String {
    - returns: boolean value indicate whether or not a string is a palindrome
    */
   func isPalindrome() -> Bool {
-    let reversed = String(self.characters.reverse())
+    let reversed = String(self.characters.reversed())
     return reversed == self
   }
 }
 
 public extension Double {
-  func format(f: String) -> String {
-    return NSString(format: "%\(f)f", self) as String
+  func format(_ f: String) -> String {
+    return NSString(format: "%\(f)f" as NSString, self) as String
   }
 }
 
@@ -704,7 +728,7 @@ public extension Double {
  *   Note: end is exclusive
  */
 
-public struct SRange: SequenceType {
+public struct SRange: Sequence {
   var start: Int = 0
   var end: Int = 0
   var step: Int = 0
@@ -715,12 +739,12 @@ public struct SRange: SequenceType {
     self.step = step
   }
   
-  public func generate() -> RangeGenerator {
+  public func makeIterator() -> RangeGenerator {
     return RangeGenerator(start: start, end: end, step: step)
   }
 }
 
-public class RangeGenerator: GeneratorType {
+open class RangeGenerator: IteratorProtocol {
   let start: Int
   let end: Int
   let step: Int
@@ -735,7 +759,7 @@ public class RangeGenerator: GeneratorType {
     clockWise = step > 0
   }
   
-  public func next() -> Int? {
+  open func next() -> Int? {
     if clockWise {
       guard start + stepNum * step < end else { return nil }
       let ret = start + step * stepNum
@@ -757,8 +781,8 @@ public class RangeGenerator: GeneratorType {
  */
 
 public struct Queue<Element> {
-  private var left: [Element]
-  private var right: [Element]
+  fileprivate var left: [Element]
+  fileprivate var right: [Element]
   
   public init() {
     left = []
@@ -770,15 +794,15 @@ public struct Queue<Element> {
    
    - parameter element: the element that need to be enqueued
    */
-  public mutating func enqueue(element: Element) {
+  public mutating func enqueue(_ element: Element) {
     right.append(element)
   }
   
   public mutating func dequeue() -> Element? {
     guard !(left.isEmpty && right.isEmpty) else { return nil }
     if left.isEmpty {
-      left = right.reverse()
-      right.removeAll(keepCapacity: true)
+      left = right.reversed()
+      right.removeAll(keepingCapacity: true)
     }
     return left.removeLast()
   }
@@ -788,14 +812,26 @@ public struct Queue<Element> {
   }
 }
 
-extension Queue: CollectionType {
+extension Queue: Collection {
+  /// Returns the position immediately after the given index.
+  ///
+  /// - Parameter i: A valid index of the collection. `i` must be less than
+  ///   `endIndex`.
+  /// - Returns: The index value immediately after `i`.
+  public func index(after i: Int) -> Int {
+    guard i < endIndex - 1 else {
+      fatalError("Index out of bounds")
+    }
+    return i + 1
+  }
+
   public var startIndex: Int { return 0 }
   public var endIndex: Int { return left.count + right.count }
   
   public subscript(idx: Int) -> Element {
     guard idx < endIndex else { fatalError("Index out of bounds") }
     if idx < left.endIndex {
-      return left[left.count - idx.successor()]
+      return left[left.count - (idx + 1)]
     } else {
       return right[idx - left.count]
     }
@@ -807,9 +843,9 @@ extension Queue: CollectionType {
  *  This class is used by Leetcode.
  */
 
-public class ListNode {
-  public var val: Int
-  public var next: ListNode?
+open class ListNode {
+  open var val: Int
+  open var next: ListNode?
   public init(_ val: Int) {
     self.val = val
     self.next = nil
@@ -819,7 +855,7 @@ public class ListNode {
 /**
  *   DoubleListNode Class
  */
-public class DoubleListNode<T>{
+open class DoubleListNode<T>{
   var value: T
   var next: DoubleListNode?
   // NOTE: weak here to prevent retain cycle.
@@ -838,7 +874,7 @@ public class DoubleListNode<T>{
    
    - returns: a brand new node with reversed elements
    */
-  public static func reverse(node: DoubleListNode?) -> DoubleListNode? {
+  open static func reverse(_ node: DoubleListNode?) -> DoubleListNode? {
     var prev: DoubleListNode? = nil
     var head = node
     while head != nil {
@@ -867,36 +903,36 @@ extension DoubleListNode: CustomStringConvertible {
  *   Linked List Class
  */
 
-public class LinkedList<T> {
+open class LinkedList<T> {
 
   public typealias Node = DoubleListNode<T>
 
   /// head of this linked list.
-  private var head: Node?
+  fileprivate var head: Node?
   
   /// tail of this linked list.
-  private var tail: Node?
+  fileprivate var tail: Node?
   
   /// The count of elements in this linked list.
-  public var count: Int = 0
+  open var count: Int = 0
   
   /// Whether or not this LinkedList is empty.
-  public var isEmpty: Bool {
+  open var isEmpty: Bool {
     return head == nil
   }
   
   /// The first element of this Linked list.
-  public var first: Node? {
+  open var first: Node? {
     return head
   }
   
   /// The last element of this linked list.
-  public var last: Node? {
+  open var last: Node? {
     return tail
   }
   
   /// Insert an element at The head of this double linked list.
-  public func insertAtHead(value: T) {
+  open func insertAtHead(_ value: T) {
     let newHead = DoubleListNode(value)
     if let node = head {
       node.pre = newHead
@@ -910,7 +946,7 @@ public class LinkedList<T> {
   }
   
   /// Append an element at the tail of this double linked list.
-  public func append(value: T) {
+  open func append(_ value: T) {
     let newTail = DoubleListNode(value)
     if let node = tail {
       node.next = newTail
@@ -924,7 +960,7 @@ public class LinkedList<T> {
   }
   
   /// Return the node at specified index.
-  public func nodeAtIndex(index: Int) -> Node? {
+  open func nodeAtIndex(_ index: Int) -> Node? {
     if index >= 0 {
       var node = head
       var i = index
@@ -939,14 +975,14 @@ public class LinkedList<T> {
     return nil
   }
   
-  public subscript(index: Int) -> T {
+  open subscript(index: Int) -> T {
     assert(index < count)
     let node = nodeAtIndex(index)
     return node!.value
   }
   
   /// Helper function return the element before and after that index.
-  public func beforAndAfterElementAt(index: Int) -> (Node?, Node?) {
+  open func beforAndAfterElementAt(_ index: Int) -> (Node?, Node?) {
     assert(index < count)
     var searchCount = index
     var currentNode = head
@@ -958,20 +994,20 @@ public class LinkedList<T> {
   }
   
   /// Remove element at `index`, return the element's value.
-  public func removeElementAt(index: Int) {
+  open func removeElementAt(_ index: Int) {
     assert(index < count)
     let (nodeBefore, nodeAfter) = beforAndAfterElementAt(index)
     switch (nodeBefore, nodeAfter) {
-    case (.None, .Some(let node)):
+    case (.none, .some(let node)):
       node.pre = nil
       head = node
-    case (.Some(let node), .None):
+    case (.some(let node), .none):
       node.next = nil
       tail = node
-    case (.Some(let beforeNode), .Some(let afterNode)):
+    case (.some(let beforeNode), .some(let afterNode)):
       beforeNode.next = afterNode
       afterNode.pre = beforeNode
-    case (.None, .None):
+    case (.none, .none):
       head = nil
       tail = nil
     }
@@ -979,7 +1015,7 @@ public class LinkedList<T> {
   }
   
   /// Remove last element of this linked list
-  public func removeLastElement() {
+  open func removeLastElement() {
     guard count > 0 else {
       return
     }
@@ -994,7 +1030,7 @@ public class LinkedList<T> {
   }
   
   /// Remove first element of this linked list
-  public func removeFirstElement() {
+  open func removeFirstElement() {
     guard count > 0 else {
       return
     }
@@ -1009,8 +1045,8 @@ public class LinkedList<T> {
   }
   
   /// Cool, notice how the `T`, `C` generic type works, and where clause.
-  class func generateLinkedListFromSequence<C: CollectionType where C.Generator.Element == T>(sequence: C) ->
-    LinkedList<T> {
+  class func generateLinkedListFromSequence<C: Collection>(_ sequence: C) ->
+    LinkedList<T> where C.Iterator.Element == T {
     let result = LinkedList<T>()
     for element in sequence {
       result.append(element)
@@ -1030,13 +1066,13 @@ extension LinkedList: CustomStringConvertible {
 }
 
 enum List<Element> {
-  case End
-  indirect case Node(Element, next: List<Element>)
+  case end
+  indirect case node(Element, next: List<Element>)
 }
 
 extension List {
-  func cons(element: Element) -> List {
-    return .Node(element, next:self)
+  func cons(_ element: Element) -> List {
+    return .node(element, next:self)
   }
 }
 
@@ -1046,33 +1082,33 @@ extension List {
 protocol StackType {
   associatedtype Element
   
-  mutating func push(x: Element)
+  mutating func push(_ x: Element)
   
   mutating func pop() -> Element?
 }
 
 extension List: StackType {
-  mutating func push(x: Element) {
+  mutating func push(_ x: Element) {
     self = self.cons(x)
   }
   
   mutating func pop() -> Element? {
     switch self {
-    case .End:
+    case .end:
       return nil
-    case let .Node(element, nx):
+    case let .node(element, nx):
       self = nx
       return element
     }
   }
 }
 
-extension List: SequenceType {
-  func generate() -> AnyGenerator<Element> {
-    var current = self
-    return AnyGenerator(body:{ () -> Element? in
+extension List: Sequence {
+  func makeIterator() -> AnyIterator<Element> {
+    var current: List<Element> = self
+    return AnyIterator {
       return current.pop()
-    })
+    }
   }
 }
 
@@ -1138,7 +1174,7 @@ public func-<T>(tree: AVLTree<T>, value : T) {
   }
 }
 
-public class AVLTree<T: Comparable> {
+open class AVLTree<T: Comparable> {
   var root: AVLNode<T>?
   var count: UInt = 0
 }
@@ -1172,10 +1208,10 @@ public final class AVLNode<T : Comparable> {
     self.right = right
     self.balance = Int(left?.depth ?? 0) - Int(right?.depth ?? 0)
     self.count = 1 + (left?.count ?? 0) + (right?.count ?? 0)
-    self.depth = 1 + max(left?.depth ?? 0, right?.depth ?? 0)
+    self.depth = 1 + Swift.max(left?.depth ?? 0, right?.depth ?? 0)
   }
   
-  public func contains(value: T) -> Bool {
+  public func contains(_ value: T) -> Bool {
     if self.value == value {
       return true
     } else if self.value < value {
@@ -1223,7 +1259,7 @@ public final class AVLNode<T : Comparable> {
     fatalError("Tree too unbalanced")
   }
   
-  func remove(value : Element) -> (result: AVLNode<Element>?, foundFlag :Bool){
+  func remove(_ value : Element) -> (result: AVLNode<Element>?, foundFlag :Bool){
     if value < self.value {
       
       let removeResult = left?.remove(value)
@@ -1337,13 +1373,13 @@ extension AVLNode : CustomStringConvertible, CustomDebugStringConvertible {
 //  SequenceType implementation is based on following blog post:
 //  http://www.spazcosoft.com/posts/data-structures-in-swift-part-1-wow-thats-an-unstable-compiler/
 
-extension AVLNode : SequenceType {
-  public func generate() -> AnyGenerator<T> {
+extension AVLNode : Sequence {
+  public func makeIterator() -> AnyIterator<T> {
     
     var stack : [AVLNode<Element>] = []
     var current : AVLNode<Element>? = self
     
-    return AnyGenerator {
+    return AnyIterator {
       while(stack.count != 0 || current != nil){
         if(current != nil) {
           stack.append(current!)
@@ -1360,14 +1396,14 @@ extension AVLNode : SequenceType {
   }
 }
 
-struct ReversedSequenceOfAvlNode<T : Comparable> : SequenceType {
+struct ReversedSequenceOfAvlNode<T : Comparable> : Sequence {
   let node : AVLNode<T>
-  func generate() -> AnyGenerator<T> {
+  func makeIterator() -> AnyIterator<T> {
     
     var stack : [AVLNode<T>] = []
     var current : AVLNode<T>? = node
     
-    return AnyGenerator {
+    return AnyIterator {
       while(stack.count != 0 || current != nil){
         if(current != nil) {
           stack.append(current!)
@@ -1400,7 +1436,7 @@ extension AVLNode {
  *
  */
 
-public class BinaryIndexedTree {
+open class BinaryIndexedTree {
   // we ignore 0th element, since it's no sence to count non-exist element's occurence.
   
   // size is actually the maximum count that could occur.
@@ -1410,7 +1446,7 @@ public class BinaryIndexedTree {
   
   public init(size: Int) {
     self.size = size
-    tree = Array(count: size+1, repeatedValue: 0)
+    tree = Array(repeating: 0, count: size+1)
   }
   
   /**
@@ -1419,7 +1455,7 @@ public class BinaryIndexedTree {
    * - parameter pos: Index to BIT array, usually means number for item quantity
    * - parameter val: this index's frequency's change
    */
-  public func update(pos: Int, val: Int) {
+  open func update(_ pos: Int, val: Int) {
     guard pos > 0 else { return }
     var localPos = pos
     while localPos <= size {
@@ -1433,7 +1469,7 @@ public class BinaryIndexedTree {
    *
    * - parameter pos: Index to query, usually means number for item quantity
    */
-  public func query(localPos: Int) -> Int {
+  open func query(_ localPos: Int) -> Int {
     var pos = localPos
     var sum = 0
     while pos > 0 {
@@ -1453,7 +1489,7 @@ public class BinaryIndexedTree {
  */
 protocol Heap {
   associatedtype Value
-  mutating func insert(value: Value)
+  mutating func insert(_ value: Value)
   mutating func remove() -> Value?
   func peak() -> Value?
   var count: Int { get }
@@ -1468,7 +1504,7 @@ public struct MaxHeap<T: Comparable> : Heap {
    *  1 2    3
    *  Will be represented as [10, 7, 5, 1, 2, 3]
    */
-  private var mem: [T]
+  fileprivate var mem: [T]
   
   init() {
     mem = [T]()
@@ -1490,7 +1526,7 @@ public struct MaxHeap<T: Comparable> : Heap {
     return mem.count
   }
   
-  public mutating func insert(value: T) {
+  public mutating func insert(_ value: T) {
     mem.append(value)
     shiftUp(index: mem.count - 1)
   }
@@ -1514,19 +1550,19 @@ public struct MaxHeap<T: Comparable> : Heap {
     return mem[0]
   }
   
-  private func parentIndex(childIndex childIndex: Int) -> Int {
+  fileprivate func parentIndex(childIndex: Int) -> Int {
     return (childIndex - 1)/2
   }
   
-  private func firstChildIndex(index: Int) -> Int {
+  fileprivate func firstChildIndex(_ index: Int) -> Int {
     return index * 2 + 1
   }
   
-  @inline(__always) private func validIndex(index: Int) -> Bool {
+  @inline(__always) fileprivate func validIndex(_ index: Int) -> Bool {
     return index < mem.endIndex
   }
   
-  private mutating func shiftUp(index index: Int) {
+  fileprivate mutating func shiftUp(index: Int) {
     var currentIndex = index
     var currentParentIndex = parentIndex(childIndex: index)
     while currentIndex > 0 && mem[currentIndex]>mem[currentParentIndex] {
@@ -1536,7 +1572,7 @@ public struct MaxHeap<T: Comparable> : Heap {
     }
   }
   
-  private mutating func shiftDown(index index: Int = 0) {
+  fileprivate mutating func shiftDown(index: Int = 0) {
     var parentIndex = index
     var leftChildIndex = firstChildIndex(parentIndex)
     

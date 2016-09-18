@@ -16,7 +16,7 @@ import Foundation
  */
 
 class PowerOfTwo_Solution {
-  func isPowerOfTwo(n: Int) -> Bool {
+  func isPowerOfTwo(_ n: Int) -> Bool {
     guard n > 0 else {
       return false
     }

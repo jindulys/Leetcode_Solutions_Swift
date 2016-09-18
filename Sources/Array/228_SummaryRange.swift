@@ -16,7 +16,7 @@ import Foundation
  */
 
 class SummaryRanges_Solution {
-  func summaryRanges(nums: [Int]) -> [String] {
+  func summaryRanges(_ nums: [Int]) -> [String] {
     guard nums.count > 0 else {
       return []
     }

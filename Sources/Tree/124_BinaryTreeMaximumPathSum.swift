@@ -16,12 +16,12 @@ import Foundation
  */
 
 class BinaryTreeMaximumPathSum_Solution {
-  func maxPathSum(root: TreeNode?) -> Int {
+  func maxPathSum(_ root: TreeNode?) -> Int {
     let (_, anyMax) = maxPathSumHelper(root)
     return anyMax
   }
   
-  private func maxPathSumHelper(root: TreeNode?) -> (Int, Int) {
+  fileprivate func maxPathSumHelper(_ root: TreeNode?) -> (Int, Int) {
     guard let root = root else {
       return (0, Int.min)
     }
@@ -34,17 +34,17 @@ class BinaryTreeMaximumPathSum_Solution {
     return (currentRootMax, currentAnyMax)
   }
   
-  func maxPathSum_Memoized(root: TreeNode?) -> Int {
+  func maxPathSum_Memoized(_ root: TreeNode?) -> Int {
     let hashableTreeRoot = HashableTreeNode.buildHashableTreeWith(root)
     let (_, anyMax) = maxPathSumMemoized(hashableTreeRoot)
     return anyMax
   }
   
-  private func maxPathSumMemoized(root: HashableTreeNode?) -> (Int, Int) {
+  fileprivate func maxPathSumMemoized(_ root: HashableTreeNode?) -> (Int, Int) {
     guard let root = root else {
       return (0, Int.min)
     }
-    let ans:(HashableTreeNode) -> (Int, Int) = memoize { (ans: HashableTreeNode -> (Int, Int), currentNode: HashableTreeNode) -> (Int, Int) in
+    let ans:(HashableTreeNode) -> (Int, Int) = memoize { (ans: (HashableTreeNode) -> (Int, Int), currentNode: HashableTreeNode) -> (Int, Int) in
       var leftResult: (Int, Int)
       if let left = currentNode.left {
         leftResult = ans(left)

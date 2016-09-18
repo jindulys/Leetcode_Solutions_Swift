@@ -16,11 +16,11 @@ import Foundation
  */
 
 class ValidSudoku_Solution {
-  func isValidSudoku(board: [[Character]]) -> Bool {
-    let emptyArray = Array(count: 9, repeatedValue: 0)
-    var rowCheck = Array(count: 9, repeatedValue: emptyArray)
-    var colCheck = Array(count: 9, repeatedValue: emptyArray)
-    var blockCheck = Array(count: 9, repeatedValue: emptyArray)
+  func isValidSudoku(_ board: [[Character]]) -> Bool {
+    let emptyArray = Array(repeating: 0, count: 9)
+    var rowCheck = Array(repeating: emptyArray, count: 9)
+    var colCheck = Array(repeating: emptyArray, count: 9)
+    var blockCheck = Array(repeating: emptyArray, count: 9)
     for i in 0..<9 {
       for j in 0..<9 {
         let currentCharacter = board[i][j]

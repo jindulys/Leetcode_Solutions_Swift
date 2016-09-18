@@ -45,6 +45,7 @@
 		0E6FADCD1D58172200C8D71D /* 337_HouseRobberIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FADC01D58172200C8D71D /* 337_HouseRobberIII.swift */; };
 		0E6FADCF1D58172B00C8D71D /* LeetCodeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FADCE1D58172B00C8D71D /* LeetCodeKit.swift */; };
 		0E93F9711D86594C0050995D /* 139_WordBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E93F9701D86594C0050995D /* 139_WordBreak.swift */; };
+		0E948BB31D8CC1B600BEB6A9 /* 213_HouseRobberII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E948BB21D8CC1B600BEB6A9 /* 213_HouseRobberII.swift */; };
 		0E9C91F01D753A090022BC93 /* 189_RotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6818C11D735AFC00C33DFB /* 189_RotateArray.swift */; };
 		0E9C91F21D7712EB0022BC93 /* 39_ValidSudoku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C91F11D7712EB0022BC93 /* 39_ValidSudoku.swift */; };
 		0E9C91F71D7B09230022BC93 /* 162_FindAPeakElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C91F61D7B09230022BC93 /* 162_FindAPeakElement.swift */; };
@@ -147,6 +148,7 @@
 		0E6FADC01D58172200C8D71D /* 337_HouseRobberIII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 337_HouseRobberIII.swift; sourceTree = "<group>"; };
 		0E6FADCE1D58172B00C8D71D /* LeetCodeKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeetCodeKit.swift; sourceTree = "<group>"; };
 		0E93F9701D86594C0050995D /* 139_WordBreak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 139_WordBreak.swift; sourceTree = "<group>"; };
+		0E948BB21D8CC1B600BEB6A9 /* 213_HouseRobberII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 213_HouseRobberII.swift; sourceTree = "<group>"; };
 		0E9C91F11D7712EB0022BC93 /* 39_ValidSudoku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 39_ValidSudoku.swift; sourceTree = "<group>"; };
 		0E9C91F61D7B09230022BC93 /* 162_FindAPeakElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 162_FindAPeakElement.swift; sourceTree = "<group>"; };
 		0E9C91F81D7B5CEF0022BC93 /* 33_SearchInRotatedSortedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 33_SearchInRotatedSortedArray.swift; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 				0EA852B91D87AB5200721FE2 /* 63_UniquePaths.swift */,
 				0E93F9701D86594C0050995D /* 139_WordBreak.swift */,
 				0EB02F7C1D8B9F000033F46E /* 198_HouseRobber.swift */,
+				0E948BB21D8CC1B600BEB6A9 /* 213_HouseRobberII.swift */,
 				0E5622401D897A5900D069D5 /* 279_PerfectSquares.swift */,
 				0E5622421D89804300D069D5 /* 322_CoinChange.swift */,
 			);
@@ -461,13 +464,16 @@
 				TargetAttributes = {
 					0E6FAD501D5811BE00C8D71D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					0E6FAD641D5811BE00C8D71D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 0E6FAD501D5811BE00C8D71D;
 					};
 					0E6FAD6F1D5811BE00C8D71D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 0E6FAD501D5811BE00C8D71D;
 					};
 				};
@@ -577,6 +583,7 @@
 				0E6FADB31D58171900C8D71D /* 345_ReverseVowelsOfAString.swift in Sources */,
 				0E6FADC21D58172200C8D71D /* 100_SameTree.swift in Sources */,
 				0E9C91F91D7B5CEF0022BC93 /* 33_SearchInRotatedSortedArray.swift in Sources */,
+				0E948BB31D8CC1B600BEB6A9 /* 213_HouseRobberII.swift in Sources */,
 				0EB7AD681D7E485B00278C48 /* 231_PowerOfTwo.swift in Sources */,
 				0E6FAD571D5811BE00C8D71D /* ViewController.swift in Sources */,
 				0EB7AD621D7E393900278C48 /* 278_FirstBadVersion.swift in Sources */,
@@ -741,6 +748,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yansong.li.LeetcodeSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -752,6 +760,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yansong.li.LeetcodeSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -763,6 +772,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yansong.li.LeetcodeSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeetcodeSwift.app/LeetcodeSwift";
 			};
 			name = Debug;
@@ -775,6 +785,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yansong.li.LeetcodeSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeetcodeSwift.app/LeetcodeSwift";
 			};
 			name = Release;
@@ -786,6 +797,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yansong.li.LeetcodeSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = LeetcodeSwift;
 			};
 			name = Debug;
@@ -797,6 +809,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yansong.li.LeetcodeSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = LeetcodeSwift;
 			};
 			name = Release;

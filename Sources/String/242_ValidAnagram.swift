@@ -16,7 +16,7 @@ import Foundation
  */
 
 class ValidAnagram_Solution {
-  func isAnagram(s: String, _ t: String) -> Bool {
+  func isAnagram(_ s: String, _ t: String) -> Bool {
     guard s.characters.count == t.characters.count else {
       return false
     }

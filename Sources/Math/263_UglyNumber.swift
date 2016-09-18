@@ -16,7 +16,7 @@ import Foundation
  */
 
 class UglyNumber_Solution {
-  func isUgly(num: Int) -> Bool {
+  func isUgly(_ num: Int) -> Bool {
     guard num > 0 else {
       return false
     }

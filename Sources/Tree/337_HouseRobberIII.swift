@@ -38,7 +38,7 @@ import Foundation
  */
 
 class HouseRobberIII_Solution {
-  func rob(root: TreeNode?) -> Int {
+  func rob(_ root: TreeNode?) -> Int {
     guard let root = root else {
       return 0
     }
@@ -70,7 +70,7 @@ class HouseRobberIII_Solution {
   }
 
   /// Second solution. A little better than first one.
-  func robII(root: TreeNode?) -> Int {
+  func robII(_ root: TreeNode?) -> Int {
     let ans = subRob(root)
     return max(ans[0], ans[1])
   }
@@ -78,7 +78,7 @@ class HouseRobberIII_Solution {
   /// SubRob will calculate from the root and return an Array of 2.
   /// A[0]: The maximum money if root is Robbed.
   /// A[1]: The maximum money if root is not Robbed.
-  private func subRob(root: TreeNode?) -> [Int] {
+  fileprivate func subRob(_ root: TreeNode?) -> [Int] {
     guard let root = root else {
       return [0, 0]
     }

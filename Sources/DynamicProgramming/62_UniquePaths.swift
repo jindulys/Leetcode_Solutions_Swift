@@ -16,8 +16,8 @@ import Foundation
  */
 
 class UniquePaths_Solution {
-  func uniquePaths(m: Int, _ n: Int) -> Int {
-    var pathsMatrix = Array(count: m, repeatedValue: Array(count: n, repeatedValue: 0))
+  func uniquePaths(_ m: Int, _ n: Int) -> Int {
+    var pathsMatrix = Array(repeating: Array(repeating: 0, count: n), count: m)
     guard m > 1 || n > 1 else {
       return m * n
     }

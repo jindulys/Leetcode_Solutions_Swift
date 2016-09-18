@@ -16,14 +16,14 @@ import Foundation
  */
 
 class MaximumSubarray_Solution {
-  func maxSubArray(nums: [Int]) -> Int {
+  func maxSubArray(_ nums: [Int]) -> Int {
     guard nums.count > 1 else {
       if nums.count == 1 {
         return nums[0]
       }
       return 0
     }
-    var maxSums = Array(count: nums.count, repeatedValue: 0)
+    var maxSums = Array(repeating: 0, count: nums.count)
     maxSums[0] = nums[0]
     var ret = nums[0]
     for i in 1..<nums.count {

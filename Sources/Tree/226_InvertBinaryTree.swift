@@ -41,7 +41,7 @@ import Foundation
  */
 
 class Solution_invertTree {
-  func invertTree(root: TreeNode?) -> TreeNode? {
+  func invertTree(_ root: TreeNode?) -> TreeNode? {
     guard let root = root else {
       return nil
     }

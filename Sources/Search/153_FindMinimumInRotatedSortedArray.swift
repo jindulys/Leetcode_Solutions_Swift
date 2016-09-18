@@ -18,7 +18,7 @@ import Foundation
 class FindMinimumInRotatedSortedArray_Solution {
   // Set the right most element as this rotated sorted array's target.
   // Then we want to find the first element that less that right most element.
-  func findMin(nums: [Int]) -> Int {
+  func findMin(_ nums: [Int]) -> Int {
     guard nums.count > 1 else {
       return nums.count == 1 ? nums[0] : -1
     }

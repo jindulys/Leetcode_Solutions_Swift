@@ -16,7 +16,7 @@ import Foundation
  */
 
 class SingleNumber_Solution {
-  func singleNumber(nums: [Int]) -> Int {
+  func singleNumber(_ nums: [Int]) -> Int {
     var ret: Int = 0
     for i in nums {
       ret ^= i

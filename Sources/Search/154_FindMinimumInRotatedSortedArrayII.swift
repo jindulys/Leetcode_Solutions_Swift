@@ -16,7 +16,7 @@ import Foundation
  */
 
 class FindMinimumInRotatedSortedArrayII_Solution {
-  func findMin(nums: [Int]) -> Int {
+  func findMin(_ nums: [Int]) -> Int {
     guard nums.count > 1 else {
       return nums.count == 1 ? nums[0] : -1
     }

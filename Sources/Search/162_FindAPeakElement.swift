@@ -17,7 +17,7 @@ import Foundation
 
 class FindPeakElement_Solution {
   // My solution loop through.
-  func MyfindPeakElement(nums: [Int]) -> Int {
+  func MyfindPeakElement(_ nums: [Int]) -> Int {
     guard nums.count > 1 else {
       return nums.count == 1 ? 0 : -1
     }
@@ -35,7 +35,7 @@ class FindPeakElement_Solution {
     return -1
   }
   
-  func findPeakElement(nums: [Int]) -> Int {
+  func findPeakElement(_ nums: [Int]) -> Int {
     guard nums.count > 1 else {
       return nums.count == 1 ? 0 : -1
     }

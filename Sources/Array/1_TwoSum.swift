@@ -16,7 +16,7 @@ import Foundation
  */
 
 class TwoSum_Solution {
-  func twoSum(nums: [Int], _ target: Int) -> [Int] {
+  func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
     var expectedDict: [Int: Int] = [:]
     for i in 0..<nums.count {
       if let pairedIndex = expectedDict[nums[i]] {

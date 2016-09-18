@@ -16,7 +16,7 @@ import Foundation
  */
 
 class FindTheDifference_Solution {
-  func solution(s: String, t: String) -> Character {
+  func solution(_ s: String, t: String) -> Character {
     var sDict: [Character : Int] = [:]
     var tDict: [Character : Int] = [:]
     for sc in s.characters {

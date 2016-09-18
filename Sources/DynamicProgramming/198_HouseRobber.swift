@@ -16,12 +16,12 @@ import Foundation
  */
 
 class HouseRobber_Solution {
-  func rob(nums: [Int]) -> Int {
+  func rob(_ nums: [Int]) -> Int {
     guard nums.count > 0 else {
       return 0
     }
     // NOTE: The maximum value by robbing current room.
-    var robCurrentRoom = Array(count: nums.count, repeatedValue: 0)
+    var robCurrentRoom = Array(repeating: 0, count: nums.count)
     for i in 0..<nums.count {
       if i == 0 {
         robCurrentRoom[i] = nums[0]
@@ -41,7 +41,7 @@ class HouseRobber_Solution {
    Time: O(n)
    */
   
-  func coolRob(nums: [Int]) -> Int {
+  func coolRob(_ nums: [Int]) -> Int {
     var robCurrent = 0
     var robPre = 0
     var robPrePre = 0

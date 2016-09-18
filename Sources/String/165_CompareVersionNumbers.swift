@@ -7,6 +7,26 @@
 //
 
 import Foundation
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l > r
+  default:
+    return rhs < lhs
+  }
+}
+
 
 /**
 	Title:165 Compare Version Numbers
@@ -16,11 +36,11 @@ import Foundation
  */
 
 class CompareVersionNumbers_Solution {
-  func compareVersion(version1: String, _ version2: String) -> Int {
-    let version1Number = version1.characters.split(".").map {
+  func compareVersion(_ version1: String, _ version2: String) -> Int {
+    let version1Number = version1.characters.split(separator: ".").map {
       Int(String($0))
     }
-    let version2Number = version2.characters.split(".").map {
+    let version2Number = version2.characters.split(separator: ".").map {
       Int(String($0))
     }
     var loopCount: Int = 0

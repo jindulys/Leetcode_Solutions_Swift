@@ -16,7 +16,7 @@ import Foundation
  */
 
 class BuildTreeInorderPostOrder_Solution {
-  func buildTree(inorder: [Int], _ postorder: [Int]) -> TreeNode? {
+  func buildTree(_ inorder: [Int], _ postorder: [Int]) -> TreeNode? {
     guard inorder.count > 0 && postorder.count > 0 && inorder.count == postorder.count else {
       return nil
     }
@@ -28,7 +28,7 @@ class BuildTreeInorderPostOrder_Solution {
                            postEnd: postorder.count - 1)
   }
   
-  private func treeBuildHelper(inorder: [Int],
+  fileprivate func treeBuildHelper(_ inorder: [Int],
                                inorderStart: Int,
                                inorderEnd: Int,
                                postorder: [Int],

@@ -16,7 +16,7 @@ import Foundation
  */
 
 class AddDigits_Solution {
-  func addDigits(num: Int) -> Int {
+  func addDigits(_ num: Int) -> Int {
     var currentDigitsArray = [Int]()
     var tenCount: Int = 1
     while num / tenCount >= 10 {

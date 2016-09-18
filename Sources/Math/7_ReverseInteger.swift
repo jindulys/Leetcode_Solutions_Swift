@@ -16,7 +16,7 @@ import Foundation
  */
 
 class ReverseInteger_Solution {
-  func reverse(x: Int) -> Int {
+  func reverse(_ x: Int) -> Int {
     var loopVariable = x
     var res = 0
     while loopVariable != 0 {

@@ -16,14 +16,14 @@ import Foundation
  */
 
 class IntersectionOfTwoArraysII_Solution {
-  func intersect(nums1: [Int], _ nums2: [Int]) -> [Int] {
+  func intersect(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
     var result: [Int] = []
     let nums1Dict = nums1.generateCountDict()
     let nums2Dict = nums2.generateCountDict()
     for (element, occuranceCount) in nums1Dict {
       if let nums2OccuranceCount = nums2Dict[element] {
-        result.appendContentsOf(Array(count: min(occuranceCount, nums2OccuranceCount),
-                              repeatedValue: element))
+        result.append(contentsOf: Array(repeating: element,
+                              count: min(occuranceCount, nums2OccuranceCount)))
       }
     }
     return result

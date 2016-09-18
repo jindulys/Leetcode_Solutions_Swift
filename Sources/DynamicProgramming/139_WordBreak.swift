@@ -16,7 +16,7 @@ import Foundation
  */
 
 class WordBreak_Solution {
-  func wordBreak(s: String, wordSet:Set<String>) -> Bool {
+  func wordBreak(_ s: String, wordSet:Set<String>) -> Bool {
     guard s.characters.count > 0 || wordSet.count > 0 else {
       return true
     }
@@ -24,7 +24,7 @@ class WordBreak_Solution {
       return max($0, $1.characters.count)
     }
     // Query Array means the first 'x' elements could be broken by word set.
-    var queryArray = Array(count: s.characters.count + 1, repeatedValue: false)
+    var queryArray = Array(repeating: false, count: s.characters.count + 1)
     queryArray[0] = true
     for i in 1...s.characters.count {
       queryArray[i] = false
@@ -35,7 +35,7 @@ class WordBreak_Solution {
         if !queryArray[i - currentWordLength] {
           continue
         }
-        let currentRange = s.startIndex.advancedBy(i - currentWordLength)..<s.startIndex.advancedBy(i)
+        let currentRange = s.characters.index(s.startIndex, offsetBy: i - currentWordLength)..<s.characters.index(s.startIndex, offsetBy: i)
         let currentSubString = s[currentRange]
         if wordSet.contains(currentSubString) {
           queryArray[i] = true

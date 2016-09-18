@@ -16,7 +16,7 @@ import Foundation
  */
 
 class ImplementStrStr_Solution {
-  func strStr(haystack: String, _ needle: String) -> Int {
+  func strStr(_ haystack: String, _ needle: String) -> Int {
     let longCharacters = Array(haystack.characters)
     let shortCharacters = Array(needle.characters)
     // NOTE: First time I missed this guard.

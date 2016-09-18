@@ -28,14 +28,14 @@ import Foundation
 class PathSumII_Solution {
   var satisfiedRouts: [[Int]] = []
   var target: Int = 0
-  func pathSum(root: TreeNode?, _ sum: Int) -> [[Int]] {
+  func pathSum(_ root: TreeNode?, _ sum: Int) -> [[Int]] {
     self.target = sum
     var routeStack:[Int] = []
     DFSSum(root, prevSum: 0, routeStack: &routeStack)
     return satisfiedRouts
   }
   
-  private func DFSSum(root: TreeNode?, prevSum: Int, inout routeStack: [Int]) {
+  fileprivate func DFSSum(_ root: TreeNode?, prevSum: Int, routeStack: inout [Int]) {
     guard let root = root else {
       return
     }

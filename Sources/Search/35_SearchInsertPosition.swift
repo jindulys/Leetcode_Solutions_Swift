@@ -16,7 +16,7 @@ import Foundation
  */
 
 class SearchInsertPosition_Solution {
-  func searchInsert(nums: [Int], _ target: Int) -> Int {
+  func searchInsert(_ nums: [Int], _ target: Int) -> Int {
     guard nums.count > 1 else {
       if nums.count == 1 {
         if nums[0] > target {

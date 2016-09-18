@@ -30,14 +30,14 @@ import Foundation
  */
 
 class Solution_SameTree {
-  func isSameTree(p: TreeNode?, _ q: TreeNode?) -> Bool {
+  func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool {
     switch(p, q){
-      case (let .Some(leftRoot), let .Some(rightRoot)):
+      case (let .some(leftRoot), let .some(rightRoot)):
         let valEqual = (leftRoot.val == rightRoot.val)
         let leftEqual = isSameTree(leftRoot.left, rightRoot.left)
         let rightEqual = isSameTree(leftRoot.right, rightRoot.right)
         return valEqual && leftEqual && rightEqual
-      case (.None, .None):
+      case (.none, .none):
         return true
       default:
         return false

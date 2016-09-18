@@ -17,7 +17,7 @@ import Foundation
 
 class PowerOfThree_Solution {
   
-  func isPowerOfThree(n: Int) -> Bool {
+  func isPowerOfThree(_ n: Int) -> Bool {
     guard n > 0 else {
       return false
     }

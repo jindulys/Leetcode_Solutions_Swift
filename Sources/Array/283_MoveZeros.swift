@@ -16,7 +16,7 @@ import Foundation
  */
 
 class MoveZeros_Solution {
-  func moveZeroes(inout nums: [Int]) {
+  func moveZeroes(_ nums: inout [Int]) {
     var firstZeroIndex: Int = -1
     /// 1 2 3 0 0 1 2
     /// 1 2 3 1 0 0 2

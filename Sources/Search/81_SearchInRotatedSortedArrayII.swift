@@ -16,7 +16,7 @@ import Foundation
  */
 
 class SearchInRotatedSortedArrayII_Solution {
-  func search(nums: [Int], _ target: Int) -> Bool {
+  func search(_ nums: [Int], _ target: Int) -> Bool {
     guard nums.count > 1 else {
       return nums.count == 1 ? (nums[0] == target ? true : false ) : false
     }

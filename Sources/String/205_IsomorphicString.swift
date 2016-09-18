@@ -16,7 +16,7 @@ import Foundation
  */
 
 class IsomorphicString_Solution {
-  func isIsomorphic(s: String, _ t: String) -> Bool {
+  func isIsomorphic(_ s: String, _ t: String) -> Bool {
     guard s.characters.count > 0 else {
       return true
     }

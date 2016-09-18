@@ -24,7 +24,7 @@ import Foundation
  */
 
 class BinaryTreeLevelOrderTraversal_Solution {
-  func levelOrder(root: TreeNode?) -> [[Int]] {
+  func levelOrder(_ root: TreeNode?) -> [[Int]] {
     guard let root = root else {
       return []
     }

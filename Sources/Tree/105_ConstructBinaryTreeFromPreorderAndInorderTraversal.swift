@@ -16,7 +16,7 @@ import Foundation
  */
 
 class TreeBuildPreorderInorder_Solution {
-  func buildTree(preorder: [Int], _ inorder: [Int]) -> TreeNode? {
+  func buildTree(_ preorder: [Int], _ inorder: [Int]) -> TreeNode? {
     guard preorder.count > 0 &&
       inorder.count > 0 &&
       preorder.count == inorder.count else {
@@ -29,7 +29,7 @@ class TreeBuildPreorderInorder_Solution {
                            inorderStartIndex: 0,
                            inorderEndIndex: inorder.count - 1)
   }
-  func treeBuildHelper(preorder: [Int],
+  func treeBuildHelper(_ preorder: [Int],
                        preStartIndex: Int,
                        preEndIndex: Int,
                        inorder: [Int],

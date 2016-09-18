@@ -17,13 +17,13 @@ import Foundation
 
 /// Inorder traversal.
 class ValidateBinaryTree_Solution {
-  func isValidBST(root: TreeNode?) -> Bool {
+  func isValidBST(_ root: TreeNode?) -> Bool {
     var inorderList: [Int] = []
     inorderTraversal(root, nodeList: &inorderList)
     return inorderList.isStrictlyIncreasing
   }
   
-  func inorderTraversal(root: TreeNode?, inout nodeList: [Int]) {
+  func inorderTraversal(_ root: TreeNode?, nodeList: inout [Int]) {
     guard let root = root else {
       return
     }

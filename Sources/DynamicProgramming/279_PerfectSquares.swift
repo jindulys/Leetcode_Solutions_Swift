@@ -16,13 +16,13 @@ import Foundation
  */
 
 class PerfectSquares_Solution {
-  func numSquares(n: Int) -> Int {
+  func numSquares(_ n: Int) -> Int {
     guard n > 0 else {
       return 0
     }
     // NOTE: perfectNums is an Array, which stores the minimum nums of square numbers
     // to sum up for index 'i'.
-    var perfectNums = Array(count: n + 1, repeatedValue: Int.max)
+    var perfectNums = Array(repeating: Int.max, count: n + 1)
     perfectNums[0] = 0
     for i in 1...n {
       for j in 1...i {

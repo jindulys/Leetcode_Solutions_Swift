@@ -16,7 +16,7 @@ import Foundation
  */
 
 class UniquePathsII_Solution {
-  func uniquePathsWithObstacles(obstacleGrid: [[Int]]) -> Int {
+  func uniquePathsWithObstacles(_ obstacleGrid: [[Int]]) -> Int {
     let m = obstacleGrid.count
     let n = obstacleGrid[0].count
     guard m > 1 || n > 1 else {
@@ -26,7 +26,7 @@ class UniquePathsII_Solution {
         return 1
       }
     }
-    var pathsMatrix = Array(count: m, repeatedValue: Array(count: n, repeatedValue: 0))
+    var pathsMatrix = Array(repeating: Array(repeating: 0, count: n), count: m)
     for i in 0..<m {
       for j in 0..<n {
         if i == 0 || j == 0 {

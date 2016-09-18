@@ -17,7 +17,7 @@ import Foundation
 
 class ContainsDuplicate_Solution {
   // Use set.
-  func containsDuplicate(nums: [Int]) -> Bool {
+  func containsDuplicate(_ nums: [Int]) -> Bool {
     let numsSet = Set(nums)
     return numsSet.count != nums.count
   }

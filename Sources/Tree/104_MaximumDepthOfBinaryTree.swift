@@ -33,7 +33,7 @@ import Foundation
  */
 
 class MaximumDepthOfBinaryTree_Solution {
-  func maxDepth(root: TreeNode?) -> Int {
+  func maxDepth(_ root: TreeNode?) -> Int {
     guard let root = root else { return 0 }
     var nodeQueue = Queue<(TreeNode, Int)>()
     nodeQueue.enqueue((root, 1))

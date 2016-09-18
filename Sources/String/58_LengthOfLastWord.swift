@@ -16,8 +16,8 @@ import Foundation
  */
 
 class LengthOfLastWord_Solution {
-  func lengthOfLastWord(s: String) -> Int {
-    if let lastWord = s.characters.split(" ").last {
+  func lengthOfLastWord(_ s: String) -> Int {
+    if let lastWord = s.characters.split(separator: " ").last {
       return lastWord.count
     } else {
       return 0

@@ -16,11 +16,11 @@ import Foundation
  */
 
 class ThreeSum_Solution {
-  func threeSum(nums: [Int]) -> [[Int]] {
+  func threeSum(_ nums: [Int]) -> [[Int]] {
     guard nums.count >= 3 else {
       return []
     }
-    let nums = nums.sort()
+    let nums = nums.sorted()
     var ret: [[Int]] = []
     for i in 0..<nums.count - 2 {
       // Skip repeated value, if we have computed it.

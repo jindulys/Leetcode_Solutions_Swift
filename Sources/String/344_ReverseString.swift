@@ -16,7 +16,7 @@ import Foundation
  */
 
 class ReverseString_Solution {
-  func reverseString(s: String) -> String {
+  func reverseString(_ s: String) -> String {
     var characters = Array(s.characters)
     guard characters.count > 0 else {
       return ""

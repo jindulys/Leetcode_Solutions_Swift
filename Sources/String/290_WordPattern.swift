@@ -17,11 +17,11 @@ import Foundation
 
 class WordPattern_Solution {
   /// This is correct but with ugly logic
-  func wordPattern_initial(pattern: String, _ str: String) -> Bool {
+  func wordPattern_initial(_ pattern: String, _ str: String) -> Bool {
     var dict: [Character : String] = [:]
     var wordIndexedDict: [String: Character] = [:]
     let keys:[Character] = Array(pattern.characters)
-    let words = str.characters.split(" ").map { String($0) }
+    let words = str.characters.split(separator: " ").map { String($0) }
     guard words.count == keys.count else {
       return false
     }
@@ -43,11 +43,11 @@ class WordPattern_Solution {
     return true
   }
   
-  func wordPattern(pattern: String, _ str: String) -> Bool {
+  func wordPattern(_ pattern: String, _ str: String) -> Bool {
     var characterIndexedDict: [Character : String] = [:]
     var wordIndexedDict: [String: Character] = [:]
     let keys:[Character] = Array(pattern.characters)
-    let words = str.characters.split(" ").map { String($0) }
+    let words = str.characters.split(separator: " ").map { String($0) }
     guard words.count == keys.count else {
       return false
     }

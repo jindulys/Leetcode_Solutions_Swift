@@ -16,7 +16,7 @@ import Foundation
  */
 
 class RemoveElement_Solution {
-  func removeElement(inout nums: [Int], _ val: Int) -> Int {
+  func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
     var len: Int = nums.count
     var i: Int = 0
     while i < len {

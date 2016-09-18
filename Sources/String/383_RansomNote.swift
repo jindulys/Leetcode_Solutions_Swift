@@ -19,7 +19,7 @@ class RansomeNote_Solution {
   // My thoughts:
   // 1. construct the dictionary(character: count) for both `ransomNote` and `magazine`.
   // 2. make sure each key exist in magazine dictionary and count is less than its counterpart.
-  func canConstruct(ransomNote: String, _ magazine: String) -> Bool {
+  func canConstruct(_ ransomNote: String, _ magazine: String) -> Bool {
     // Construct ransomNote Dictionary
     let noteDict = generateCharacterDictFrom(ransomNote)
     let magazineDict = generateCharacterDictFrom(magazine)
@@ -38,7 +38,7 @@ class RansomeNote_Solution {
     return contained
   }
   
-  func generateCharacterDictFrom(string: String) -> [Character: Int] {
+  func generateCharacterDictFrom(_ string: String) -> [Character: Int] {
     var dict: [Character: Int] = [:]
     for rc in string.characters {
       if let rcCount = dict[rc] {

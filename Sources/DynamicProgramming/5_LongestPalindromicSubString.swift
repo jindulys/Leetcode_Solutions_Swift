@@ -22,7 +22,7 @@ import Foundation
  */
 
 class LongestPalindromicSubString_Solution {
-  func longestPalindrome(s: String) -> String {
+  func longestPalindrome(_ s: String) -> String {
     guard s.characters.count > 1 else {
       return s
     }
@@ -31,8 +31,8 @@ class LongestPalindromicSubString_Solution {
     var maxStartIndex: Int = 0
     var maxLength: Int = 1
     var palindromicTable =
-      Array(count: totalLength,
-            repeatedValue:Array(count:totalLength, repeatedValue: false))
+      Array(repeating: Array(repeating: false, count: totalLength),
+            count: totalLength)
     for i in 0..<characters.count {
       palindromicTable[i][i] = true
       maxStartIndex = i

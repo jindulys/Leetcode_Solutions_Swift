@@ -16,10 +16,10 @@ import Foundation
  */
 
 class FirstBadVersion_Solution {
-  func isBadVersion(version: Int) -> Bool {
+  func isBadVersion(_ version: Int) -> Bool {
     return version >= 1801
   }
-  func solution(version: Int) -> Int {
+  func solution(_ version: Int) -> Int {
     guard version > 1 else {
       return version
     }

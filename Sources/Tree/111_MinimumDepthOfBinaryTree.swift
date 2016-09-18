@@ -33,13 +33,13 @@ import Foundation
  */
 
 class MinimumDepthOfBinaryTree_Solution {
-  func minDepth(root: TreeNode?) -> Int {
+  func minDepth(_ root: TreeNode?) -> Int {
     if let root = root {
       var nonLeafQueue = Queue<(TreeNode, Int)>()
       nonLeafQueue.enqueue((root, 1))
       var (currentNode, currentLevel) = nonLeafQueue.dequeue()!
       while currentNode.left != nil || currentNode.right != nil {
-        if let left = currentNode.left, right = currentNode.right {
+        if let left = currentNode.left, let right = currentNode.right {
           nonLeafQueue.enqueue((left, (currentLevel + 1)))
           nonLeafQueue.enqueue((right, (currentLevel + 1)))
         } else if let left = currentNode.left {

@@ -16,7 +16,7 @@ import Foundation
  */
 
 class ReverseVowels_Solution {
-  func reverseVowels(s: String) -> String {
+  func reverseVowels(_ s: String) -> String {
     let vowels:[Character] = ["a","A", "e","E", "i","I", "o","O", "u", "U"]
     var characters = Array(s.characters)
     var start = 0

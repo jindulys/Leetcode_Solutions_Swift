@@ -16,7 +16,7 @@ import Foundation
  */
 
 class PalindromeNumber_Solution {
-  func isPalindrome(x: Int) -> Bool {
+  func isPalindrome(_ x: Int) -> Bool {
     guard x >= 0 else {
       return false
     }

@@ -17,7 +17,7 @@ import Foundation
 
 class SymmetricTree_Solution {
   /// Bonus points: Iterative
-  func isSymmetric(root: TreeNode?) -> Bool {
+  func isSymmetric(_ root: TreeNode?) -> Bool {
     guard let root = root else {
       return true
     }
@@ -32,7 +32,7 @@ class SymmetricTree_Solution {
     return comparison
   }
   
-  private func switchSubTree(root: TreeNode) -> TreeNode {
+  fileprivate func switchSubTree(_ root: TreeNode) -> TreeNode {
     var switchedLeft: TreeNode?
     var switchedRight: TreeNode?
     if let left = root.left {
@@ -47,40 +47,40 @@ class SymmetricTree_Solution {
   }
 
   /// Use a queue to convert a tree to an array.
-  private func treeToArray(root: TreeNode?) -> [TreeValue] {
+  fileprivate func treeToArray(_ root: TreeNode?) -> [TreeValue] {
     guard let root = root else {
-      return [TreeValue.Empty]
+      return [TreeValue.empty]
     }
     var traversalQueue = Queue<TreeNode>()
-    var retVal: [TreeValue] = [.Valid(root.val)]
+    var retVal: [TreeValue] = [.valid(root.val)]
     traversalQueue.enqueue(root)
     while !traversalQueue.isEmpty() {
       let currentNode = traversalQueue.dequeue()!
       if let left = currentNode.left {
-        retVal.append(.Valid(left.val))
+        retVal.append(.valid(left.val))
         traversalQueue.enqueue(left)
       } else {
-        retVal.append(.Empty)
+        retVal.append(.empty)
       }
       if let right = currentNode.right {
-        retVal.append(.Valid(right.val))
+        retVal.append(.valid(right.val))
         traversalQueue.enqueue(right)
       } else {
-        retVal.append(.Empty)
+        retVal.append(.empty)
       }
     }
     return retVal
   }
   
   /// A simpler solution, recursive
-  func solutionTwo(root: TreeNode?) -> Bool {
+  func solutionTwo(_ root: TreeNode?) -> Bool {
     guard let root = root else {
       return true
     }
     return symmetricHelper(root.left, q: root.right)
   }
   
-  private func symmetricHelper(p: TreeNode?, q: TreeNode?) -> Bool {
+  fileprivate func symmetricHelper(_ p: TreeNode?, q: TreeNode?) -> Bool {
     if p == nil && q == nil {
       return true
     }
@@ -92,17 +92,17 @@ class SymmetricTree_Solution {
 }
 
 enum TreeValue {
-  case Valid(Int)
-  case Empty
+  case valid(Int)
+  case empty
 }
 
 extension TreeValue: Equatable { }
 
 func ==(lhs: TreeValue, rhs: TreeValue) -> Bool {
   switch (lhs, rhs) {
-  case (.Valid(let lval), .Valid(let rval)):
+  case (.valid(let lval), .valid(let rval)):
     return lval == rval
-  case (.Empty, .Empty):
+  case (.empty, .empty):
     return true
   default:
     return false

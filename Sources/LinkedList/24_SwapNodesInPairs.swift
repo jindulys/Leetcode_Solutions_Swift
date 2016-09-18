@@ -16,7 +16,7 @@ import Foundation
  */
 
 class SwapNodesInPairs_Solution {
-  func swapPairs(head: ListNode?) -> ListNode? {
+  func swapPairs(_ head: ListNode?) -> ListNode? {
     guard head != nil && head?.next != nil else {
       return head
     }

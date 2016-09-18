@@ -23,7 +23,7 @@ import Foundation
  */
 
 class RotateImage_Solution {
-  func rotate(inout matrix: [[Int]]) {
+  func rotate(_ matrix: inout [[Int]]) {
     for i in 0..<matrix.count {
       for j in i..<matrix.count {
         let tmp = matrix[i][j]
