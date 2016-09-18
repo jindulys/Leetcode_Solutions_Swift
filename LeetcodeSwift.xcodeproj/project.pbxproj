@@ -369,9 +369,9 @@
 				0E5D155A1D7FBB7C001EB24C /* 8_StringToInteger.swift */,
 				0EB7AD591D7E0B4B00278C48 /* 9_PalindromeNumber.swift */,
 				0EB7AD6B1D7E5B7500278C48 /* 13_RomanToInteger.swift */,
-				0EB7AD5F1D7E273A00278C48 /* 258_AddDigits.swift */,
 				0EB7AD651D7E471100278C48 /* 136_SingleNumber.swift */,
 				0EB7AD671D7E485B00278C48 /* 231_PowerOfTwo.swift */,
+				0EB7AD5F1D7E273A00278C48 /* 258_AddDigits.swift */,
 				0EB7AD6D1D7E5CB500278C48 /* 263_UglyNumber.swift */,
 				0EB7AD691D7E4C7D00278C48 /* 326_PowerOfThree.swift */,
 			);
