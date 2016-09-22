@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *68*
+Current Finished: *69*
 
 ##[String](Sources/String)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -88,6 +88,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [152 Maximum Product Subarray]( https://leetcode.com/problems/maximum-product-subarray/) |  DP |  Medium |  O(1) |  O(n)
 [198 House Robber]( https://leetcode.com/problems/house-robber/) |  DP |  Easy |  O(n) |  O(n)
 [213 House Robber II]( https://leetcode.com/problems/house-robber-ii/) |  DP |  Medium |  O(n) |  O(n)
+[221 Maximal Square]( https://leetcode.com/problems/maximal-square/) |  DP |  Medium |  O(MN) |  O(MN)
 [279 Unique Paths II]( https://leetcode.com/problems/perfect-squares/) |  DP |  Medium |  O(n) |  O(n^2)
 [322 Coin Change]( https://leetcode.com/problems/coin-change/) |  DP |  Medium |  O(n^2) |  O(n)
 
