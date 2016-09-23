@@ -44,9 +44,9 @@ class MaximalSquare_Solution {
   
   func test() {
     let test1: [[Int]] = [[1,0,1,0,0],
-                                [1,0,1,1,1],
-                                [1,1,1,1,1],
-                                [1,0,0,1,0]]
+                          [1,0,1,1,1],
+                          [1,1,1,1,1],
+                          [1,0,0,1,0]]
     let ret = maximalSquare(test1)
     if ret == 4 {
       print("Maximal Square Passed")

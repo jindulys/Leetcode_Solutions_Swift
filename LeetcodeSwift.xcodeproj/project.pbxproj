@@ -48,6 +48,7 @@
 		0E6FADCF1D58172B00C8D71D /* LeetCodeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FADCE1D58172B00C8D71D /* LeetCodeKit.swift */; };
 		0E93F9711D86594C0050995D /* 139_WordBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E93F9701D86594C0050995D /* 139_WordBreak.swift */; };
 		0E948BB31D8CC1B600BEB6A9 /* 213_HouseRobberII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E948BB21D8CC1B600BEB6A9 /* 213_HouseRobberII.swift */; };
+		0E952FA41D94B250003342F4 /* 70_ClimbingStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E952FA31D94B250003342F4 /* 70_ClimbingStairs.swift */; };
 		0E9C91F01D753A090022BC93 /* 189_RotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6818C11D735AFC00C33DFB /* 189_RotateArray.swift */; };
 		0E9C91F21D7712EB0022BC93 /* 36_ValidSudoku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C91F11D7712EB0022BC93 /* 36_ValidSudoku.swift */; };
 		0E9C91F71D7B09230022BC93 /* 162_FindAPeakElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C91F61D7B09230022BC93 /* 162_FindAPeakElement.swift */; };
@@ -153,6 +154,7 @@
 		0E6FADCE1D58172B00C8D71D /* LeetCodeKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeetCodeKit.swift; sourceTree = "<group>"; };
 		0E93F9701D86594C0050995D /* 139_WordBreak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 139_WordBreak.swift; sourceTree = "<group>"; };
 		0E948BB21D8CC1B600BEB6A9 /* 213_HouseRobberII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 213_HouseRobberII.swift; sourceTree = "<group>"; };
+		0E952FA31D94B250003342F4 /* 70_ClimbingStairs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 70_ClimbingStairs.swift; sourceTree = "<group>"; };
 		0E9C91F11D7712EB0022BC93 /* 36_ValidSudoku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 36_ValidSudoku.swift; sourceTree = "<group>"; };
 		0E9C91F61D7B09230022BC93 /* 162_FindAPeakElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 162_FindAPeakElement.swift; sourceTree = "<group>"; };
 		0E9C91F81D7B5CEF0022BC93 /* 33_SearchInRotatedSortedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 33_SearchInRotatedSortedArray.swift; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 				0E5185C41D8A3D7100E7FD18 /* 53_MaximumSubarry.swift */,
 				0EA852B71D87980F00721FE2 /* 62_UniquePaths.swift */,
 				0EA852B91D87AB5200721FE2 /* 63_UniquePaths.swift */,
+				0E952FA31D94B250003342F4 /* 70_ClimbingStairs.swift */,
 				0E93F9701D86594C0050995D /* 139_WordBreak.swift */,
 				0E55A4711D8EE7A2004982DF /* 152_MaximumProductSubarray.swift */,
 				0EB02F7C1D8B9F000033F46E /* 198_HouseRobber.swift */,
@@ -597,6 +600,7 @@
 				0EB7AD621D7E393900278C48 /* 278_FirstBadVersion.swift in Sources */,
 				0EB7AD641D7E402100278C48 /* 389_FindTheDifference.swift in Sources */,
 				0E6FADB21D58171900C8D71D /* 344_ReverseString.swift in Sources */,
+				0E952FA41D94B250003342F4 /* 70_ClimbingStairs.swift in Sources */,
 				0E6FAD551D5811BE00C8D71D /* AppDelegate.swift in Sources */,
 				0EBC87F91D7CAE12003DE97A /* 35_SearchInsertPosition.swift in Sources */,
 				0E5185C51D8A3D7100E7FD18 /* 53_MaximumSubarry.swift in Sources */,
