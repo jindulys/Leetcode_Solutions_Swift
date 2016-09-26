@@ -627,6 +627,49 @@ public extension Array where Element: Comparable {
   }
 }
 
+public extension Array where Element: Equatable {
+  public func LCS(_ other: [Element]) -> [Element] {
+    let table =
+        MemoizedSequenceComparison.buildTable(self, other, self.count, other.count)
+    return Array.lcsFromIndices(table, self, other, self.count, other.count)
+  }
+  
+  fileprivate static func lcsFromIndices(_ table: [[Int]],
+                                         _ x: [Element],
+                                         _ y: [Element],
+                                         _ i: Int,
+                                         _ j: Int) -> [Element] {
+    if i == 0 || j == 0 {
+      return []
+    } else if x[i - 1] == y[j - 1] {
+      return lcsFromIndices(table, x, y, i - 1, j - 1) + [x[i - 1]]
+    } else if table[i - 1][j] > table[i][j - 1] {
+      return lcsFromIndices(table, x, y, i - 1, j)
+    } else {
+      return lcsFromIndices(table, x, y, i, j - 1)
+    }
+  }
+}
+
+internal struct MemoizedSequenceComparison<T: Equatable> {
+  static func buildTable(_ x: [T], _ y: [T], _ n: Int, _ m: Int) -> [[Int]] {
+    var table = Array(repeating: Array(repeating: 0, count: m + 1), count: n + 1)
+    for i in 0...n {
+      for j in 0...m {
+        if i == 0 || j == 0 {
+          continue
+        }
+        if x[i - 1] == y[j - 1] {
+          table[i][j] = table[i - 1][j - 1] + 1
+        } else {
+          table[i][j] = max(table[i][j - 1], table[i - 1][j])
+        }
+      }
+    }
+    return table
+  }
+}
+
 public extension Sequence where Iterator.Element: Hashable {
   /**
    Given a sequence of array returns unique element
