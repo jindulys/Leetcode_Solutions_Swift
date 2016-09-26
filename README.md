@@ -8,7 +8,7 @@ Leetcode solutions in Swift
 
 Current Finished: *70*
 
-##[String](Sources/String)
+##[String](Sources/String)(*12*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [3 Longest Substring without repeating characters]( https://leetcode.com/problems/longest-substring-without-repeating-characters/) |  String |  Medium |  O(n) |  O(n) 
@@ -24,7 +24,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [383 Ransom Note]( https://leetcode.com/problems/ransom-note/) |  String |  Easy |  O(n) |  O(n) 
 [389 Find the difference]( https://leetcode.com/problems/find-the-difference/) |  String & hash table |  Easy |  O(n) |  O(n)
 
-##[Array](Sources/Array)
+##[Array](Sources/Array)(*11*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [1 Two Sum]( https://leetcode.com/problems/two-sum/) |  Array |  Easy |  O(n) |  O(n)
@@ -39,7 +39,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [349 Intersection of two arrays]( https://leetcode.com/problems/intersection-of-two-arrays/) |  Array |  Easy |  O(n) |  O(n) 
 [350 Intersection of two arrays II]( https://leetcode.com/problems/intersection-of-two-arrays-ii/) |  Array |  Easy |  O(n) |  O(n)
 
-##[Tree](Sources/Tree)
+##[Tree](Sources/Tree)(*15*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [98 Validate Binary Search Tree]( https://leetcode.com/problems/validate-binary-search-tree/) |  Tree |  Medium |  O(n) |  O(n)
@@ -58,7 +58,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [235 Lowest Common Ancestor of a Binary Search Tree]( https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |  Tree |  Medium |  O(n) |  O(n)
 [337 House Robber III](https://leetcode.com/problems/house-robber-iii/) | Tree | Medium | O(n) | O(n)
 
-##[Search](Sources/Search)
+##[Search](Sources/Search)(*9*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [33 Search in rotated sorted array]( https://leetcode.com/problems/search-in-rotated-sorted-array/) |  Search |  Hard |  O(1) |  O(lgn)
@@ -71,13 +71,13 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [162 Find Peak Element]( https://leetcode.com/problems/find-peak-element/) |  Search |  Medium |  O(1) |  O(lgn)
 [278 First Bad Version]( https://leetcode.com/problems/first-bad-version/) |  Binary Search |  Easy |  O(1) |  O(lgn)
 
-##[Linked List](Sources/LinkedList)
+##[Linked List](Sources/LinkedList)(*2*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [2 Add Two Numbers]( https://leetcode.com/submissions/detail/73064342/) |  LinkedList |  Medium |  O(n) |  O(n)
 [24 Swap Nodes in Pairs]( https://leetcode.com/problems/swap-nodes-in-pairs/) |  Linked List |  Easy |  O(1) |  O(n)
 
-##[DynamicProgramming](Sources/DynamicProgramming)
+##[DynamicProgramming](Sources/DynamicProgramming)(*13*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [5 Longest Palindromic Substring]( https://leetcode.com/problems/longest-palindromic-substring/) |  DP |  Medium |  O(n^2) |  O(n^2)
@@ -85,6 +85,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [62 Unique Paths]( https://leetcode.com/problems/unique-paths/) |  DP |  Medium |  O(mn) |  O(mn)
 [63 Unique Paths II]( https://leetcode.com/problems/unique-paths-ii/) |  DP |  Medium |  O(mn) |  O(mn)
 [70 Climbing Stairs]( https://leetcode.com/problems/climbing-stairs/) |  DP |  Easy |  O(1) |  O(N)
+[121 Best Time to Buy and Sell Stock]( https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |  DP |  Easy |  O(1) |  O(N)
 [139 Word Break]( https://leetcode.com/problems/word-break/) |  DP |  Medium |  O(n) |  O(nL^2)
 [152 Maximum Product Subarray]( https://leetcode.com/problems/maximum-product-subarray/) |  DP |  Medium |  O(1) |  O(n)
 [198 House Robber]( https://leetcode.com/problems/house-robber/) |  DP |  Easy |  O(n) |  O(n)
@@ -93,7 +94,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [279 Unique Paths II]( https://leetcode.com/problems/perfect-squares/) |  DP |  Medium |  O(n) |  O(n^2)
 [322 Coin Change]( https://leetcode.com/problems/coin-change/) |  DP |  Medium |  O(n^2) |  O(n)
 
-##[Math](Sources/Math)
+##[Math](Sources/Math)(*8*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [7 Reverse Integer]( https://leetcode.com/problems/reverse-integer/) |  Math |  Easy |  O(1) |  O(1)
