@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+		let test = EditDistance_Solution()
+		test.test()
   }
 
   override func didReceiveMemoryWarning() {
