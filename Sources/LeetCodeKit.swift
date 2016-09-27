@@ -555,7 +555,6 @@ public extension Array {
    */
   func adjacentTest(_ oneElementArrayAllowed: Bool = true, condition: (Element, Element) -> Bool) -> Bool {
     guard self.count > 1 else { return oneElementArrayAllowed }
-    
     for i in 0..<self.count-1 {
       if condition(self[i], self[i+1]) == false {
         return false
