@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *70*
+Current Finished: *71*
 
 ##[String](Sources/String)(*12*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -77,7 +77,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [2 Add Two Numbers]( https://leetcode.com/submissions/detail/73064342/) |  LinkedList |  Medium |  O(n) |  O(n)
 [24 Swap Nodes in Pairs]( https://leetcode.com/problems/swap-nodes-in-pairs/) |  Linked List |  Easy |  O(1) |  O(n)
 
-##[DynamicProgramming](Sources/DynamicProgramming)(*13*)
+##[DynamicProgramming](Sources/DynamicProgramming)(*14*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [5 Longest Palindromic Substring]( https://leetcode.com/problems/longest-palindromic-substring/) |  DP |  Medium |  O(n^2) |  O(n^2)
@@ -85,6 +85,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [62 Unique Paths]( https://leetcode.com/problems/unique-paths/) |  DP |  Medium |  O(mn) |  O(mn)
 [63 Unique Paths II]( https://leetcode.com/problems/unique-paths-ii/) |  DP |  Medium |  O(mn) |  O(mn)
 [70 Climbing Stairs]( https://leetcode.com/problems/climbing-stairs/) |  DP |  Easy |  O(1) |  O(N)
+[72 Edit Distance]( https://leetcode.com/problems/edit-distance/) |  DP |  Hard |  O(NM) |  O(NM)
 [121 Best Time to Buy and Sell Stock]( https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |  DP |  Easy |  O(1) |  O(N)
 [139 Word Break]( https://leetcode.com/problems/word-break/) |  DP |  Medium |  O(n) |  O(nL^2)
 [152 Maximum Product Subarray]( https://leetcode.com/problems/maximum-product-subarray/) |  DP |  Medium |  O(1) |  O(n)
