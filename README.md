@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *71*
+Current Finished: *72*
 
 ##[String](Sources/String)(*12*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -24,11 +24,12 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [383 Ransom Note]( https://leetcode.com/problems/ransom-note/) |  String |  Easy |  O(n) |  O(n) 
 [389 Find the difference]( https://leetcode.com/problems/find-the-difference/) |  String & hash table |  Easy |  O(n) |  O(n)
 
-##[Array](Sources/Array)(*11*)
+##[Array](Sources/Array)(*12*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [1 Two Sum]( https://leetcode.com/problems/two-sum/) |  Array |  Easy |  O(n) |  O(n)
 [15 3Sum]( https://leetcode.com/problems/3sum/) |  Array |  Medium |  O(n) |  O(n^2)
+[18 4Sum]( https://leetcode.com/problems/4sum/) |  Array |  Medium |  O(N^2) |  O(N^4)
 [27 Remove Element]( https://leetcode.com/problems/remove-element/) |  Array |  Easy |  O(1) |  O(n)
 [36 Valid Sudoku]( https://leetcode.com/problems/valid-sudoku/) |  Array |  Easy |  O(1) |  O(1)
 [48 Rotate Image]( https://leetcode.com/problems/rotate-image/) |  Array |  Medium |  O(1) |  O(n^2)
