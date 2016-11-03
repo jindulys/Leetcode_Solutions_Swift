@@ -56,7 +56,7 @@
                   moduleName = "LeetcodeSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yansongli/Desktop/LeetcodeSwift/Sources/DynamicProgramming/53_MaximumSubarry.swift"
-                  timestampString = "496641520.206984"
+                  timestampString = "499832831.736796"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -71,7 +71,7 @@
                   moduleName = "LeetcodeSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yansongli/Desktop/LeetcodeSwift/Sources/DynamicProgramming/53_MaximumSubarry.swift"
-                  timestampString = "496641520.210032"
+                  timestampString = "499832831.740364"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -86,7 +86,7 @@
                   moduleName = "LeetcodeSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yansongli/Desktop/LeetcodeSwift/Sources/DynamicProgramming/53_MaximumSubarry.swift"
-                  timestampString = "496641520.211623"
+                  timestampString = "499832831.742011"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -102,12 +102,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Sources/DynamicProgramming/72_EditDistance.swift"
-            timestampString = "496641442.537044"
+            filePath = "Sources/Array/18_4Sum.swift"
+            timestampString = "499832205.232727"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "test()"
             landmarkType = "7">
          </BreakpointContent>
@@ -118,13 +118,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Sources/DynamicProgramming/72_EditDistance.swift"
-            timestampString = "496641550.379209"
+            filePath = "Sources/Array/18_4Sum.swift"
+            timestampString = "499831493.160546"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
             endingLineNumber = "13"
-            landmarkName = "minDistance(_:_:)"
+            landmarkName = "fourSum(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/Array/18_4Sum.swift"
+            timestampString = "499832214.053494"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "test()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/Array/18_4Sum.swift"
+            timestampString = "499832847.365328"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "fourSum(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

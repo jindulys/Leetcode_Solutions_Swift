@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     super.viewDidLoad()
 		let test = EditDistance_Solution()
 		test.test()
+    let testFourSum = FourSum_Solution()
+    testFourSum.test()
   }
 
   override func didReceiveMemoryWarning() {
