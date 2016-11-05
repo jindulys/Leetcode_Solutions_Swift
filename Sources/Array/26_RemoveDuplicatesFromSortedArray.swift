@@ -22,10 +22,13 @@ class RemoveDuplicatesFromSortedArray_Solution {
     }
 
     var lastFoundUnrepeatedIndex = 0
+    // Add in a local tmp to reduce array index query and improve performance.
+    var currentComparisonElement = nums[lastFoundUnrepeatedIndex]
     for num in nums {
-      if num != nums[lastFoundUnrepeatedIndex] {
+      if num != currentComparisonElement {
         lastFoundUnrepeatedIndex += 1
         nums[lastFoundUnrepeatedIndex] = num
+        currentComparisonElement = num
       }
     }
     return lastFoundUnrepeatedIndex + 1
