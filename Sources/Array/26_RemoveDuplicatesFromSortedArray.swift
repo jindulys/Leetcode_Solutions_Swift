@@ -28,6 +28,6 @@ class RemoveDuplicatesFromSortedArray_Solution {
         nums[lastFoundUnrepeatedIndex] = num
       }
     }
-    return lastFoundUnrepeatedIndex
+    return lastFoundUnrepeatedIndex + 1
   }
 }
