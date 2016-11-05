@@ -8,8 +8,37 @@
 
 import Foundation
 
+/**
+	Title:49 Group Anagrams
+	URL: https://leetcode.com/problems/anagrams/
+  m is the average length for the string in input array.
+	Space: O(Nmlgm)
+	Time: O(N)
+ */
+
 class GroupAnagrams_Solution {
+
   func groupAnagrams(_ strs: [String]) -> [[String]] {
+    var anagramDict: [String: [String]] = [:]
+    for str in strs {
+      let sortedStr = String(str.characters.sorted { $0 < $1 })
+      var existingAnagramGroup:[String] = []
+      if let existing = anagramDict[sortedStr] {
+        existingAnagramGroup = existing
+      }
+      existingAnagramGroup.append(str)
+      anagramDict[sortedStr] = existingAnagramGroup
+    }
+    var result: [[String]] = []
+    for strArr in anagramDict.values {
+      result.append(strArr)
+    }
+    return result
+  }
+
+  /// What the fuck, I came up a so fucking low solution.
+  /// I forget that each anagram group actually shares a common key.
+  func groupAnagramsMySolution(_ strs: [String]) -> [[String]] {
     guard strs.count > 0 else {
       return []
     }
@@ -89,11 +118,5 @@ class GroupAnagrams_Solution {
       }
     }
     return dict
-  }
-
-  func test() {
-    let test = ["eat", "tea", "ate", "tan"]
-    let result = self.groupAnagrams(test)
-    print(result)
   }
 }
