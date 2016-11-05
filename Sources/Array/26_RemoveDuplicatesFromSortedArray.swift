@@ -33,4 +33,22 @@ class RemoveDuplicatesFromSortedArray_Solution {
     }
     return lastFoundUnrepeatedIndex + 1
   }
+
+  
+  func brilliant(_ nums: inout [Int]) -> Int {
+    guard nums.count > 1 else {
+      return nums.count
+    }
+    
+    var i = 0
+    var lastValid = nums[0]
+    for num in nums {
+      if i < 1 || num > lastValid {
+        nums[i] = num
+        i += 1
+        lastValid = num
+      }
+    }
+    return i
+  }
 }
