@@ -17,6 +17,14 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 
+# Ignore files build by xcode
+*.mode*v*
+*.pbxuser
+*.xcbkptlist
+*.xcscheme
+*.xcworkspacedata
+*.xcuserstate
+
 ## Other
 *.moved-aside
 *.xcuserstate
