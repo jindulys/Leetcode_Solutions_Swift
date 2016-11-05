@@ -6,14 +6,15 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *74*
+Current Finished: *75*
 
-##[String](Sources/String)(*12*)
+##[String](Sources/String)(*13*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [3 Longest Substring without repeating characters]( https://leetcode.com/problems/longest-substring-without-repeating-characters/) |  String |  Medium |  O(n) |  O(n) 
 [14 Longest Common Prefix]( https://leetcode.com/problems/longest-common-prefix/) |  String |  Easy |  O(nm) |  O(mn) 
 [28 Implement strStr]( https://leetcode.com/problems/implement-strstr/) |  String |  Easy |  O(n) |  O(mn) 
+[49 Group Anagrams]( https://leetcode.com/problems/anagrams/) |  String |  Medium |  O(Nmlgm) |  O(N)
 [58 Length of Last Word]( https://leetcode.com/problems/length-of-last-word/) |  String |  Easy |  O(n) |  O(n) 
 [165 Compare Version Numbers]( https://leetcode.com/problems/compare-version-numbers/) |  String |  Easy |  O(n) |  O(n)
 [205 Isomorphic Strings]( https://leetcode.com/problems/isomorphic-strings/) |  String |  Easy |  O(n) |  O(n) 
