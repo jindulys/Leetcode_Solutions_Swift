@@ -41,4 +41,15 @@ class RemoveDuplicatesFromSortedArrayII_Solution {
     }
     return lastFoundValidElementIndex + 1
   }
+  
+  func brilliantSolution(_ nums: inout [Int]) -> Int {
+    var lastValidIndex = 0
+    for num in nums {
+      if lastValidIndex < 2 || num > nums[lastValidIndex - 2] {
+        nums[lastValidIndex] = num
+        lastValidIndex += 1
+      }
+    }
+    return lastValidIndex
+  }
 }
