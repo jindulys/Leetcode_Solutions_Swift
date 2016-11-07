@@ -20,10 +20,9 @@ class ReverseLinkedList_Solution {
     var temp: ListNode?
     var first = head
     while let validNode = first {
-      let second = validNode.next
+      first = validNode.next
       validNode.next = temp
       temp = validNode
-      first = second
     }
     return temp
   }
