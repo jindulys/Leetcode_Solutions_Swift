@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *77*
+Current Finished: *78*
 
 ##[String](Sources/String)(*13*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -75,11 +75,12 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [162 Find Peak Element]( https://leetcode.com/problems/find-peak-element/) |  Search |  Medium |  O(1) |  O(lgn)
 [278 First Bad Version]( https://leetcode.com/problems/first-bad-version/) |  Binary Search |  Easy |  O(1) |  O(lgn)
 
-##[Linked List](Sources/LinkedList)(*4*)
+##[Linked List](Sources/LinkedList)(*5*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [2 Add Two Numbers]( https://leetcode.com/submissions/detail/73064342/) |  LinkedList |  Medium |  O(n) |  O(n)
 [24 Swap Nodes in Pairs]( https://leetcode.com/problems/swap-nodes-in-pairs/) |  Linked List |  Easy |  O(1) |  O(n)
+[61 Rotate List]( https://leetcode.com/problems/rotate-list/) |  Linked List |  Medium |  O(1) |  O(N)
 [83 Remove Duplicates From Sorted List]( https://leetcode.com/problems/remove-duplicates-from-sorted-list/) |  Linked List |  Easy |  O(1) |  O(N)
 [206 Reverse LinkedList]( https://leetcode.com/problems/reverse-linked-list/) |  Linked List |  Easy |  O(1) |  O(N)
 
