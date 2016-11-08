@@ -1143,6 +1143,19 @@ protocol StackType {
   mutating func pop() -> Element?
 }
 
+extension Array: StackType {
+  mutating func push(_ x: Element) {
+    self.append(x)
+  }
+  
+  mutating func pop() -> Element? {
+    if self.count == 0 {
+      return nil
+    }
+    return self.popLast()
+  }
+}
+
 extension List: StackType {
   mutating func push(_ x: Element) {
     self = self.cons(x)
@@ -1155,6 +1168,15 @@ extension List: StackType {
     case let .node(element, nx):
       self = nx
       return element
+    }
+  }
+  
+  func isEmpty() -> Bool {
+    switch self {
+    case .end:
+      return true
+    case .node:
+      return false
     }
   }
 }

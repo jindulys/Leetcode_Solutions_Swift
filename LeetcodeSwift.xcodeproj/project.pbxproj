@@ -25,6 +25,7 @@
 		0E6CDE831D98BA4100FB662F /* ArrayExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6CDE821D98BA4100FB662F /* ArrayExtensionTest.swift */; };
 		0E6D9CDE1DD163430068A56A /* 143_ReorderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6D9CDD1DD163430068A56A /* 143_ReorderList.swift */; };
 		0E6D9CE01DD177220068A56A /* 86_PartitionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6D9CDF1DD177220068A56A /* 86_PartitionList.swift */; };
+		0E6D9CE31DD191740068A56A /* 144_BinaryTreePreorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6D9CE21DD191740068A56A /* 144_BinaryTreePreorderTraversal.swift */; };
 		0E6FAD551D5811BE00C8D71D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FAD541D5811BE00C8D71D /* AppDelegate.swift */; };
 		0E6FAD571D5811BE00C8D71D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FAD561D5811BE00C8D71D /* ViewController.swift */; };
 		0E6FAD5A1D5811BE00C8D71D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E6FAD581D5811BE00C8D71D /* Main.storyboard */; };
@@ -137,6 +138,7 @@
 		0E6CDE821D98BA4100FB662F /* ArrayExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensionTest.swift; sourceTree = "<group>"; };
 		0E6D9CDD1DD163430068A56A /* 143_ReorderList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 143_ReorderList.swift; sourceTree = "<group>"; };
 		0E6D9CDF1DD177220068A56A /* 86_PartitionList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 86_PartitionList.swift; sourceTree = "<group>"; };
+		0E6D9CE21DD191740068A56A /* 144_BinaryTreePreorderTraversal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = 144_BinaryTreePreorderTraversal.swift; path = Stack/144_BinaryTreePreorderTraversal.swift; sourceTree = "<group>"; };
 		0E6FAD511D5811BE00C8D71D /* LeetcodeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetcodeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6FAD541D5811BE00C8D71D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E6FAD561D5811BE00C8D71D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +244,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E6D9CE11DD1913E0068A56A /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				0E6D9CE21DD191740068A56A /* 144_BinaryTreePreorderTraversal.swift */,
+			);
+			name = Stack;
+			sourceTree = "<group>";
+		};
 		0E6FAD481D5811BE00C8D71D = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +315,7 @@
 				0EB7AD4E1D7DB3DE00278C48 /* LinkedList */,
 				0EB7AD561D7DF59300278C48 /* Math */,
 				0E9C91F51D7B09050022BC93 /* Search */,
+				0E6D9CE11DD1913E0068A56A /* Stack */,
 				0E6FADAA1D5816EB00C8D71D /* String */,
 				0E6FADAB1D5816F200C8D71D /* Tree */,
 			);
@@ -627,6 +638,7 @@
 				0EEF2D581D72103A00A85EAA /* 58_LengthOfLastWord.swift in Sources */,
 				0E6FADC81D58172200C8D71D /* 110_BalancedBinaryTree.swift in Sources */,
 				0E6FADCF1D58172B00C8D71D /* LeetCodeKit.swift in Sources */,
+				0E6D9CE31DD191740068A56A /* 144_BinaryTreePreorderTraversal.swift in Sources */,
 				0EEF2D541D71CC6B00A85EAA /* 3_LongestSubStringWithoutRepeatingCharacters.swift in Sources */,
 				0E7D77D61DCE5C99006DD938 /* 80_RemoveDuplicatesFromSortedArrayII.swift in Sources */,
 				0E5EADC71D5D6A78008E79B4 /* 28_ImplementStrStr.swift in Sources */,
