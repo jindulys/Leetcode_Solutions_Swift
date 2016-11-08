@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *80*
+Current Finished: *81*
 
 ##[String](Sources/String)(*13*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -103,6 +103,11 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [221 Maximal Square]( https://leetcode.com/problems/maximal-square/) |  DP |  Medium |  O(MN) |  O(MN)
 [279 Unique Paths II]( https://leetcode.com/problems/perfect-squares/) |  DP |  Medium |  O(n) |  O(n^2)
 [322 Coin Change]( https://leetcode.com/problems/coin-change/) |  DP |  Medium |  O(n^2) |  O(n)
+
+##[Stack](Sources/Stack)(*1*)
+Problem         |    Category           |    Difficulty   |    Space           | Time        
+--------------- |  -------------------- | --------------- | -------------------|--------
+[144 Binary Tree Preorder Traversal]( https://leetcode.com/problems/binary-tree-preorder-traversal/) |  Stack |  Medium |  O(N) |  O(N)
 
 ##[Math](Sources/Math)(*8*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
