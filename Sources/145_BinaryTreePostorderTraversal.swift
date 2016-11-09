@@ -58,4 +58,26 @@ class BinaryTreePostOrderTraversal_Solution {
     }
     return result
   }
+  
+  func postorderTraversalSlow(_ root: TreeNode?) -> [Int] {
+    var stack: [TreeNode] = []
+    var resultList: ListNode? = ListNode(0)
+    let dummyFirst = resultList
+    guard let validRoot = root else {
+      return []
+    }
+    stack.push(validRoot)
+    while let checkingNode = stack.pop() {
+      resultList?.next = ListNode(checkingNode.val)
+      resultList = resultList?.next
+      if let leftNode = checkingNode.left {
+        stack.push(leftNode)
+      }
+      if let rightNode = checkingNode.right {
+        stack.push(rightNode)
+      }
+    }
+    let correctResult = self.reverseList(dummyFirst?.next)
+    return self.listNodeToArray(correctResult)
+  }
 }
