@@ -1141,6 +1141,8 @@ protocol StackType {
   mutating func push(_ x: Element)
   
   mutating func pop() -> Element?
+  
+  func isEmpty() -> Bool
 }
 
 extension Array: StackType {
@@ -1153,6 +1155,10 @@ extension Array: StackType {
       return nil
     }
     return self.popLast()
+  }
+  
+  func isEmpty() -> Bool {
+    return self.isEmpty
   }
 }
 
