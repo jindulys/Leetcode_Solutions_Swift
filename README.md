@@ -107,8 +107,9 @@ Problem         |    Category           |    Difficulty   |    Space           |
 ##[Stack](Sources/Stack)(*2*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
-[94 Binary Tree Ignorer Traversal]( https://leetcode.com/problems/binary-tree-inorder-traversal/) |  Stack |  Medium |  O(N) |  O(N)
+[94 Binary Tree In order Traversal]( https://leetcode.com/problems/binary-tree-inorder-traversal/) |  Stack |  Medium |  O(N) |  O(N)
 [144 Binary Tree Preorder Traversal]( https://leetcode.com/problems/binary-tree-preorder-traversal/) |  Stack |  Medium |  O(N) |  O(N)
+[145 Binary Tree Post Order Traversal]( https://leetcode.com/problems/binary-tree-postorder-traversal/) |  Stack |  Hard |  O(N) |  O(N^2)
 
 ##[Math](Sources/Math)(*8*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
