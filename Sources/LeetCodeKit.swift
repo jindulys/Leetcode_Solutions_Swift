@@ -1571,7 +1571,7 @@ open class BinaryIndexedTree {
  *
  *  This results in a data structure that stores n item in O(n) space. Both insertion and deletion take O(lg(n)) time (amortized)
  */
-protocol Heap {
+protocol HeapProtocol {
   associatedtype Value
   mutating func insert(_ value: Value)
   mutating func remove() -> Value?
@@ -1580,7 +1580,8 @@ protocol Heap {
   var isEmpty: Bool { get }
 }
 
-public struct MaxHeap<T: Comparable> : Heap {
+/// Heap Struct that adopt HeapProtocol, default is a maxHeap
+public struct Heap<T: Comparable> : HeapProtocol {
   public static func arrayIsMaxHeap(_ array: [T]) -> Bool {
     if array.count == 0 {
       return false
@@ -1611,12 +1612,18 @@ public struct MaxHeap<T: Comparable> : Heap {
    */
   fileprivate var mem: [T]
   
-  init() {
-    mem = [T]()
+  // The block to determine the object's order in this heap.
+  fileprivate var isOrderedBefore: (T, T) -> Bool
+
+  /// Init with sorting method.
+  init(sort: @escaping (T, T) -> Bool) {
+    self.isOrderedBefore = sort
+    self.mem = [T]()
   }
   
-  init(array: [T]) {
-    self.init()
+  /// Init with sorting method and an array.
+  init(array: [T], sort: @escaping (T, T) -> Bool) {
+    self.init(sort: sort)
     mem.reserveCapacity(array.count)
     for value in array {
       insert(value)
@@ -1640,13 +1647,13 @@ public struct MaxHeap<T: Comparable> : Heap {
     if self.isEmpty {
       return nil
     }
-    
+
     let retVal = mem[0]
     (mem[0], mem[count-1]) = (mem[count-1], mem[0])
     mem.removeLast()
-    
+
     shiftDown()
-    
+
     return retVal
   }
   
@@ -1670,7 +1677,7 @@ public struct MaxHeap<T: Comparable> : Heap {
   fileprivate mutating func shiftUp(index: Int) {
     var currentIndex = index
     var currentParentIndex = parentIndex(childIndex: index)
-    while currentIndex > 0 && mem[currentIndex]>mem[currentParentIndex] {
+    while currentIndex > 0 &&  isOrderedBefore(mem[currentIndex], mem[currentParentIndex]) {
       (mem[currentParentIndex], mem[currentIndex]) = (mem[currentIndex], mem[currentParentIndex])
       currentIndex = currentParentIndex
       currentParentIndex = parentIndex(childIndex: currentIndex)
@@ -1695,7 +1702,7 @@ public struct MaxHeap<T: Comparable> : Heap {
       //If the child > parent, swap them
       let parent = mem[parentIndex]
       let biggerChild = mem[highestIndex]
-      if biggerChild < parent {
+      if isOrderedBefore(parent, biggerChild) {
         return
       }
       

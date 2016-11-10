@@ -23,7 +23,7 @@ class HeapTest: XCTestCase {
     }
 
   func testPeak() {
-    var testMaxHeap = MaxHeap<Int>()
+    var testMaxHeap = Heap<Int>(sort: >)
     testMaxHeap.insert(10)
     testMaxHeap.insert(1)
     testMaxHeap.insert(100)
@@ -31,7 +31,7 @@ class HeapTest: XCTestCase {
   }
 
   func testRemove() {
-    var testMaxHeap = MaxHeap<Int>()
+    var testMaxHeap = Heap<Int>(sort: >)
     testMaxHeap.insert(10)
     testMaxHeap.insert(1)
     testMaxHeap.insert(100)
@@ -43,9 +43,9 @@ class HeapTest: XCTestCase {
 
   func testHeapCheck() {
     let testMaxHeapArray = [10, 7, 2, 5, 1]
-    XCTAssert(MaxHeap.arrayIsMaxHeap(testMaxHeapArray))
+    XCTAssert(Heap.arrayIsMaxHeap(testMaxHeapArray))
     let testNonMaxHeapArray = [1, 2, 3, 4, 5]
-    XCTAssert(!MaxHeap.arrayIsMaxHeap(testNonMaxHeapArray))
+    XCTAssert(!Heap.arrayIsMaxHeap(testNonMaxHeapArray))
   }
     
     func testPerformanceExample() {
