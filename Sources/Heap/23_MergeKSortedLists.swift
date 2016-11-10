@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class MergeKSortedLists_Solution {
+//  func mergeKLists(_ lists: [ListNode?]) -> ListNode? {
+//    
+//  }
+}
