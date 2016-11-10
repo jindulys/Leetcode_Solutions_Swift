@@ -1581,6 +1581,27 @@ protocol Heap {
 }
 
 public struct MaxHeap<T: Comparable> : Heap {
+  public static func arrayIsMaxHeap(_ array: [T]) -> Bool {
+    if array.count == 0 {
+      return false
+    }
+    for i in 0..<array.count {
+      let leftChild = i * 2 + 1
+      let rightChild = i * 2 + 2
+      if leftChild < array.endIndex {
+        if array[leftChild] > array[i] {
+          return false
+        }
+      }
+      if rightChild < array.endIndex {
+        if array[rightChild] > array[i] {
+          return false
+        }
+      }
+    }
+    return true
+  }
+
   typealias Value = T
   
   /**     10
@@ -1663,14 +1684,12 @@ public struct MaxHeap<T: Comparable> : Heap {
     //Loop preconditions: parentIndex and left child index are set
     while (validIndex(leftChildIndex)) {
       let rightChildIndex = leftChildIndex + 1
-      let highestIndex: Int
+      var highestIndex = leftChildIndex
       
       if validIndex(rightChildIndex) {
         let left = mem[leftChildIndex]
         let right = mem[rightChildIndex]
         highestIndex = (left > right) ? leftChildIndex : rightChildIndex
-      } else {
-        highestIndex = leftChildIndex
       }
       
       //If the child > parent, swap them
