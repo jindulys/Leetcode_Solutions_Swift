@@ -8,6 +8,13 @@
 
 import Foundation
 
+/**
+	Title:23 Merge K Sorted Lists
+	URL: https://leetcode.com/problems/merge-k-sorted-lists/
+	Space: O(N)
+	Time: O(Nlgk)
+ */
+
 class MergeKSortedLists_Solution {
   func mergeKLists(_ lists: [ListNode?]) -> ListNode? {
     var listNodeHeap = Heap<ListNode> {
@@ -23,11 +30,18 @@ class MergeKSortedLists_Solution {
     }
     let dummyNode = ListNode(0)
     var prev: ListNode? = dummyNode
-    while let checkingNode = listNodeHeap.remove() {
+    while let checkingNode = listNodeHeap.peak() {
       prev?.next = ListNode(checkingNode.val)
       prev = prev?.next
       if let validNext = checkingNode.next {
-        listNodeHeap.insert(validNext)
+        if validNext.val == checkingNode.val {
+          listNodeHeap.replaceHead(value: validNext)
+        } else {
+          listNodeHeap.remove()
+          listNodeHeap.insert(validNext)
+        }
+      } else {
+        listNodeHeap.remove()
       }
     }
     return dummyNode.next

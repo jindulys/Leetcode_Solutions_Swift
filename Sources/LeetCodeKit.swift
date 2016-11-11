@@ -1680,7 +1680,7 @@ public struct Heap<T: Comparable> : HeapProtocol {
     shiftUp(index: mem.count - 1)
   }
   
-  public mutating func remove() -> T? {
+  @discardableResult public mutating func remove() -> T? {
     if self.isEmpty {
       return nil
     }
@@ -1697,6 +1697,11 @@ public struct Heap<T: Comparable> : HeapProtocol {
   public func peak() -> T? {
     guard self.count > 0 else { return nil }
     return mem[0]
+  }
+  
+  /// Replace the head with the value, note you should guarantee the replace is correct.
+  public mutating func replaceHead(value: T) {
+    mem[0] = value
   }
   
   fileprivate func parentIndex(childIndex: Int) -> Int {
