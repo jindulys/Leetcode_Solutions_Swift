@@ -906,6 +906,43 @@ open class ListNode {
     self.val = val
     self.next = nil
   }
+  
+  /// generate a listNode with array.
+  static func generateListNodeFromArray(_ array: [Int]) -> ListNode? {
+    if array.count == 0 {
+      return nil
+    }
+    let dummyNode = ListNode(0)
+    var currentNode: ListNode? = dummyNode
+    for i in array {
+      currentNode?.next = ListNode(i)
+      currentNode = currentNode?.next
+    }
+    return dummyNode.next
+  }
+}
+
+extension ListNode: CustomStringConvertible {
+  public var description: String {
+    var result = "\(self.val)"
+    var checkingNode = self.next
+    while let validNext = checkingNode {
+      result.append("->\(validNext.val)")
+      checkingNode = validNext.next
+    }
+    result.append("->NULL")
+    return result
+  }
+}
+
+extension ListNode: Comparable { }
+
+public func <(lhs: ListNode, rhs: ListNode) -> Bool {
+  return lhs.val < rhs.val
+}
+
+public func ==(lhs: ListNode, rhs: ListNode) -> Bool {
+  return lhs.val == rhs.val
 }
 
 /**
@@ -1677,7 +1714,7 @@ public struct Heap<T: Comparable> : HeapProtocol {
   fileprivate mutating func shiftUp(index: Int) {
     var currentIndex = index
     var currentParentIndex = parentIndex(childIndex: index)
-    while currentIndex > 0 &&  isOrderedBefore(mem[currentIndex], mem[currentParentIndex]) {
+    while currentIndex > 0 && isOrderedBefore(mem[currentIndex], mem[currentParentIndex]) {
       (mem[currentParentIndex], mem[currentIndex]) = (mem[currentIndex], mem[currentParentIndex])
       currentIndex = currentParentIndex
       currentParentIndex = parentIndex(childIndex: currentIndex)
@@ -1696,7 +1733,7 @@ public struct Heap<T: Comparable> : HeapProtocol {
       if validIndex(rightChildIndex) {
         let left = mem[leftChildIndex]
         let right = mem[rightChildIndex]
-        highestIndex = (left > right) ? leftChildIndex : rightChildIndex
+        highestIndex = (isOrderedBefore(left, right)) ? leftChildIndex : rightChildIndex
       }
       
       //If the child > parent, swap them
