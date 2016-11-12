@@ -17,12 +17,11 @@ import Foundation
 
 class SearchInsertPosition_Solution {
   func searchInsert(_ nums: [Int], _ target: Int) -> Int {
-    guard nums.count > 1 else {
-      if nums.count == 1 && nums[0] < target {
-        return 1
-      } else {
-        return 0
-      }
+    if nums.count == 1 && nums[0] < target {
+      return 1
+    }
+    if nums.count == 0 {
+      return 0
     }
     var start = 0
     var end = nums.count - 1
