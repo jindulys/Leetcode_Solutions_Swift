@@ -21,6 +21,8 @@
 		0E61C9731D60CCF60014C2D2 /* 14_LongestCommonPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E61C9721D60CCF60014C2D2 /* 14_LongestCommonPrefix.swift */; };
 		0E67250C1D7329A400408DA3 /* 1_TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E67250B1D7329A400408DA3 /* 1_TwoSum.swift */; };
 		0E6818C41D73788500C33DFB /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6818C31D73788500C33DFB /* LinkedListTest.swift */; };
+		0E6896781DD576C5006F10D3 /* 295_FindMedianFromDataStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6896771DD576C5006F10D3 /* 295_FindMedianFromDataStream.swift */; };
+		0E68967A1DD787E6006F10D3 /* QuickMedianTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6896791DD787E6006F10D3 /* QuickMedianTest.swift */; };
 		0E6CDE811D98A1CE00FB662F /* 72_EditDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6CDE801D98A1CE00FB662F /* 72_EditDistance.swift */; };
 		0E6CDE831D98BA4100FB662F /* ArrayExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6CDE821D98BA4100FB662F /* ArrayExtensionTest.swift */; };
 		0E6D9CDE1DD163430068A56A /* 143_ReorderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6D9CDD1DD163430068A56A /* 143_ReorderList.swift */; };
@@ -138,6 +140,8 @@
 		0E67250B1D7329A400408DA3 /* 1_TwoSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1_TwoSum.swift; sourceTree = "<group>"; };
 		0E6818C11D735AFC00C33DFB /* 189_RotateArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 189_RotateArray.swift; sourceTree = "<group>"; };
 		0E6818C31D73788500C33DFB /* LinkedListTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
+		0E6896771DD576C5006F10D3 /* 295_FindMedianFromDataStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 295_FindMedianFromDataStream.swift; sourceTree = "<group>"; };
+		0E6896791DD787E6006F10D3 /* QuickMedianTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickMedianTest.swift; sourceTree = "<group>"; };
 		0E6CDE801D98A1CE00FB662F /* 72_EditDistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 72_EditDistance.swift; sourceTree = "<group>"; };
 		0E6CDE821D98BA4100FB662F /* ArrayExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensionTest.swift; sourceTree = "<group>"; };
 		0E6D9CDD1DD163430068A56A /* 143_ReorderList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 143_ReorderList.swift; sourceTree = "<group>"; };
@@ -303,6 +307,7 @@
 				0EE265241DD41EC300D2B0B1 /* HeapTest.swift */,
 				0E6FAD691D5811BE00C8D71D /* LeetcodeSwiftTests.swift */,
 				0E6818C31D73788500C33DFB /* LinkedListTest.swift */,
+				0E6896791DD787E6006F10D3 /* QuickMedianTest.swift */,
 				0E6FAD6B1D5811BE00C8D71D /* Info.plist */,
 			);
 			path = LeetcodeSwiftTests;
@@ -447,6 +452,7 @@
 			isa = PBXGroup;
 			children = (
 				0EE265221DD416E400D2B0B1 /* 23_MergeKSortedLists.swift */,
+				0E6896771DD576C5006F10D3 /* 295_FindMedianFromDataStream.swift */,
 			);
 			path = Heap;
 			sourceTree = "<group>";
@@ -618,6 +624,7 @@
 				0EBC87FF1D7D1814003DE97A /* 124_BinaryTreeMaximumPathSum.swift in Sources */,
 				0EB02F7D1D8B9F000033F46E /* 198_HouseRobber.swift in Sources */,
 				0E6FADC71D58172200C8D71D /* 106_ConstructBinaryTreeFromInorderAndPostorderTraversal.swift in Sources */,
+				0E6896781DD576C5006F10D3 /* 295_FindMedianFromDataStream.swift in Sources */,
 				0E5EADC51D5D61DD008E79B4 /* 242_ValidAnagram.swift in Sources */,
 				0E9C91F21D7712EB0022BC93 /* 36_ValidSudoku.swift in Sources */,
 				0EA852BA1D87AB5200721FE2 /* 63_UniquePaths.swift in Sources */,
@@ -702,6 +709,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E6818C41D73788500C33DFB /* LinkedListTest.swift in Sources */,
+				0E68967A1DD787E6006F10D3 /* QuickMedianTest.swift in Sources */,
 				0E6FAD6A1D5811BE00C8D71D /* LeetcodeSwiftTests.swift in Sources */,
 				0E6CDE831D98BA4100FB662F /* ArrayExtensionTest.swift in Sources */,
 				0EE265251DD41EC300D2B0B1 /* HeapTest.swift in Sources */,
