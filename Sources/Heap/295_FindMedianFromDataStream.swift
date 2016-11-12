@@ -48,6 +48,17 @@ public struct QuickMedian<T: Comparable & NumberProtocol> {
   /// Add a new element to this structure.
   public mutating func add(_ newOne: T) {
     assert(abs(smallerHalf.count - largerHalf.count) < 2)
+    largerHalf.insert(newOne)
+    let peak = largerHalf.remove()!
+    smallerHalf.insert(peak)
+    if smallerHalf.count > largerHalf.count {
+      let peak = smallerHalf.remove()!
+      largerHalf.insert(peak)
+    }
+  }
+  
+  private mutating func myUglyAdd(_ newOne: T) {
+    assert(abs(smallerHalf.count - largerHalf.count) < 2)
     if smallerHalf.count > largerHalf.count, let smallerPeak = smallerHalf.peak() {
       if smallerPeak > newOne {
         smallerHalf.remove()
