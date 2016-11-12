@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *86*
+Current Finished: *87*
 
 ##[String](Sources/String)(*13*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -117,7 +117,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [23 Merge K Sorted Lists]( https://leetcode.com/problems/merge-k-sorted-lists/) |  Heap |  Hard |  O(N) |  O(Nlgk)
 [295 Find Median From Data Stream]( https://leetcode.com/problems/find-median-from-data-stream/) |  Heap |  Hard |  O(N) |  O(1) || O(lgN)
 
-##[Math](Sources/Math)(*9*)
+##[Math](Sources/Math)(*10*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [7 Reverse Integer]( https://leetcode.com/problems/reverse-integer/) |  Math |  Easy |  O(1) |  O(1)
@@ -129,5 +129,6 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [258 Add Digits]( https://leetcode.com/problems/add-digits/) |  Math |  Easy |  O(1) |  O(1)
 [263 Ugly Number]( https://leetcode.com/problems/ugly-number/) |  Math |  Easy |  O(1) |  O(1)
 [326 Power of Three]( https://leetcode.com/problems/power-of-three/) |  Math |  Easy |  O(1) |  O(1)
+[338 Counting Bits]( https://leetcode.com/problems/counting-bits/) |  Math |  Medium |  O(N) |  O(N)
 
 
