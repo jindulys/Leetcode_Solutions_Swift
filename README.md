@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *83*
+Current Finished: *86*
 
 ##[String](Sources/String)(*13*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -117,13 +117,14 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [23 Merge K Sorted Lists]( https://leetcode.com/problems/merge-k-sorted-lists/) |  Heap |  Hard |  O(N) |  O(Nlgk)
 [295 Find Median From Data Stream]( https://leetcode.com/problems/find-median-from-data-stream/) |  Heap |  Hard |  O(N) |  O(1) || O(lgN)
 
-##[Math](Sources/Math)(*8*)
+##[Math](Sources/Math)(*9*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [7 Reverse Integer]( https://leetcode.com/problems/reverse-integer/) |  Math |  Easy |  O(1) |  O(1)
 [8 String to Integer(atoi)]( https://leetcode.com/problems/string-to-integer-atoi/) |  Math String |  Easy |  O(n) |  O(1)
 [9 Palindrome Number]( https://leetcode.com/problems/palindrome-number/) |  Math |  Easy |  O(1) |  O(1)
 [136 Single Number]( https://leetcode.com/problems/single-number/) |  Math |  Easy |  O(1) |  O(n)
+[223 Rectangle Area]( https://leetcode.com/problems/rectangle-area/) |  Math |  Easy |  O(1) |  O(1)
 [231 Power of Two]( https://leetcode.com/problems/power-of-two/) |  Math |  Easy |  O(1) |  O(1)
 [258 Add Digits]( https://leetcode.com/problems/add-digits/) |  Math |  Easy |  O(1) |  O(1)
 [263 Ugly Number]( https://leetcode.com/problems/ugly-number/) |  Math |  Easy |  O(1) |  O(1)
