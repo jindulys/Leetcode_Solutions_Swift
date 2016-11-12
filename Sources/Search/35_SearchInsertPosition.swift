@@ -18,14 +18,8 @@ import Foundation
 class SearchInsertPosition_Solution {
   func searchInsert(_ nums: [Int], _ target: Int) -> Int {
     guard nums.count > 1 else {
-      if nums.count == 1 {
-        if nums[0] > target {
-          return 0
-        } else if nums[0] == target {
-          return 0
-        } else {
-          return 1
-        }
+      if nums.count == 1 && nums[0] < target {
+        return 1
       } else {
         return 0
       }
@@ -43,21 +37,12 @@ class SearchInsertPosition_Solution {
         start = mid
       }
     }
-    if nums[start] == target {
+    if nums[start] >= target {
       return start
-    }
-    if nums[end] == target {
-      return end
-    }
-    if nums[start] > target {
-      return start
-    }
-    if nums[start] < target && nums[end] > target {
-      return start + 1
     }
     if nums[end] < target {
       return end + 1
     }
-    return -1
+    return end
   }
 }
