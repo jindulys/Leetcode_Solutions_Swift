@@ -18,18 +18,14 @@ import Foundation
 class SearchForARange_Solution {
   func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
     guard nums.count > 1 else {
-      if nums.count == 1 {
-        if nums[0] == target {
-          return [0, 0]
-        } else {
-          return [-1, -1]
-        }
+      if nums.count == 1 && nums[0] == target {
+        return [0, 0]
       }
       return [-1, -1]
     }
     var start = 0
     var end = nums.count - 1
-    // Firstly, find the last element that less than target.
+    // Firstly, find the last element that equals to target.
     while start + 1 < end {
       let mid = start + (end - start) / 2
       if nums[mid] >= target {
@@ -45,9 +41,12 @@ class SearchForARange_Solution {
     if nums[start] == target {
       leftBound = start
     }
+    if leftBound == -1 {
+      return [-1, -1]
+    }
     start = 0
     end = nums.count - 1
-    // Secondly, find the first element that greater than target.
+    // Secondly, find the first element that equals to target.
     while start + 1 < end {
       let mid = start + (end - start) / 2
       if nums[mid] <= target {
