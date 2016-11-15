@@ -117,6 +117,11 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [23 Merge K Sorted Lists]( https://leetcode.com/problems/merge-k-sorted-lists/) |  Heap |  Hard |  O(N) |  O(Nlgk)
 [295 Find Median From Data Stream]( https://leetcode.com/problems/find-median-from-data-stream/) |  Heap |  Hard |  O(N) |  O(1) || O(lgN)
 
+##[DFS](Sources/DFS)(*1*)
+Problem         |    Category           |    Difficulty   |    Space           | Time        
+--------------- |  -------------------- | --------------- | -------------------|--------
+[46 Permutations]( https://leetcode.com/problems/permutations/) |  DFS |  Medium |  O(N!) |  O(N!)
+
 ##[Math](Sources/Math)(*10*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
