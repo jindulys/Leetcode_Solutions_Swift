@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *91*
+Current Finished: *92*
 
 ##[String](Sources/String)(*13*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -117,11 +117,12 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [23 Merge K Sorted Lists]( https://leetcode.com/problems/merge-k-sorted-lists/) |  Heap |  Hard |  O(N) |  O(Nlgk)
 [295 Find Median From Data Stream]( https://leetcode.com/problems/find-median-from-data-stream/) |  Heap |  Hard |  O(N) |  O(1) || O(lgN)
 
-##[DFS](Sources/DFS)(*4*)
+##[DFS](Sources/DFS)(*5*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [46 Permutations]( https://leetcode.com/problems/permutations/) |  DFS |  Medium |  O(N!) |  O(N!)
 [47 Permutations II]( https://leetcode.com/problems/permutations-ii/) |  DFS |  Medium |  O(N!) |  O(N!)
+[77 Combinations]( https://leetcode.com/problems/combinations/) |  DFS |  Medium |  O(N^K) |  O(K*N^K)
 [78 Subsets]( https://leetcode.com/problems/subsets/) |  DFS |  Medium |  O(2^N) |  O(2^N)
 [90 Subsets II]( https://leetcode.com/problems/subsets-ii/) |  DFS |  Medium |  O(2^N) |  O(2^N)
 
