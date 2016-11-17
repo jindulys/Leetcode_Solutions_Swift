@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *92*
+Current Finished: *91*
 
 ##[String](Sources/String)(*13*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -111,7 +111,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [144 Binary Tree Preorder Traversal]( https://leetcode.com/problems/binary-tree-preorder-traversal/) |  Stack |  Medium |  O(N) |  O(N)
 [145 Binary Tree Post Order Traversal]( https://leetcode.com/problems/binary-tree-postorder-traversal/) |  Stack |  Hard |  O(N) |  O(N)
 
-##[Heap](Sources/Heap)(*3*)
+##[Heap](Sources/Heap)(*2*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [23 Merge K Sorted Lists]( https://leetcode.com/problems/merge-k-sorted-lists/) |  Heap |  Hard |  O(N) |  O(Nlgk)
