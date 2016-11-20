@@ -16,8 +16,8 @@ class ViewController: UIViewController {
 		test.test()
     let testFourSum = FourSum_Solution()
     testFourSum.test()
-    let combination = Combinations_Solution()
-    combination.test()
+    let wordSearch = WordSearch_Solution()
+    wordSearch.test()
   }
 
   override func didReceiveMemoryWarning() {
