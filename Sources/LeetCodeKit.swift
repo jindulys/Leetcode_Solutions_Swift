@@ -830,7 +830,7 @@ open class RangeGenerator: IteratorProtocol {
   }
 }
 
-// MARK: Data Structures
+// MARK: - Data Structures
 
 /**
  *  Queue FIFO, this implementation could achieve amortised O(1) enqueue and dequeue
@@ -1758,5 +1758,85 @@ public struct Heap<T: Comparable> : HeapProtocol {
   }
 }
 
+// MARK: - Trie Data Structure
 
-// TODO: Priority Queue
+/// The trie node data structure, which contains information that a trie node needs.
+open class TrieNode {
+  
+  /// The character for this trie node.
+  var character: Character
+  
+  /// Indicate whether or not this node is an end for a word.
+  var isEnd: Bool
+  
+  /// The children for this node
+  var children: [Character : TrieNode]
+  
+  init(character: Character) {
+    self.character = character
+    isEnd = false
+    children = [Character : TrieNode]()
+  }
+}
+
+/// Trie (also known as a prefix tree, or radix tree in some other implementations) is a special 
+/// type of tree used to store associative data structures. 
+
+open class Trie {
+  /// the root node for this trie
+  var root: TrieNode
+  
+  init() {
+    root = TrieNode(character: "0")
+  }
+  
+  /// Insert a word to trie.
+  func insert(word: String) {
+    var node = root
+    var wordCharacters = [Character](word.characters)
+    
+    for i in 0..<wordCharacters.count {
+      let currentCharacter = wordCharacters[i]
+      if let validNode = node.children[currentCharacter] {
+        node = validNode
+      } else {
+        let newNode = TrieNode(character: currentCharacter)
+        node.children[currentCharacter] = newNode
+        node = newNode
+      }
+    }
+    node.isEnd = true
+  }
+  
+  /// Whether or not word is a word in the trie
+  func isWord(word: String) -> Bool {
+    let wordCharacters = [Character](word.characters)
+    var node = root
+    
+    for i in 0..<wordCharacters.count {
+      let currentCharacter = wordCharacters[i]
+      if let validNode = node.children[currentCharacter] {
+        node = validNode
+      } else {
+        return false
+      }
+    }
+    return node.isEnd
+  }
+  
+  /// Whether or not prefix is a prefix in the trie.
+  func isWordPrefix(prefix: String) -> Bool {
+    let wordCharacters = [Character](prefix.characters)
+    var node = root
+    
+    for i in 0..<wordCharacters.count {
+      let currentCharacter = wordCharacters[i]
+      if let validNode = node.children[currentCharacter] {
+        node = validNode
+      } else {
+        return false
+      }
+    }
+    return true
+  }
+}
