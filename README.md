@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *93*
+Current Finished: *94*
 
 ##[String](Sources/String)(*13*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -117,7 +117,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [23 Merge K Sorted Lists]( https://leetcode.com/problems/merge-k-sorted-lists/) |  Heap |  Hard |  O(N) |  O(Nlgk)
 [295 Find Median From Data Stream]( https://leetcode.com/problems/find-median-from-data-stream/) |  Heap |  Hard |  O(N) |  O(1) || O(lgN)
 
-##[DFS](Sources/DFS)(*6*)
+##[DFS](Sources/DFS)(*7*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [46 Permutations]( https://leetcode.com/problems/permutations/) |  DFS |  Medium |  O(N!) |  O(N!)
@@ -126,6 +126,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [78 Subsets]( https://leetcode.com/problems/subsets/) |  DFS |  Medium |  O(2^N) |  O(2^N)
 [79 Word Search]( https://leetcode.com/problems/word-search/) |  DFS |  Medium |  O(3^N) |  O(N^2)
 [90 Subsets II]( https://leetcode.com/problems/subsets-ii/) |  DFS |  Medium |  O(2^N) |  O(2^N)
+[212 Word Search II]( https://leetcode.com/problems/word-search-ii/) |  DFS |  Hard |  O(N*3^N) |  O(N^2)
 
 ##[Math](Sources/Math)(*10*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
