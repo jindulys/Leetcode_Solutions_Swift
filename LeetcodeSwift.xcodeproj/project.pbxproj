@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E385DE31DE3E4E400320406 /* 347_TopKFrequentElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E385DE21DE3E4E400320406 /* 347_TopKFrequentElements.swift */; };
 		0E5185C51D8A3D7100E7FD18 /* 53_MaximumSubarry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5185C41D8A3D7100E7FD18 /* 53_MaximumSubarry.swift */; };
 		0E55A4721D8EE7A2004982DF /* 152_MaximumProductSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55A4711D8EE7A2004982DF /* 152_MaximumProductSubarray.swift */; };
 		0E55A4741D8F3AA0004982DF /* 221_MaximalSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55A4731D8F3AA0004982DF /* 221_MaximalSquare.swift */; };
@@ -135,6 +136,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E385DE21DE3E4E400320406 /* 347_TopKFrequentElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 347_TopKFrequentElements.swift; sourceTree = "<group>"; };
 		0E5185C41D8A3D7100E7FD18 /* 53_MaximumSubarry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 53_MaximumSubarry.swift; sourceTree = "<group>"; };
 		0E55A4711D8EE7A2004982DF /* 152_MaximumProductSubarray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 152_MaximumProductSubarray.swift; sourceTree = "<group>"; };
 		0E55A4731D8F3AA0004982DF /* 221_MaximalSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 221_MaximalSquare.swift; sourceTree = "<group>"; };
@@ -490,6 +492,7 @@
 			isa = PBXGroup;
 			children = (
 				0EBD56B51DE261FC00E81AE7 /* 75_SortColors.swift */,
+				0E385DE21DE3E4E400320406 /* 347_TopKFrequentElements.swift */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -689,6 +692,7 @@
 				0E67250C1D7329A400408DA3 /* 1_TwoSum.swift in Sources */,
 				0E6D3D2F1DE0F04E00035818 /* 79_WordSearch.swift in Sources */,
 				0E7D77CE1DCE4B9C006DD938 /* 26_RemoveDuplicatesFromSortedArray.swift in Sources */,
+				0E385DE31DE3E4E400320406 /* 347_TopKFrequentElements.swift in Sources */,
 				0EEF2D5F1D72266900A85EAA /* 217_ContainsDuplicate.swift in Sources */,
 				0EB7AD6C1D7E5B7500278C48 /* 13_RomanToInteger.swift in Sources */,
 				0EB7AD501D7DB40500278C48 /* 2_AddTwoNumbers.swift in Sources */,
