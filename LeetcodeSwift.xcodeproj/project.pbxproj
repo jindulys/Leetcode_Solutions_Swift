@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E385DE31DE3E4E400320406 /* 347_TopKFrequentElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E385DE21DE3E4E400320406 /* 347_TopKFrequentElements.swift */; };
+		0E385DEF1DE4010700320406 /* 56_MergeIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E385DEE1DE4010700320406 /* 56_MergeIntervals.swift */; };
 		0E5185C51D8A3D7100E7FD18 /* 53_MaximumSubarry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5185C41D8A3D7100E7FD18 /* 53_MaximumSubarry.swift */; };
 		0E55A4721D8EE7A2004982DF /* 152_MaximumProductSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55A4711D8EE7A2004982DF /* 152_MaximumProductSubarray.swift */; };
 		0E55A4741D8F3AA0004982DF /* 221_MaximalSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55A4731D8F3AA0004982DF /* 221_MaximalSquare.swift */; };
@@ -137,6 +138,7 @@
 
 /* Begin PBXFileReference section */
 		0E385DE21DE3E4E400320406 /* 347_TopKFrequentElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 347_TopKFrequentElements.swift; sourceTree = "<group>"; };
+		0E385DEE1DE4010700320406 /* 56_MergeIntervals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 56_MergeIntervals.swift; sourceTree = "<group>"; };
 		0E5185C41D8A3D7100E7FD18 /* 53_MaximumSubarry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 53_MaximumSubarry.swift; sourceTree = "<group>"; };
 		0E55A4711D8EE7A2004982DF /* 152_MaximumProductSubarray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 152_MaximumProductSubarray.swift; sourceTree = "<group>"; };
 		0E55A4731D8F3AA0004982DF /* 221_MaximalSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 221_MaximalSquare.swift; sourceTree = "<group>"; };
@@ -491,6 +493,7 @@
 		0EBD56B41DE261B900E81AE7 /* Sort */ = {
 			isa = PBXGroup;
 			children = (
+				0E385DEE1DE4010700320406 /* 56_MergeIntervals.swift */,
 				0EBD56B51DE261FC00E81AE7 /* 75_SortColors.swift */,
 				0E385DE21DE3E4E400320406 /* 347_TopKFrequentElements.swift */,
 			);
@@ -733,6 +736,7 @@
 				0E6FADB31D58171900C8D71D /* 345_ReverseVowelsOfAString.swift in Sources */,
 				0E6FADC21D58172200C8D71D /* 100_SameTree.swift in Sources */,
 				0E9C91F91D7B5CEF0022BC93 /* 33_SearchInRotatedSortedArray.swift in Sources */,
+				0E385DEF1DE4010700320406 /* 56_MergeIntervals.swift in Sources */,
 				0E948BB31D8CC1B600BEB6A9 /* 213_HouseRobberII.swift in Sources */,
 				0EB7AD681D7E485B00278C48 /* 231_PowerOfTwo.swift in Sources */,
 				0EC1CF401DD2F9B4005A1604 /* 145_BinaryTreePostorderTraversal.swift in Sources */,
