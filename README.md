@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *96*
+Current Finished: *97*
 
 ##[String](Sources/String)(*13*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -117,11 +117,12 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [23 Merge K Sorted Lists]( https://leetcode.com/problems/merge-k-sorted-lists/) |  Heap |  Hard |  O(N) |  O(Nlgk)
 [295 Find Median From Data Stream]( https://leetcode.com/problems/find-median-from-data-stream/) |  Heap |  Hard |  O(N) |  O(1) || O(lgN)
 
-##[Sort](Sources/Sort)(*2*)
+##[Sort](Sources/Sort)(*3*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [75 Sort Colors]( https://leetcode.com/problems/sort-colors/) |  Sort |  Medium |  O(NlgN) |  O(N)
 [347 Top K Frequent Element]( https://leetcode.com/problems/top-k-frequent-elements/) |  Sort |  Medium |  O(klgk) |  O(N)
+[56 Merge Intervals]( https://leetcode.com/problems/merge-intervals/) |  Sort |  Medium |  O(NlgN) |  O(N)
 
 ##[DFS](Sources/DFS)(*7*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
