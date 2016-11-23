@@ -8,80 +8,35 @@
 
 import Foundation
 
+/**
+	Title:56 Merge Intervals
+	URL: https://leetcode.com/problems/merge-intervals/
+	Space: O(NlgN)
+	Time: O(N)
+ */
+
 class MergeIntervals_Solution {
   /// Primary idea use binary search.
   func merge(_ intervals: [Interval]) -> [Interval] {
     guard intervals.count > 0 else {
       return []
     }
-    var merged = [intervals[0]]
-    for i in 1..<intervals.count {
-      // TODO: merge in current intervals
-      let currentInsertPos = binarySearchInterval(intervals[i], array: merged)
-      if currentInsertPos == merged.count {
-        let currentLast = merged[merged.count - 1]
-        if currentLast.end < intervals[i].start {
-          merged.append(intervals[i])
-        } else {
-          merged.removeLast()
-          merged.append(Interval(currentLast.start, max(intervals[i].end, currentLast.end)))
-        }
+    let sortedIntervals = intervals.sorted {
+      if $0.start == $1.start {
+        return $0.end <= $1.end
+      }
+      return $0.start < $1.start
+    }
+    var merged = [sortedIntervals[0]]
+    for i in 1..<sortedIntervals.count {
+      let currentLast = merged.last!
+      if currentLast.end < sortedIntervals[i].start {
+        merged.append(sortedIntervals[i])
       } else {
-        let oldElement = merged[currentInsertPos]
-        if currentInsertPos == 0 {
-          if intervals[i].end < oldElement.start {
-            merged.insert(intervals[i], at: 0)
-          } else {
-            merged[0] = Interval(intervals[i].start, max(intervals[i].end, oldElement.end))
-          }
-        } else {
-          let oldBeforeElement = merged[currentInsertPos - 1]
-          if intervals[i].end < oldElement.start {
-            if intervals[i].start > oldBeforeElement.end {
-              merged.insert(intervals[i], at: currentInsertPos)
-            } else {
-              merged[currentInsertPos - 1] = Interval(oldBeforeElement.start, max(intervals[i].end, oldBeforeElement.end))
-            }
-          } else {
-            let potentialNewInterval = Interval(intervals[i].start, max(intervals[i].end, oldBeforeElement.end))
-            merged[currentInsertPos] = potentialNewInterval
-            if potentialNewInterval.start <= oldBeforeElement.end {
-              merged.remove(at:currentInsertPos)
-              merged[currentInsertPos - 1] = Interval(oldBeforeElement.start, max(oldBeforeElement.end, potentialNewInterval.end))
-            }
-          }
-        }
+        merged[merged.count - 1] = Interval(currentLast.start, max(currentLast.end, sortedIntervals[i].end))
       }
     }
     return merged
-  }
-  
-  /// return insert position.
-  func binarySearchInterval(_ interval: Interval, array: [Interval]) -> Int {
-    guard array.count > 1 else {
-      if array[0].start >= interval.start {
-        return 0
-      } else {
-        return 1
-      }
-    }
-    var start = 0
-    var end = array.count - 1
-    while end > start + 1 {
-      let mid = start + (end - start) / 2
-      if array[mid].start <= interval.start {
-        start = mid
-      } else {
-        end = mid
-      }
-    }
-    if interval.start <= array[start].start {
-      return start
-    } else if interval.start <= array[end].start {
-      return end
-    } else {
-      return end + 1
-    }
   }
   
   func test() {
