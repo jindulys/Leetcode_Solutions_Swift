@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *97*
+Current Finished: *98*
 
 ##[String](Sources/String)(*13*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -104,9 +104,10 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [279 Unique Paths II]( https://leetcode.com/problems/perfect-squares/) |  DP |  Medium |  O(n) |  O(n^2)
 [322 Coin Change]( https://leetcode.com/problems/coin-change/) |  DP |  Medium |  O(n^2) |  O(n)
 
-##[Stack](Sources/Stack)(*3*)
+##[Stack](Sources/Stack)(*4*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
+[20 Valid Parentheses]( https://leetcode.com/problems/valid-parentheses/) |  Stack |  Easy |  O(N) |  O(N)
 [94 Binary Tree In order Traversal]( https://leetcode.com/problems/binary-tree-inorder-traversal/) |  Stack |  Medium |  O(N) |  O(N)
 [144 Binary Tree Preorder Traversal]( https://leetcode.com/problems/binary-tree-preorder-traversal/) |  Stack |  Medium |  O(N) |  O(N)
 [145 Binary Tree Post Order Traversal]( https://leetcode.com/problems/binary-tree-postorder-traversal/) |  Stack |  Hard |  O(N) |  O(N)
