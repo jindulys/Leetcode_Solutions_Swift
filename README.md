@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *98*
+Current Finished: *99*
 
 ##[String](Sources/String)(*13*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -86,7 +86,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [141 Reorder List]( https://leetcode.com/problems/reorder-list/) |  Linked List |  Medium |  O(1) |  O(N)
 [206 Reverse LinkedList]( https://leetcode.com/problems/reverse-linked-list/) |  Linked List |  Easy |  O(1) |  O(N)
 
-##[DynamicProgramming](Sources/DynamicProgramming)(*14*)
+##[DynamicProgramming](Sources/DynamicProgramming)(*15*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [5 Longest Palindromic Substring]( https://leetcode.com/problems/longest-palindromic-substring/) |  DP |  Medium |  O(n^2) |  O(n^2)
@@ -103,6 +103,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [221 Maximal Square]( https://leetcode.com/problems/maximal-square/) |  DP |  Medium |  O(MN) |  O(MN)
 [279 Unique Paths II]( https://leetcode.com/problems/perfect-squares/) |  DP |  Medium |  O(n) |  O(n^2)
 [322 Coin Change]( https://leetcode.com/problems/coin-change/) |  DP |  Medium |  O(n^2) |  O(n)
+[377 Combination Sum IV]( https://leetcode.com/problems/combination-sum-iv/) |  Dynamic Programming |  Medium |  O(n^(target/min(n))) |  O(N)
 
 ##[Stack](Sources/Stack)(*4*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
