@@ -393,7 +393,7 @@ public func ceilIndex<T: Comparable>(_ inputs:[T], l: Int, r: Int, key: T) -> In
  
  - returns: a closure who's input has already in a memorized way
  */
-public func memoize<T: Hashable, U>( _ body:@escaping ((T)->U, T)->U ) -> (T)->U {
+public func memoize<T: Hashable, U>( _ body:@escaping ((T) -> U, T) -> U) -> (T) -> U {
   var memo = Dictionary<T, U>()
   var result: ((T)->U)!
   result = { x in

@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 		test.test()
     let testFourSum = FourSum_Solution()
     testFourSum.test()
-    let wordSearch = MergeIntervals_Solution()
+    let wordSearch = CombinationSumIV_Solution()
     wordSearch.test()
   }
 
