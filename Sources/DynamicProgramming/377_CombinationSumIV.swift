@@ -17,6 +17,7 @@ import Foundation
 
 class CombinationSumIV_Solution {
   // NOTE: For this solution I will use memoization way.
+  // This is a top-down approach.
   func combinationSum4(_ nums: [Int], _ target: Int) -> Int {
     guard nums.count > 0 else {
       return 0
@@ -41,8 +42,29 @@ class CombinationSumIV_Solution {
     return combinationFunction(target)
   }
   
+  func combinationSum4_bottomUp(_ nums: [Int], _ target: Int) -> Int {
+    guard nums.count > 0 else {
+      return 0
+    }
+    let sortedNums = nums.sorted()
+    var dp = Array(repeating: 0, count: target + 1)
+    dp[0] = 1
+    for i in 1...target {
+      for num in sortedNums {
+        if i < num {
+          break
+        }
+        if dp[i - num] > Int.max - dp[i] {
+          continue
+        }
+        dp[i] += dp[i - num]
+      }
+    }
+    return dp[target]
+  }
+  
   func test() {
-    let result = combinationSum4([1, 2, 3], 4)
+    let result = combinationSum4_bottomUp([3, 33, 333], 10000)
     print(result)
   }
 }
