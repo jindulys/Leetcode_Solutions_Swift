@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *104*
+Current Finished: *105*
 
 ##[String](Sources/String)(*15*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -27,7 +27,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [383 Ransom Note]( https://leetcode.com/problems/ransom-note/) |  String |  Easy |  O(n) |  O(n) 
 [389 Find the difference]( https://leetcode.com/problems/find-the-difference/) |  String & hash table |  Easy |  O(n) |  O(n)
 
-##[Array](Sources/Array)(*16*)
+##[Array](Sources/Array)(*17*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [1 Two Sum]( https://leetcode.com/problems/two-sum/) |  Array |  Easy |  O(n) |  O(n)
@@ -44,6 +44,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [283 Move Zeroes]( https://leetcode.com/problems/move-zeroes/) |  Array |  Easy |  O(1) |  O(n)
 [303 Range Sum Query - Immutable]( https://leetcode.com/problems/range-sum-query-immutable/) |  Array |  Easy |  O(N) |  O(N)
 [304 Range Sum Query 2D - Immutable]( https://leetcode.com/problems/range-sum-query-2d-immutable/) |  Array |  Medium |  O(N^2) |  O(N^2)
+[308 Range Sum Query 2D - Mutable]( https://leetcode.com/problems/range-sum-query-2d-mutable/) |  Array |  Hard |  O(N^2) |  O(N^2)
 [349 Intersection of two arrays]( https://leetcode.com/problems/intersection-of-two-arrays/) |  Array |  Easy |  O(n) |  O(n) 
 [350 Intersection of two arrays II]( https://leetcode.com/problems/intersection-of-two-arrays-ii/) |  Array |  Easy |  O(n) |  O(n)
 
