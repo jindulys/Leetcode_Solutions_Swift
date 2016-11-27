@@ -12,11 +12,7 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-		let test = EditDistance_Solution()
-		test.test()
-    let testFourSum = FourSum_Solution()
-    testFourSum.test()
-    let wordSearch = FlipGameII_Solution()
+    let wordSearch = RangeSumQuery_Solution()
     wordSearch.test()
   }
 
