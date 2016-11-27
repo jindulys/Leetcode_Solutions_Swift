@@ -157,4 +157,9 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [338 Counting Bits]( https://leetcode.com/problems/counting-bits/) |  Math |  Medium |  O(N) |  O(N)
 [400 Nth Digit]( https://leetcode.com/problems/nth-digit/) |  Math |  Easy |  O(lgN) |  O(1)
 
+##[Google]
+[294 Flip Game :lock: ]( https://leetcode.com/problems/flip-game-ii/) |  String |  Medium |  O(2^(n/2)) |  O(2^(n/2))
+[308 Range Sum Query 2D - Mutable]( https://leetcode.com/problems/range-sum-query-2d-mutable/) |  Array |  Hard |  O(N^2) |  O(N^2)
+
+
 
