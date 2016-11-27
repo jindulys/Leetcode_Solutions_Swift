@@ -6,9 +6,9 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *100*
+Current Finished: *101*
 
-##[String](Sources/String)(*14*)
+##[String](Sources/String)(*15*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [3 Longest Substring without repeating characters]( https://leetcode.com/problems/longest-substring-without-repeating-characters/) |  String |  Medium |  O(n) |  O(n) 
@@ -20,6 +20,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [205 Isomorphic Strings]( https://leetcode.com/problems/isomorphic-strings/) |  String |  Easy |  O(n) |  O(n) 
 [242 Valid Anagram]( https://leetcode.com/problems/valid-anagram/) |  String |  Easy |  O(n) |  O(n) 
 [293 Flip Game :lock: ]( https://leetcode.com/problems/flip-game/) |  String |  Easy |  O(N) |  O(N)
+[294 Flip Game :lock: ]( https://leetcode.com/problems/flip-game-ii/) |  String |  Medium |  O(2^(n/2)) |  O(2^(n/2))
 [290 Word Pattern]( https://leetcode.com/problems/word-pattern/) |  String |  Easy |  O(n) |  O(n)
 [344 Reverse String]( https://leetcode.com/problems/reverse-string/) |  String |  Easy |  O(n) |  O(n)
 [345 Reverse Vowels of a String]( https://leetcode.com/problems/reverse-vowels-of-a-string/) |  String |  Easy |  O(n) |  O(n) 
