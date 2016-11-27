@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    let wordSearch = Range2DSumQuery_Solution()
+    let wordSearch = Range2DSumQueryMutable_Solution()
     wordSearch.test()
   }
 

@@ -27,6 +27,14 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
   }
 }
 
+// MARK: - Solution Class
+
+open class Solution {
+  open func test() {
+    // NOTE: Implemented by subclass.
+  }
+}
+
 
 // MARK: TreeNode
 
