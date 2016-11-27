@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *101*
+Current Finished: *102*
 
 ##[String](Sources/String)(*15*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -139,7 +139,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [90 Subsets II]( https://leetcode.com/problems/subsets-ii/) |  DFS |  Medium |  O(2^N) |  O(2^N)
 [212 Word Search II]( https://leetcode.com/problems/word-search-ii/) |  DFS |  Hard |  O(N*3^N) |  O(N^2)
 
-##[Math](Sources/Math)(*10*)
+##[Math](Sources/Math)(*11*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [7 Reverse Integer]( https://leetcode.com/problems/reverse-integer/) |  Math |  Easy |  O(1) |  O(1)
@@ -152,5 +152,6 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [263 Ugly Number]( https://leetcode.com/problems/ugly-number/) |  Math |  Easy |  O(1) |  O(1)
 [326 Power of Three]( https://leetcode.com/problems/power-of-three/) |  Math |  Easy |  O(1) |  O(1)
 [338 Counting Bits]( https://leetcode.com/problems/counting-bits/) |  Math |  Medium |  O(N) |  O(N)
+[400 Nth Digit]( https://leetcode.com/problems/nth-digit/) |  Math |  Easy |  O(lgN) |  O(1)
 
 
