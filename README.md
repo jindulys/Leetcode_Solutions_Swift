@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *102*
+Current Finished: *103*
 
 ##[String](Sources/String)(*15*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -27,7 +27,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [383 Ransom Note]( https://leetcode.com/problems/ransom-note/) |  String |  Easy |  O(n) |  O(n) 
 [389 Find the difference]( https://leetcode.com/problems/find-the-difference/) |  String & hash table |  Easy |  O(n) |  O(n)
 
-##[Array](Sources/Array)(*14*)
+##[Array](Sources/Array)(*15*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [1 Two Sum]( https://leetcode.com/problems/two-sum/) |  Array |  Easy |  O(n) |  O(n)
@@ -42,6 +42,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [217 Contains Duplicate]( https://leetcode.com/problems/contains-duplicate/) |  Array |  Easy |  O(n) |  O(n) 
 [228 Summary Ranges]( https://leetcode.com/problems/summary-ranges/) |  Array |  Medium |  O(n) |  O(n)
 [283 Move Zeroes]( https://leetcode.com/problems/move-zeroes/) |  Array |  Easy |  O(1) |  O(n)
+[303 Range Sum Query - Immutable]( https://leetcode.com/problems/range-sum-query-immutable/) |  Array |  Easy |  O(N) |  O(N)
 [349 Intersection of two arrays]( https://leetcode.com/problems/intersection-of-two-arrays/) |  Array |  Easy |  O(n) |  O(n) 
 [350 Intersection of two arrays II]( https://leetcode.com/problems/intersection-of-two-arrays-ii/) |  Array |  Easy |  O(n) |  O(n)
 
