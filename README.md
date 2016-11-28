@@ -6,9 +6,9 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *105*
+Current Finished: *106*
 
-##[String](Sources/String)(*15*)
+##[String](Sources/String)(*16*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [3 Longest Substring without repeating characters]( https://leetcode.com/problems/longest-substring-without-repeating-characters/) |  String |  Medium |  O(n) |  O(n) 
@@ -26,6 +26,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [345 Reverse Vowels of a String]( https://leetcode.com/problems/reverse-vowels-of-a-string/) |  String |  Easy |  O(n) |  O(n) 
 [383 Ransom Note]( https://leetcode.com/problems/ransom-note/) |  String |  Easy |  O(n) |  O(n) 
 [389 Find the difference]( https://leetcode.com/problems/find-the-difference/) |  String & hash table |  Easy |  O(n) |  O(n)
+[394 Decode String]( https://leetcode.com/problems/decode-string/) |  String |  Medium |  O(N) |  O(N)
 
 ##[Array](Sources/Array)(*17*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -162,6 +163,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 --------------- |  -------------------- | --------------- | -------------------|--------
 [294 Flip Game :lock: ]( https://leetcode.com/problems/flip-game-ii/) |  String |  Medium |  O(2^(n/2)) |  O(2^(n/2))
 [308 Range Sum Query 2D - Mutable]( https://leetcode.com/problems/range-sum-query-2d-mutable/) |  Array |  Hard |  O(N^2) |  O(N^2)
+[394 Decode String]( https://leetcode.com/problems/decode-string/) |  String |  Medium |  O(N) |  O(N)
 
 
 
