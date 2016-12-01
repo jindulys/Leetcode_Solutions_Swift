@@ -8,6 +8,13 @@
 
 import Foundation
 
+/**
+	Title:361 Bomb Enemy
+	URL: https://leetcode.com/problems/bomb-enemy/
+	Space: O(MN)
+	Time: O(N)
+ */
+
 class BombEnemySolution {
   func maxKilledEnemies(_ grid: [[Character]]) -> Int {
     guard grid.count > 0 else {
@@ -15,61 +22,43 @@ class BombEnemySolution {
     }
     let rowCount = grid.count
     let colCount = grid[0].count
-    var rowMetrix: [[Int]] = Array(repeating: Array(repeating: 0, count: colCount), count: rowCount)
-    var colMetrix: [[Int]] = Array(repeating: Array(repeating: 0, count: colCount), count: rowCount)
-    
-    // Generate rowMetrix.
-    for i in 0..<rowCount {
-      var emptyIndexes: [Int] = []
-      var currentEnemies = 0
-      for j in 0..<colCount {
-        if grid[i][j] == "0" {
-          emptyIndexes.append(j)
-        } else if grid[i][j] == "E" {
-          currentEnemies += 1
-        } else if grid[i][j] == "W" {
-          for col in emptyIndexes {
-            rowMetrix[i][col] = currentEnemies
-          }
-          emptyIndexes = []
-          currentEnemies = 0
-        }
-      }
-      for col in emptyIndexes {
-        rowMetrix[i][col] = currentEnemies
-      }
-    }
-    
-    // Generate colMetrix.
-    for j in 0..<colCount {
-      var emptyIndexes: [Int] = []
-      var currentEnemies = 0
-      for i in 0..<rowCount {
-        if grid[i][j] == "0" {
-          emptyIndexes.append(i)
-        } else if grid[i][j] == "E" {
-          currentEnemies += 1
-        } else if grid[i][j] == "W" {
-          for row in emptyIndexes {
-            colMetrix[row][j] = currentEnemies
-          }
-          emptyIndexes = []
-          currentEnemies = 0
-        }
-        for row in emptyIndexes {
-          colMetrix[row][j] = currentEnemies
-        }
-      }
-    }
-    
+    var currentRow = 0
+    var cols = Array(repeating: 0, count: colCount)
     var result = 0
+    
     for i in 0..<rowCount {
       for j in 0..<colCount {
-        if grid[i][j] == "0" {
-          let current = colMetrix[i][j] + rowMetrix[i][j]
-          if current > result {
-            result = current
+        // NOTE: calculate col.
+        if i == 0 || grid[i - 1][j] == "W" {
+          var currentColE = 0
+          for m in i..<rowCount {
+            if grid[m][j] == "W" {
+              break
+            } else if grid[m][j] == "E" {
+              currentColE += 1
+            }
           }
+          cols[j] = currentColE
+        }
+        
+        // NOTE: calculate row.
+        if j == 0 || grid[i][j - 1] == "W" {
+          currentRow = 0
+          for m in j..<colCount {
+            if grid[i][m] == "W" {
+              break
+            } else if grid[i][m] == "E" {
+              currentRow += 1
+            }
+          }
+        }
+        
+        if grid[i][j] == "W" {
+          continue
+        }
+        
+        if grid[i][j] == "0" {
+          result = currentRow + cols[j] > result ? currentRow + cols[j] : result
         }
       }
     }
