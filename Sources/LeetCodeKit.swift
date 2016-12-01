@@ -874,6 +874,10 @@ public struct Queue<Element> {
   public func isEmpty() -> Bool {
     return left.isEmpty && right.isEmpty
   }
+  
+  public var size: Int {
+    return left.count + right.count
+  }
 }
 
 extension Queue: Collection {

@@ -12,8 +12,7 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    let wordSearch = BombEnemySolution()
-    wordSearch.test()
+    MovingAverage_Solution.test()
   }
 
   override func didReceiveMemoryWarning() {
