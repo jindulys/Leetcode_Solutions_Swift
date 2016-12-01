@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *107*
+Current Finished: *108*
 
 ##[String](Sources/String)(*16*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -126,6 +126,11 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [23 Merge K Sorted Lists]( https://leetcode.com/problems/merge-k-sorted-lists/) |  Heap |  Hard |  O(N) |  O(Nlgk)
 [295 Find Median From Data Stream]( https://leetcode.com/problems/find-median-from-data-stream/) |  Heap |  Hard |  O(N) |  O(1) || O(lgN)
 
+##[Queue](Sources/Queue)(*1*)
+Problem         |    Category           |    Difficulty   |    Space           | Time        
+--------------- |  -------------------- | --------------- | -------------------|--------
+[346 Moving Average from Data Stream :lock:]( https://leetcode.com/problems/moving-average-from-data-stream/) |  Queue |  Easy |  O(1) |  O(N)
+
 ##[Sort](Sources/Sort)(*3*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
@@ -164,6 +169,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 --------------- |  -------------------- | --------------- | -------------------|--------
 [294 Flip Game :lock: ]( https://leetcode.com/problems/flip-game-ii/) |  String |  Medium |  O(2^(n/2)) |  O(2^(n/2))
 [308 Range Sum Query 2D - Mutable]( https://leetcode.com/problems/range-sum-query-2d-mutable/) |  Array |  Hard |  O(N^2) |  O(N^2)
+[346 Moving Average from Data Stream :lock:]( https://leetcode.com/problems/moving-average-from-data-stream/) |  Queue |  Easy |  O(1) |  O(N)
 [361 Bomb Enemy :lock:]( https://leetcode.com/problems/bomb-enemy/) |  Array |  Medium |  O(MN) |  O(N)
 [394 Decode String]( https://leetcode.com/problems/decode-string/) |  String |  Medium |  O(N) |  O(N)
 
