@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    let solution = ShortestDistanceFromAllBuildings_Solution()
+    let solution = LongestAbsoluteFilePath_Solution()
     solution.test()
   }
 
