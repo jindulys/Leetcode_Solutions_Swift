@@ -227,7 +227,7 @@
 		0E87B3711DEBD008008DD67F /* 394_DecodeString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 394_DecodeString.swift; sourceTree = "<group>"; };
 		0E87B3731DEBE35C008DD67F /* 361_BombEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 361_BombEnemy.swift; sourceTree = "<group>"; };
 		0E88FFBC1DF133F200DC2743 /* 317_ShortestDistanceFromAllBuildings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 317_ShortestDistanceFromAllBuildings.swift; sourceTree = "<group>"; };
-		0E88FFBE1DF35B0800DC2743 /* 388_LongestAbsoluteFilePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 388_LongestAbsoluteFilePath.swift; sourceTree = "<group>"; };
+		0E88FFBE1DF35B0800DC2743 /* 388_LongestAbsoluteFilePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = 388_LongestAbsoluteFilePath.swift; path = ../Array/388_LongestAbsoluteFilePath.swift; sourceTree = "<group>"; };
 		0E93F9701D86594C0050995D /* 139_WordBreak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 139_WordBreak.swift; sourceTree = "<group>"; };
 		0E948BB21D8CC1B600BEB6A9 /* 213_HouseRobberII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 213_HouseRobberII.swift; sourceTree = "<group>"; };
 		0E94D62C1DCFDF16000271F8 /* 61_RotateList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 61_RotateList.swift; sourceTree = "<group>"; };
@@ -412,6 +412,7 @@
 				0E6FADAE1D58171900C8D71D /* 344_ReverseString.swift */,
 				0E6FADAF1D58171900C8D71D /* 345_ReverseVowelsOfAString.swift */,
 				0EEF2D551D71D8D100A85EAA /* 383_RansomNote.swift */,
+				0E88FFBE1DF35B0800DC2743 /* 388_LongestAbsoluteFilePath.swift */,
 				0EB7AD631D7E402100278C48 /* 389_FindTheDifference.swift */,
 				0E87B3711DEBD008008DD67F /* 394_DecodeString.swift */,
 			);
@@ -588,7 +589,6 @@
 				0EEF2D5A1D72167200A85EAA /* 349_IntersectionOfTwoArrays.swift */,
 				0EEF2D5C1D7222AE00A85EAA /* 350_IntersectionOfTwoArraysII.swift */,
 				0E87B3731DEBE35C008DD67F /* 361_BombEnemy.swift */,
-				0E88FFBE1DF35B0800DC2743 /* 388_LongestAbsoluteFilePath.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
