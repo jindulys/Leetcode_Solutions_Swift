@@ -152,7 +152,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 ##[BFS](Sources/BFS)(*1*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
-[317 Shortest Distance from All Buildings]( https://leetcode.com/problems/shortest-distance-from-all-buildings/) |  BFS |  Easy |  O(KMN) |  O(MN)
+[317 Shortest Distance from All Buildings :lock:]( https://leetcode.com/problems/shortest-distance-from-all-buildings/) |  BFS |  Easy |  O(KMN) |  O(MN)
 
 ##[Math](Sources/Math)(*11*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -174,6 +174,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 --------------- |  -------------------- | --------------- | -------------------|--------
 [294 Flip Game :lock: ]( https://leetcode.com/problems/flip-game-ii/) |  String |  Medium |  O(2^(n/2)) |  O(2^(n/2))
 [308 Range Sum Query 2D - Mutable]( https://leetcode.com/problems/range-sum-query-2d-mutable/) |  Array |  Hard |  O(N^2) |  O(N^2)
+[317 Shortest Distance from All Buildings :lock:]( https://leetcode.com/problems/shortest-distance-from-all-buildings/) |  BFS |  Easy |  O(KMN) |  O(MN)
 [346 Moving Average from Data Stream :lock:]( https://leetcode.com/problems/moving-average-from-data-stream/) |  Queue |  Easy |  O(1) |  O(N)
 [361 Bomb Enemy :lock:]( https://leetcode.com/problems/bomb-enemy/) |  Array |  Medium |  O(MN) |  O(N)
 [394 Decode String]( https://leetcode.com/problems/decode-string/) |  String |  Medium |  O(N) |  O(N)
