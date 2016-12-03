@@ -12,7 +12,8 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    MovingAverage_Solution.test()
+    let solution = ShortestDistanceFromAllBuildings_Solution()
+    solution.test()
   }
 
   override func didReceiveMemoryWarning() {

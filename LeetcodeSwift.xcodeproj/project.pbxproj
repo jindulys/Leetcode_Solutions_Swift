@@ -76,6 +76,7 @@
 		0E87B3701DEB821C008DD67F /* 308_RangeSumQuery2DMutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E87B36F1DEB821C008DD67F /* 308_RangeSumQuery2DMutable.swift */; };
 		0E87B3721DEBD008008DD67F /* 394_DecodeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E87B3711DEBD008008DD67F /* 394_DecodeString.swift */; };
 		0E87B3741DEBE35C008DD67F /* 361_BombEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E87B3731DEBE35C008DD67F /* 361_BombEnemy.swift */; };
+		0E88FFBD1DF133F200DC2743 /* 317_ShortestDistanceFromAllBuildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E88FFBC1DF133F200DC2743 /* 317_ShortestDistanceFromAllBuildings.swift */; };
 		0E93F9711D86594C0050995D /* 139_WordBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E93F9701D86594C0050995D /* 139_WordBreak.swift */; };
 		0E948BB31D8CC1B600BEB6A9 /* 213_HouseRobberII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E948BB21D8CC1B600BEB6A9 /* 213_HouseRobberII.swift */; };
 		0E94D62D1DCFDF16000271F8 /* 61_RotateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E94D62C1DCFDF16000271F8 /* 61_RotateList.swift */; };
@@ -224,6 +225,7 @@
 		0E87B36F1DEB821C008DD67F /* 308_RangeSumQuery2DMutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 308_RangeSumQuery2DMutable.swift; sourceTree = "<group>"; };
 		0E87B3711DEBD008008DD67F /* 394_DecodeString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 394_DecodeString.swift; sourceTree = "<group>"; };
 		0E87B3731DEBE35C008DD67F /* 361_BombEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 361_BombEnemy.swift; sourceTree = "<group>"; };
+		0E88FFBC1DF133F200DC2743 /* 317_ShortestDistanceFromAllBuildings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 317_ShortestDistanceFromAllBuildings.swift; sourceTree = "<group>"; };
 		0E93F9701D86594C0050995D /* 139_WordBreak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 139_WordBreak.swift; sourceTree = "<group>"; };
 		0E948BB21D8CC1B600BEB6A9 /* 213_HouseRobberII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 213_HouseRobberII.swift; sourceTree = "<group>"; };
 		0E94D62C1DCFDF16000271F8 /* 61_RotateList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 61_RotateList.swift; sourceTree = "<group>"; };
@@ -374,8 +376,10 @@
 			children = (
 				0E6FADCE1D58172B00C8D71D /* LeetCodeKit.swift */,
 				0EEF2D591D7215B500A85EAA /* Array */,
+				0E88FFBB1DF1338800DC2743 /* BFS */,
 				0E7161B11DDAA6790019E29A /* DFS */,
 				0EB7AD531D7DCF2300278C48 /* DynamicProgramming */,
+				0E88FFB61DF1102A00DC2743 /* Graph */,
 				0EE265211DD416B000D2B0B1 /* Heap */,
 				0EB7AD4E1D7DB3DE00278C48 /* LinkedList */,
 				0EB7AD561D7DF59300278C48 /* Math */,
@@ -446,6 +450,21 @@
 				0EBD56B21DE258A100E81AE7 /* 212_WordSearchII.swift */,
 			);
 			path = DFS;
+			sourceTree = "<group>";
+		};
+		0E88FFB61DF1102A00DC2743 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		0E88FFBB1DF1338800DC2743 /* BFS */ = {
+			isa = PBXGroup;
+			children = (
+				0E88FFBC1DF133F200DC2743 /* 317_ShortestDistanceFromAllBuildings.swift */,
+			);
+			path = BFS;
 			sourceTree = "<group>";
 		};
 		0E9C91F51D7B09050022BC93 /* Search */ = {
@@ -731,6 +750,7 @@
 				0E6FADC51D58172200C8D71D /* 104_MaximumDepthOfBinaryTree.swift in Sources */,
 				0E5C34551DDD48E20022B616 /* 78_Subsets.swift in Sources */,
 				0EEF2D631D728B3000A85EAA /* 27_RemoveElement.swift in Sources */,
+				0E88FFBD1DF133F200DC2743 /* 317_ShortestDistanceFromAllBuildings.swift in Sources */,
 				0E5622431D89804300D069D5 /* 322_CoinChange.swift in Sources */,
 				0E9C92011D7B95F20022BC93 /* 69_Sqrtx.swift in Sources */,
 				0EC5E7611DEA2B84004B1297 /* 294_FlipGameII.swift in Sources */,
