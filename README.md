@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *108*
+Current Finished: *109*
 
 ##[String](Sources/String)(*16*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -148,6 +148,11 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [79 Word Search]( https://leetcode.com/problems/word-search/) |  DFS |  Medium |  O(3^N) |  O(N^2)
 [90 Subsets II]( https://leetcode.com/problems/subsets-ii/) |  DFS |  Medium |  O(2^N) |  O(2^N)
 [212 Word Search II]( https://leetcode.com/problems/word-search-ii/) |  DFS |  Hard |  O(N*3^N) |  O(N^2)
+
+##[BFS](Sources/BFS)(*1*)
+Problem         |    Category           |    Difficulty   |    Space           | Time        
+--------------- |  -------------------- | --------------- | -------------------|--------
+[317 Shortest Distance from All Buildings]( https://leetcode.com/problems/shortest-distance-from-all-buildings/) |  BFS |  Easy |  O(KMN) |  O(MN)
 
 ##[Math](Sources/Math)(*11*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
