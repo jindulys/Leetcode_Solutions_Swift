@@ -47,6 +47,29 @@ class BinaryTreeLevelOrderTraversalII_Solution {
     return result
   }
   
+  func DFSSolution(_ root: TreeNode?) -> [[Int]] {
+    guard let validRoot = root else {
+      return []
+    }
+    var result = [[Int]]()
+    dfs(&result, node: validRoot, level: 0)
+    return result
+  }
+  
+  func dfs(_ matrix: inout [[Int]], node: TreeNode?, level: Int) {
+    guard let validNode = node else {
+      return
+    }
+    if matrix.count < level + 1 {
+      matrix.insert([], at: 0)
+    }
+    dfs(&matrix, node: validNode.left, level: level + 1)
+    dfs(&matrix, node: validNode.right, level: level + 1)
+    var currentLevel = matrix[matrix.count - (level + 1)]
+    currentLevel.append(validNode.val)
+    matrix[matrix.count - (level + 1)] = currentLevel
+  }
+  
   func test() {
     let root = TreeNode(3)
     let l1 = TreeNode(9)
@@ -57,7 +80,7 @@ class BinaryTreeLevelOrderTraversalII_Solution {
     root.right = r1
     r1.left = l2
     r1.right = r2
-    let result = self.levelOrderBottom(root)
+    let result = self.DFSSolution(root)
     print(result)
   }
 }
