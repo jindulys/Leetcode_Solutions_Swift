@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *110*
+Current Finished: *111*
 
 ##[String](Sources/String)(*17*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -49,9 +49,9 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [308 Range Sum Query 2D - Mutable]( https://leetcode.com/problems/range-sum-query-2d-mutable/) |  Array |  Hard |  O(N^2) |  O(N^2)
 [349 Intersection of two arrays]( https://leetcode.com/problems/intersection-of-two-arrays/) |  Array |  Easy |  O(n) |  O(n) 
 [350 Intersection of two arrays II]( https://leetcode.com/problems/intersection-of-two-arrays-ii/) |  Array |  Easy |  O(n) |  O(n)
-[361 Bomb Enemy :lock:]( https://leetcode.com/problems/bomb-enemy/) |  Array |  Medium |  O(MN) |  O(N)
+[361 Bomb Enemy :lock:]( https://leetcode.com/problems/bomb-enemy/) |  Array |  Medium |  O(N) |  O(MN)
 
-##[Tree](Sources/Tree)(*15*)
+##[Tree](Sources/Tree)(*16*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [98 Validate Binary Search Tree]( https://leetcode.com/problems/validate-binary-search-tree/) |  Tree |  Medium |  O(n) |  O(n)
@@ -61,6 +61,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [104 Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Tree | Easy | O(n) | O(n)
 [105 Construct Binary Tree From Preorder and InOorer Traversal]( https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) |  Tree |  Medium |  O(n) |  O(n)
 [106 Construct Binary Tree From Inorder and Postorder Traversal]( https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) |  Tree |  Medium |  O(n) |  O(n)
+[107 Binary Tree Level Order Traversal II]( https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) |  Tree |  Easy |  O(N) |  O(N)
 [110 Balanced Binary Tree]( https://leetcode.com/problems/balanced-binary-tree/) |  Tree |  Easy |  O(n) |  O(n)
 [111 Minimum Depth Of Binary Tree](https://leetcode.com/submissions/detail/69271743/) | Tree | Easy |  O(n) | O(n)
 [112 Path Sum]( https://leetcode.com/problems/path-sum/) |  Tree |  Easy |  O(n) |  O(n)
@@ -111,7 +112,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [221 Maximal Square]( https://leetcode.com/problems/maximal-square/) |  DP |  Medium |  O(MN) |  O(MN)
 [279 Unique Paths II]( https://leetcode.com/problems/perfect-squares/) |  DP |  Medium |  O(n) |  O(n^2)
 [322 Coin Change]( https://leetcode.com/problems/coin-change/) |  DP |  Medium |  O(n^2) |  O(n)
-[377 Combination Sum IV]( https://leetcode.com/problems/combination-sum-iv/) |  Dynamic Programming |  Medium |  O(n^(target/min(n))) |  O(N)
+[377 Combination Sum IV]( https://leetcode.com/problems/combination-sum-iv/) |  Dynamic Programming |  Medium |  O(N) | O(n^(target/min(n)))
 
 ##[Stack](Sources/Stack)(*4*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -130,7 +131,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 ##[Queue](Sources/Queue)(*1*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
-[346 Moving Average from Data Stream :lock:]( https://leetcode.com/problems/moving-average-from-data-stream/) |  Queue |  Easy |  O(1) |  O(N)
+[346 Moving Average from Data Stream :lock:]( https://leetcode.com/problems/moving-average-from-data-stream/) |  Queue |  Easy |  O(N) |  O(1)
 
 ##[Sort](Sources/Sort)(*3*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -153,7 +154,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 ##[BFS](Sources/BFS)(*1*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
-[317 Shortest Distance from All Buildings :lock:]( https://leetcode.com/problems/shortest-distance-from-all-buildings/) |  BFS |  Easy |  O(KMN) |  O(MN)
+[317 Shortest Distance from All Buildings :lock:]( https://leetcode.com/problems/shortest-distance-from-all-buildings/) |  BFS |  Easy |  O(MN) |  O(KMN)
 
 ##[Math](Sources/Math)(*11*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -175,9 +176,9 @@ Problem         |    Category           |    Difficulty   |    Space           |
 --------------- |  -------------------- | --------------- | -------------------|--------
 [294 Flip Game :lock: ]( https://leetcode.com/problems/flip-game-ii/) |  String |  Medium |  O(2^(n/2)) |  O(2^(n/2))
 [308 Range Sum Query 2D - Mutable]( https://leetcode.com/problems/range-sum-query-2d-mutable/) |  Array |  Hard |  O(N^2) |  O(N^2)
-[317 Shortest Distance from All Buildings :lock:]( https://leetcode.com/problems/shortest-distance-from-all-buildings/) |  BFS |  Easy |  O(KMN) |  O(MN)
-[346 Moving Average from Data Stream :lock:]( https://leetcode.com/problems/moving-average-from-data-stream/) |  Queue |  Easy |  O(1) |  O(N)
-[361 Bomb Enemy :lock:]( https://leetcode.com/problems/bomb-enemy/) |  Array |  Medium |  O(MN) |  O(N)
+[317 Shortest Distance from All Buildings :lock:]( https://leetcode.com/problems/shortest-distance-from-all-buildings/) |  BFS |  Easy |  O(MN) |  O(KMN)
+[346 Moving Average from Data Stream :lock:]( https://leetcode.com/problems/moving-average-from-data-stream/) |  Queue |  Easy |  O(N) |  O(1)
+[361 Bomb Enemy :lock:]( https://leetcode.com/problems/bomb-enemy/) |  Array |  Medium |  O(N) |  O(MN)
 [388 Longest Absolute File Path Solution]( https://leetcode.com/problems/longest-absolute-file-path/) |  String |  Medium |  O(N) |  O(N)
 [394 Decode String]( https://leetcode.com/problems/decode-string/) |  String |  Medium |  O(N) |  O(N)
 
