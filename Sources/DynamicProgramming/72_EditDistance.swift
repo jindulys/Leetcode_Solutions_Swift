@@ -41,7 +41,7 @@ class EditDistance_Solution {
   }
 	
 	func test() {
-		let test1 = minDistance("", "")
+		let test1 = minDistance("abc", "cfb")
 		print(test1)
 	}
 }

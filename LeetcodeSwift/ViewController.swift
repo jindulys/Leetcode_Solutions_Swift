@@ -12,7 +12,8 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    let solution = LongestAbsoluteFilePath_Solution()
+    let solution = BinaryTreeLevelOrderTraversalII_Solution()
+    solution.test()
   }
 
   override func didReceiveMemoryWarning() {
