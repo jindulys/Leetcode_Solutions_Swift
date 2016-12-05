@@ -8,7 +8,7 @@ Leetcode solutions in Swift
 
 Current Finished: *113*
 
-##[String](Sources/String)(*18*)
+##[String](Sources/String)(*19*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [3 Longest Substring without repeating characters]( https://leetcode.com/problems/longest-substring-without-repeating-characters/) |  String |  Medium |  O(n) |  O(n) 
