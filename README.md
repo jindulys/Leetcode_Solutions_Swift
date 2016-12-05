@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *112*
+Current Finished: *113*
 
 ##[String](Sources/String)(*18*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -29,6 +29,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [388 Longest Absolute File Path Solution]( https://leetcode.com/problems/longest-absolute-file-path/) |  String |  Medium |  O(N) |  O(N)
 [389 Find the difference]( https://leetcode.com/problems/find-the-difference/) |  String & hash table |  Easy |  O(n) |  O(n)
 [394 Decode String]( https://leetcode.com/problems/decode-string/) |  String |  Medium |  O(N) |  O(N)
+[418 Sentence Screen Fitting :lock:]( https://leetcode.com/problems/sentence-screen-fitting/) |  String |  Medium |  O(1) |  O(row * col)
 
 ##[Array](Sources/Array)(*18*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -183,6 +184,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [361 Bomb Enemy :lock:]( https://leetcode.com/problems/bomb-enemy/) |  Array |  Medium |  O(N) |  O(MN)
 [388 Longest Absolute File Path Solution]( https://leetcode.com/problems/longest-absolute-file-path/) |  String |  Medium |  O(N) |  O(N)
 [394 Decode String]( https://leetcode.com/problems/decode-string/) |  String |  Medium |  O(N) |  O(N)
+[418 Sentence Screen Fitting :lock:]( https://leetcode.com/problems/sentence-screen-fitting/) |  String |  Medium |  O(1) |  O(row * col)
 
 
 
