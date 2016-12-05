@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    let solution = LongestSubStringWithAtMostKDistinctCharacters_Solution()
+    let solution = SentenceScreenFitting_Solution()
     solution.test()
   }
 
