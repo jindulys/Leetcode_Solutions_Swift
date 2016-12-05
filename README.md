@@ -6,9 +6,9 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *111*
+Current Finished: *112*
 
-##[String](Sources/String)(*17*)
+##[String](Sources/String)(*18*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [3 Longest Substring without repeating characters]( https://leetcode.com/problems/longest-substring-without-repeating-characters/) |  String |  Medium |  O(n) |  O(n) 
@@ -22,6 +22,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [293 Flip Game :lock: ]( https://leetcode.com/problems/flip-game/) |  String |  Easy |  O(N) |  O(N)
 [294 Flip Game :lock: ]( https://leetcode.com/problems/flip-game-ii/) |  String |  Medium |  O(2^(n/2)) |  O(2^(n/2))
 [290 Word Pattern]( https://leetcode.com/problems/word-pattern/) |  String |  Easy |  O(n) |  O(n)
+[340 Longest SubString with At Most K Distinct Characters :lock:]( https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) |  String |  Hard |  O(1) |  O(N)
 [344 Reverse String]( https://leetcode.com/problems/reverse-string/) |  String |  Easy |  O(n) |  O(n)
 [345 Reverse Vowels of a String]( https://leetcode.com/problems/reverse-vowels-of-a-string/) |  String |  Easy |  O(n) |  O(n) 
 [383 Ransom Note]( https://leetcode.com/problems/ransom-note/) |  String |  Easy |  O(n) |  O(n) 
@@ -177,6 +178,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [294 Flip Game :lock: ]( https://leetcode.com/problems/flip-game-ii/) |  String |  Medium |  O(2^(n/2)) |  O(2^(n/2))
 [308 Range Sum Query 2D - Mutable]( https://leetcode.com/problems/range-sum-query-2d-mutable/) |  Array |  Hard |  O(N^2) |  O(N^2)
 [317 Shortest Distance from All Buildings :lock:]( https://leetcode.com/problems/shortest-distance-from-all-buildings/) |  BFS |  Easy |  O(MN) |  O(KMN)
+[340 Longest SubString with At Most K Distinct Characters :lock:]( https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) |  String |  Hard |  O(1) |  O(N)
 [346 Moving Average from Data Stream :lock:]( https://leetcode.com/problems/moving-average-from-data-stream/) |  Queue |  Easy |  O(N) |  O(1)
 [361 Bomb Enemy :lock:]( https://leetcode.com/problems/bomb-enemy/) |  Array |  Medium |  O(N) |  O(MN)
 [388 Longest Absolute File Path Solution]( https://leetcode.com/problems/longest-absolute-file-path/) |  String |  Medium |  O(N) |  O(N)
