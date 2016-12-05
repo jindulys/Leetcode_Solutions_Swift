@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    let solution = BinaryTreeLevelOrderTraversalII_Solution()
+    let solution = LongestSubStringWithAtMostKDistinctCharacters_Solution()
     solution.test()
   }
 
