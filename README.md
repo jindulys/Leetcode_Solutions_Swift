@@ -6,7 +6,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *113*
+Current Finished: *116*
 
 ##[String](Sources/String)(*19*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
@@ -97,13 +97,15 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [141 Reorder List]( https://leetcode.com/problems/reorder-list/) |  Linked List |  Medium |  O(1) |  O(N)
 [206 Reverse LinkedList]( https://leetcode.com/problems/reverse-linked-list/) |  Linked List |  Easy |  O(1) |  O(N)
 
-##[DynamicProgramming](Sources/DynamicProgramming)(*15*)
+##[DynamicProgramming](Sources/DynamicProgramming)(*18*)
 Problem         |    Category           |    Difficulty   |    Space           | Time        
 --------------- |  -------------------- | --------------- | -------------------|--------
 [5 Longest Palindromic Substring]( https://leetcode.com/problems/longest-palindromic-substring/) |  DP |  Medium |  O(n^2) |  O(n^2)
 [53 Maximum Subarray]( https://leetcode.com/problems/maximum-subarray/) |  DP |  Medium |  O(n) |  O(n)
+[55 Jump Game]( https://leetcode.com/problems/jump-game/) |  DP |  Medium |  O(n) |  O(n)
 [62 Unique Paths]( https://leetcode.com/problems/unique-paths/) |  DP |  Medium |  O(mn) |  O(mn)
 [63 Unique Paths II]( https://leetcode.com/problems/unique-paths-ii/) |  DP |  Medium |  O(mn) |  O(mn)
+[64 Minimum Path Sum]( https://leetcode.com/problems/minimum-path-sum/) |  DP |  Medium |  O(mn) |  O(mn)
 [70 Climbing Stairs]( https://leetcode.com/problems/climbing-stairs/) |  DP |  Easy |  O(1) |  O(N)
 [72 Edit Distance]( https://leetcode.com/problems/edit-distance/) |  DP |  Hard |  O(NM) |  O(NM)
 [121 Best Time to Buy and Sell Stock]( https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |  DP |  Easy |  O(1) |  O(N)
@@ -113,6 +115,7 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [213 House Robber II]( https://leetcode.com/problems/house-robber-ii/) |  DP |  Medium |  O(n) |  O(n)
 [221 Maximal Square]( https://leetcode.com/problems/maximal-square/) |  DP |  Medium |  O(MN) |  O(MN)
 [279 Unique Paths II]( https://leetcode.com/problems/perfect-squares/) |  DP |  Medium |  O(n) |  O(n^2)
+[300 Longest Increasing Subsequence]( https://leetcode.com/problems/longest-increasing-subsequence/) |  DP |  Medium |  O(n) |  O(n^2)
 [322 Coin Change]( https://leetcode.com/problems/coin-change/) |  DP |  Medium |  O(n^2) |  O(n)
 [377 Combination Sum IV]( https://leetcode.com/problems/combination-sum-iv/) |  Dynamic Programming |  Medium |  O(N) | O(n^(target/min(n)))
 
