@@ -11,25 +11,25 @@ Current Finished: *116*
 ##[String](Sources/String)(*19*)
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |     
 |--------------- |  -------------------- | --------------- | ------------------ |--------|
-[3 Longest Substring without repeating characters]( https://leetcode.com/problems/longest-substring-without-repeating-characters/) |  String |  Medium |  O(n) |  O(n) 
-[14 Longest Common Prefix]( https://leetcode.com/problems/longest-common-prefix/) |  String |  Easy |  O(nm) |  O(mn) 
-[28 Implement strStr]( https://leetcode.com/problems/implement-strstr/) |  String |  Easy |  O(n) |  O(mn) 
-[49 Group Anagrams]( https://leetcode.com/problems/anagrams/) |  String |  Medium |  O(Nmlgm) |  O(N)
-[58 Length of Last Word]( https://leetcode.com/problems/length-of-last-word/) |  String |  Easy |  O(n) |  O(n) 
-[165 Compare Version Numbers]( https://leetcode.com/problems/compare-version-numbers/) |  String |  Easy |  O(n) |  O(n)
-[205 Isomorphic Strings]( https://leetcode.com/problems/isomorphic-strings/) |  String |  Easy |  O(n) |  O(n) 
-[242 Valid Anagram]( https://leetcode.com/problems/valid-anagram/) |  String |  Easy |  O(n) |  O(n) 
-[293 Flip Game :lock: ]( https://leetcode.com/problems/flip-game/) |  String |  Easy |  O(N) |  O(N)
-[294 Flip Game :lock: ]( https://leetcode.com/problems/flip-game-ii/) |  String |  Medium |  O(2^(n/2)) |  O(2^(n/2))
-[290 Word Pattern]( https://leetcode.com/problems/word-pattern/) |  String |  Easy |  O(n) |  O(n)
-[340 Longest SubString with At Most K Distinct Characters :lock:]( https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) |  String |  Hard |  O(1) |  O(N)
-[344 Reverse String]( https://leetcode.com/problems/reverse-string/) |  String |  Easy |  O(n) |  O(n)
+[3 Longest Substring without repeating characters]( https://leetcode.com/problems/longest-substring-without-repeating-characters/) |  String |  Medium |  O(n) |  O(n) |
+[14 Longest Common Prefix]( https://leetcode.com/problems/longest-common-prefix/) |  String |  Easy |  O(nm) |  O(mn) |
+[28 Implement strStr]( https://leetcode.com/problems/implement-strstr/) |  String |  Easy |  O(n) |  O(mn) |
+[49 Group Anagrams]( https://leetcode.com/problems/anagrams/) |  String |  Medium |  O(Nmlgm) |  O(N)|
+[58 Length of Last Word]( https://leetcode.com/problems/length-of-last-word/) |  String |  Easy |  O(n) |  O(n) |
+[165 Compare Version Numbers]( https://leetcode.com/problems/compare-version-numbers/) |  String |  Easy |  O(n) |  O(n)|
+[205 Isomorphic Strings]( https://leetcode.com/problems/isomorphic-strings/) |  String |  Easy |  O(n) |  O(n) |
+[242 Valid Anagram]( https://leetcode.com/problems/valid-anagram/) |  String |  Easy |  O(n) |  O(n)| 
+[293 Flip Game :lock: ]( https://leetcode.com/problems/flip-game/) |  String |  Easy |  O(N) |  O(N)|
+[294 Flip Game :lock: ]( https://leetcode.com/problems/flip-game-ii/) |  String |  Medium |  O(2^(n/2)) |  O(2^(n/2))|
+[290 Word Pattern]( https://leetcode.com/problems/word-pattern/) |  String |  Easy |  O(n) |  O(n)|
+[340 Longest SubString with At Most K Distinct Characters :lock:]( https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) |  String |  Hard |  O(1) |  O(N)|
+[344 Reverse String]( https://leetcode.com/problems/reverse-string/) |  String |  Easy |  O(n) |  O(n)|
 [345 Reverse Vowels of a String]( https://leetcode.com/problems/reverse-vowels-of-a-string/) |  String |  Easy |  O(n) |  O(n) 
-[383 Ransom Note]( https://leetcode.com/problems/ransom-note/) |  String |  Easy |  O(n) |  O(n) 
-[388 Longest Absolute File Path Solution]( https://leetcode.com/problems/longest-absolute-file-path/) |  String |  Medium |  O(N) |  O(N)
-[389 Find the difference]( https://leetcode.com/problems/find-the-difference/) |  String & hash table |  Easy |  O(n) |  O(n)
-[394 Decode String]( https://leetcode.com/problems/decode-string/) |  String |  Medium |  O(N) |  O(N)
-[418 Sentence Screen Fitting :lock:]( https://leetcode.com/problems/sentence-screen-fitting/) |  String |  Medium |  O(1) |  O(row * col)
+[383 Ransom Note]( https://leetcode.com/problems/ransom-note/) |  String |  Easy |  O(n) |  O(n) |
+[388 Longest Absolute File Path Solution]( https://leetcode.com/problems/longest-absolute-file-path/) |  String |  Medium |  O(N) |  O(N)|
+[389 Find the difference]( https://leetcode.com/problems/find-the-difference/) |  String & hash table |  Easy |  O(n) |  O(n)|
+[394 Decode String]( https://leetcode.com/problems/decode-string/) |  String |  Medium |  O(N) |  O(N)|
+[418 Sentence Screen Fitting :lock:]( https://leetcode.com/problems/sentence-screen-fitting/) |  String |  Medium |  O(1) |  O(row * col)|
 
 ##[Array](Sources/Array)(*18*)
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |     
