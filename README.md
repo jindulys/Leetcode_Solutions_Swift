@@ -9,8 +9,8 @@ Leetcode solutions in Swift
 Current Finished: *116*
 
 ##[String](Sources/String)(*19*)
-Problem         |    Category           |    Difficulty   |    Space           | Time        
---------------- |  -------------------- | --------------- | -------------------|--------
+|Problem         |    Category           |    Difficulty   |    Space           | Time   |     
+|--------------- |  -------------------- | --------------- | ------------------ |--------|
 [3 Longest Substring without repeating characters]( https://leetcode.com/problems/longest-substring-without-repeating-characters/) |  String |  Medium |  O(n) |  O(n) 
 [14 Longest Common Prefix]( https://leetcode.com/problems/longest-common-prefix/) |  String |  Easy |  O(nm) |  O(mn) 
 [28 Implement strStr]( https://leetcode.com/problems/implement-strstr/) |  String |  Easy |  O(n) |  O(mn) 
@@ -32,8 +32,8 @@ Problem         |    Category           |    Difficulty   |    Space           |
 [418 Sentence Screen Fitting :lock:]( https://leetcode.com/problems/sentence-screen-fitting/) |  String |  Medium |  O(1) |  O(row * col)
 
 ##[Array](Sources/Array)(*18*)
-Problem         |    Category           |    Difficulty   |    Space           | Time        
---------------- |  -------------------- | --------------- | -------------------|--------
+|Problem         |    Category           |    Difficulty   |    Space           | Time   |     
+|--------------- |  -------------------- | --------------- | -------------------|--------|
 [1 Two Sum]( https://leetcode.com/problems/two-sum/) |  Array |  Easy |  O(n) |  O(n)
 [15 3Sum]( https://leetcode.com/problems/3sum/) |  Array |  Medium |  O(n) |  O(n^2)
 [18 4Sum]( https://leetcode.com/problems/4sum/) |  Array |  Medium |  O(N^2) |  O(N^4)
