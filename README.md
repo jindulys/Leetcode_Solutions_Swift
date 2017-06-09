@@ -187,6 +187,7 @@ Current Finished: *116*
 [400 Nth Digit]( https://leetcode.com/problems/nth-digit/) |  Math |  Easy |  O(lgN) |  O(1)|
 
 ##[Google]
+
 |Problem         |    Category           |    Difficulty   |    Space           | Time    |    
 |--------------- |  -------------------- | --------------- | -------------------|--------|
 [294 Flip Game :lock: ]( https://leetcode.com/problems/flip-game-ii/) |  String |  Medium |  O(2^(n/2)) |  O(2^(n/2))|
