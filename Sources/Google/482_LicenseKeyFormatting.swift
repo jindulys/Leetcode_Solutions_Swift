@@ -8,6 +8,13 @@
 
 import Foundation
 
+/**
+	Title: 482 Licensekey formatting solution.
+	URL: https://leetcode.com/problems/license-key-formatting/#/description
+	Space: O(n)
+	Time: O(n)
+ */
+
 class LicenseKeyFormattingSolution {
   func licenseKeyFormatting(_ S: String, _ K: Int) -> String {
     // O(n)
