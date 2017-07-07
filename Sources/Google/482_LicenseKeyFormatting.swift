@@ -43,7 +43,29 @@ class LicenseKeyFormattingSolution {
       }
     }
   }
-  
+
+  func licenseKeyFormatting_simplified(_ S: String, _ K: Int) -> String {
+    // O(n)
+    let reversedCharacters = Array(S.characters).reversed()
+    var characters: [Character] = []
+    var count = 0
+    for character in reversedCharacters {
+      if character == "-" {
+        continue
+      }
+      if count == K {
+        characters.append("-")
+        count = 0
+      }
+      characters.append(character)
+      count += 1
+    }
+    if let last = characters.last, last == "-" {
+      characters.removeLast()
+    }
+    return String(characters.reversed()).uppercased()
+  }
+
   static func test() {
     let solution = LicenseKeyFormattingSolution()
     let result = solution.licenseKeyFormatting("2-4A0r7-4k", 4)
