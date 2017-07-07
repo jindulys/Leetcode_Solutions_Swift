@@ -8,7 +8,7 @@ Leetcode solutions in Swift
 
 Current Finished: *116*
 
-##[String](Sources/String)(*19*)
+## [String](Sources/String)(*19*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |     
 |--------------- |  -------------------- | --------------- | ------------------ |--------|
@@ -32,7 +32,7 @@ Current Finished: *116*
 [394 Decode String]( https://leetcode.com/problems/decode-string/) |  String |  Medium |  O(N) |  O(N)|
 [418 Sentence Screen Fitting :lock:]( https://leetcode.com/problems/sentence-screen-fitting/) |  String |  Medium |  O(1) |  O(row * col)|
 
-##[Array](Sources/Array)(*18*)
+## [Array](Sources/Array)(*18*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |     
 |--------------- |  -------------------- | --------------- | -------------------|--------|
@@ -55,7 +55,7 @@ Current Finished: *116*
 [350 Intersection of two arrays II]( https://leetcode.com/problems/intersection-of-two-arrays-ii/) |  Array |  Easy |  O(n) |  O(n)|
 [361 Bomb Enemy :lock:]( https://leetcode.com/problems/bomb-enemy/) |  Array |  Medium |  O(N) |  O(MN)|
 
-##[Tree](Sources/Tree)(*16*)
+## [Tree](Sources/Tree)(*16*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |    
 |--------------- |  -------------------- | --------------- | -------------------|--------|
@@ -76,7 +76,7 @@ Current Finished: *116*
 [235 Lowest Common Ancestor of a Binary Search Tree]( https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |  Tree |  Medium |  O(n) |  O(n)|
 [337 House Robber III](https://leetcode.com/problems/house-robber-iii/) | Tree | Medium | O(n) | O(n)|
 
-##[Search](Sources/Search)(*9*)
+## [Search](Sources/Search)(*9*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |     
 |--------------- |  -------------------- | --------------- | -------------------|--------|
@@ -90,7 +90,7 @@ Current Finished: *116*
 [162 Find Peak Element]( https://leetcode.com/problems/find-peak-element/) |  Search |  Medium |  O(1) |  O(lgn)|
 [278 First Bad Version]( https://leetcode.com/problems/first-bad-version/) |  Binary Search |  Easy |  O(1) |  O(lgn)|
 
-##[Linked List](Sources/LinkedList)(*7*)
+## [Linked List](Sources/LinkedList)(*7*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |    
 |--------------- |  -------------------- | --------------- | -------------------|--------|
@@ -102,7 +102,7 @@ Current Finished: *116*
 [141 Reorder List]( https://leetcode.com/problems/reorder-list/) |  Linked List |  Medium |  O(1) |  O(N)|
 [206 Reverse LinkedList]( https://leetcode.com/problems/reverse-linked-list/) |  Linked List |  Easy |  O(1) |  O(N)|
 
-##[DynamicProgramming](Sources/DynamicProgramming)(*18*)
+## [DynamicProgramming](Sources/DynamicProgramming)(*18*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time        |
 |--------------- |  -------------------- | --------------- | -------------------|--------|
@@ -125,7 +125,7 @@ Current Finished: *116*
 [322 Coin Change]( https://leetcode.com/problems/coin-change/) |  DP |  Medium |  O(n^2) |  O(n)|
 [377 Combination Sum IV]( https://leetcode.com/problems/combination-sum-iv/) |  Dynamic Programming |  Medium |  O(N) | O(n^(target/min(n)))|
 
-##[Stack](Sources/Stack)(*4*)
+## [Stack](Sources/Stack)(*4*)
 |Problem         |    Category           |    Difficulty   |    Space           | Time    |    
 |--------------- |  -------------------- | --------------- | -------------------|--------|
 [20 Valid Parentheses]( https://leetcode.com/problems/valid-parentheses/) |  Stack |  Easy |  O(N) |  O(N)|
@@ -133,26 +133,26 @@ Current Finished: *116*
 [144 Binary Tree Preorder Traversal]( https://leetcode.com/problems/binary-tree-preorder-traversal/) |  Stack |  Medium |  O(N) |  O(N)|
 [145 Binary Tree Post Order Traversal]( https://leetcode.com/problems/binary-tree-postorder-traversal/) |  Stack |  Hard |  O(N) |  O(N)|
 
-##[Heap](Sources/Heap)(*2*)
+## [Heap](Sources/Heap)(*2*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time     |   
 |--------------- |  -------------------- | --------------- | -------------------|--------|
 [23 Merge K Sorted Lists]( https://leetcode.com/problems/merge-k-sorted-lists/) |  Heap |  Hard |  O(N) |  O(Nlgk)|
 [295 Find Median From Data Stream]( https://leetcode.com/problems/find-median-from-data-stream/) |  Heap |  Hard |  O(N) |  O(1) || O(lgN)|
 
-##[Queue](Sources/Queue)(*1*)
+## [Queue](Sources/Queue)(*1*)
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |     
 |--------------- |  -------------------- | --------------- | -------------------|--------|
 [346 Moving Average from Data Stream :lock:]( https://leetcode.com/problems/moving-average-from-data-stream/) |  Queue |  Easy |  O(N) |  O(1)|
 
-##[Sort](Sources/Sort)(*3*)
+## [Sort](Sources/Sort)(*3*)
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |     
 |--------------- |  -------------------- | --------------- | -------------------|--------|
 [75 Sort Colors]( https://leetcode.com/problems/sort-colors/) |  Sort |  Medium |  O(NlgN) |  O(N)|
 [347 Top K Frequent Element]( https://leetcode.com/problems/top-k-frequent-elements/) |  Sort |  Medium |  O(klgk) |  O(N)|
 [56 Merge Intervals]( https://leetcode.com/problems/merge-intervals/) |  Sort |  Medium |  O(NlgN) |  O(N)|
 
-##[DFS](Sources/DFS)(*7*)
+## [DFS](Sources/DFS)(*7*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |     
 |--------------- |  -------------------- | --------------- | -------------------|--------|
@@ -164,13 +164,13 @@ Current Finished: *116*
 [90 Subsets II]( https://leetcode.com/problems/subsets-ii/) |  DFS |  Medium |  O(2^N) |  O(2^N)|
 [212 Word Search II]( https://leetcode.com/problems/word-search-ii/) |  DFS |  Hard |  O(N*3^N) |  O(N^2)|
 
-##[BFS](Sources/BFS)(*1*)
+## [BFS](Sources/BFS)(*1*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time    |    
 |--------------- |  -------------------- | --------------- | -------------------|--------|
 [317 Shortest Distance from All Buildings :lock:]( https://leetcode.com/problems/shortest-distance-from-all-buildings/) |  BFS |  Easy |  O(MN) |  O(KMN)|
 
-##[Math](Sources/Math)(*11*)
+## [Math](Sources/Math)(*11*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time      |  
 |--------------- |  -------------------- | --------------- | -------------------|--------|
@@ -186,7 +186,7 @@ Current Finished: *116*
 [338 Counting Bits]( https://leetcode.com/problems/counting-bits/) |  Math |  Medium |  O(N) |  O(N)|
 [400 Nth Digit]( https://leetcode.com/problems/nth-digit/) |  Math |  Easy |  O(lgN) |  O(1)|
 
-##[Google]
+## [Google]
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time    |    
 |--------------- |  -------------------- | --------------- | -------------------|--------|
@@ -199,6 +199,7 @@ Current Finished: *116*
 [388 Longest Absolute File Path Solution]( https://leetcode.com/problems/longest-absolute-file-path/) |  String |  Medium |  O(N) |  O(N)|
 [394 Decode String]( https://leetcode.com/problems/decode-string/) |  String |  Medium |  O(N) |  O(N)|
 [418 Sentence Screen Fitting :lock:]( https://leetcode.com/problems/sentence-screen-fitting/) |  String |  Medium |  O(1) |  O(row * col)|
+[482 LicenseKey Formatting Solution]( https://leetcode.com/problems/license-key-formatting/) |  String |  Medium |  O(n) |  O(n)|
 
 
 
