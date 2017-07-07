@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E06AE371F0F21680058DAD2 /* 482_LicenseKeyFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06AE361F0F21680058DAD2 /* 482_LicenseKeyFormatting.swift */; };
 		0E13753A1DFC5EA20058A502 /* 64_MinimumPathSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1375391DFC5EA20058A502 /* 64_MinimumPathSum.swift */; };
 		0E13753C1DFC62720058A502 /* 55_JumpGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E13753B1DFC62720058A502 /* 55_JumpGame.swift */; };
 		0E13753E1DFC69D80058A502 /* 300_LongestIncreasingSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E13753D1DFC69D80058A502 /* 300_LongestIncreasingSubsequence.swift */; };
@@ -156,6 +157,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E06AE361F0F21680058DAD2 /* 482_LicenseKeyFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = 482_LicenseKeyFormatting.swift; path = Google/482_LicenseKeyFormatting.swift; sourceTree = "<group>"; };
 		0E1375391DFC5EA20058A502 /* 64_MinimumPathSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 64_MinimumPathSum.swift; sourceTree = "<group>"; };
 		0E13753B1DFC62720058A502 /* 55_JumpGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 55_JumpGame.swift; sourceTree = "<group>"; };
 		0E13753D1DFC69D80058A502 /* 300_LongestIncreasingSubsequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 300_LongestIncreasingSubsequence.swift; sourceTree = "<group>"; };
@@ -318,6 +320,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E06AE351F0F1FC30058DAD2 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				0E06AE361F0F21680058DAD2 /* 482_LicenseKeyFormatting.swift */,
+			);
+			name = Google;
+			sourceTree = "<group>";
+		};
 		0E6D9CE11DD1913E0068A56A /* Stack */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +398,7 @@
 		0E6FAD821D58120400C8D71D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0E06AE351F0F1FC30058DAD2 /* Google */,
 				0E6FADCE1D58172B00C8D71D /* LeetCodeKit.swift */,
 				0EEF2D591D7215B500A85EAA /* Array */,
 				0E88FFBB1DF1338800DC2743 /* BFS */,
@@ -768,6 +779,7 @@
 				0E755B801DCAC3DD009E9890 /* 18_4Sum.swift in Sources */,
 				0EB7AD551D7DEE5800278C48 /* 5_LongestPalindromicSubString.swift in Sources */,
 				0EB7AD601D7E273A00278C48 /* 258_AddDigits.swift in Sources */,
+				0E06AE371F0F21680058DAD2 /* 482_LicenseKeyFormatting.swift in Sources */,
 				0E6FADC51D58172200C8D71D /* 104_MaximumDepthOfBinaryTree.swift in Sources */,
 				0E5C34551DDD48E20022B616 /* 78_Subsets.swift in Sources */,
 				0EEF2D631D728B3000A85EAA /* 27_RemoveElement.swift in Sources */,
