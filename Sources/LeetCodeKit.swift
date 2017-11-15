@@ -1323,7 +1323,7 @@ public extension AVLTree {
 
 
 public final class AVLNode<T : Comparable> {
-  typealias Element = T
+  public typealias Element = T
   let left : AVLNode<Element>?
   let right : AVLNode<Element>?
   public let count : UInt

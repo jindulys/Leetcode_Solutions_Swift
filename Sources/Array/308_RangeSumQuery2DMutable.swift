@@ -59,11 +59,11 @@ final class Range2DSumQueryMutable_Solution: Solution {
       Array(repeating: Array(repeating: 0, count:array[0].count + 1), count: array.count + 1)
     for i in 1..<array.count + 1 {
       for j in 1..<array[0].count + 1 {
-        computedSumMatrix[i][j] =
-          computedSumMatrix[i - 1][j] +
-          computedSumMatrix[i][j - 1] -
-          computedSumMatrix[i - 1][j - 1] +
+        let part1 = computedSumMatrix[i - 1][j] +
+          computedSumMatrix[i][j - 1]
+        let part2 = computedSumMatrix[i - 1][j - 1] +
           array[i - 1][j - 1]
+        computedSumMatrix[i][j] = part1 - part2
       }
     }
     self.sumMatrix = computedSumMatrix

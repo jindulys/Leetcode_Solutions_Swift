@@ -404,7 +404,6 @@
 				0E88FFBB1DF1338800DC2743 /* BFS */,
 				0E7161B11DDAA6790019E29A /* DFS */,
 				0EB7AD531D7DCF2300278C48 /* DynamicProgramming */,
-				0E88FFB61DF1102A00DC2743 /* Graph */,
 				0EE265211DD416B000D2B0B1 /* Heap */,
 				0EB7AD4E1D7DB3DE00278C48 /* LinkedList */,
 				0EB7AD561D7DF59300278C48 /* Math */,
@@ -479,13 +478,6 @@
 				0EBD56B21DE258A100E81AE7 /* 212_WordSearchII.swift */,
 			);
 			path = DFS;
-			sourceTree = "<group>";
-		};
-		0E88FFB61DF1102A00DC2743 /* Graph */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Graph;
 			sourceTree = "<group>";
 		};
 		0E88FFBB1DF1338800DC2743 /* BFS */ = {
