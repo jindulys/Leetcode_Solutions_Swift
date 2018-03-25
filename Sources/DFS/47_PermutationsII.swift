@@ -41,7 +41,7 @@ class PermutationsII_Solution {
       return
     }
     for i in 0..<nums.count {
-      if visited[i] == true || (i > 0 && nums[i] == nums[i - 1] && visited[i - 1]) {
+      if visited[i] == true || (i > 0 && nums[i] == nums[i - 1] && !visited[i - 1]) {
         continue
       }
       let nextPermutation = currentPermutation + [nums[i]]
