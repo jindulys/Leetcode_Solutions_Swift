@@ -25,29 +25,25 @@ import Foundation
 
 class BinaryTreeLevelOrderTraversal_Solution {
   func levelOrder(_ root: TreeNode?) -> [[Int]] {
-    guard let root = root else {
-      return []
+    guard let node = root else {
+        return []
     }
+    var result: [[Int]] = []
     var queue = Queue<(TreeNode, Int)>()
-    var ans: [[Int]] = [[]]
-    queue.enqueue((root, 1))
+    queue.enqueue((node, 0))
     while !queue.isEmpty() {
-      let (currentNode, currentlevel) = queue.dequeue()!
-      if ans.count == currentlevel {
-        var lastLevelNodes = ans.removeLast()
-        lastLevelNodes.append(currentNode.val)
-        ans.append(lastLevelNodes)
-      } else if ans.count < currentlevel {
-        let newLevelNodes = [currentNode.val];
-        ans.append(newLevelNodes)
-      }
-      if let left = currentNode.left {
-        queue.enqueue((left, currentlevel + 1))
-      }
-      if let right = currentNode.right {
-        queue.enqueue((right, currentlevel + 1))
-      }
+        let (currentNode, currentLevel) = queue.dequeue()!
+        if currentLevel >= result.count {
+            result.append([])
+        }
+        result[currentLevel].append(currentNode.val)
+        if let left = currentNode.left {
+            queue.enqueue((left, currentLevel + 1))
+        }
+        if let right = currentNode.right {
+            queue.enqueue((right, currentLevel + 1))
+        }
     }
-    return ans
+    return result
   }
 }
