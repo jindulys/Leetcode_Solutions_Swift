@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E06AE371F0F21680058DAD2 /* 482_LicenseKeyFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06AE361F0F21680058DAD2 /* 482_LicenseKeyFormatting.swift */; };
+		0E08F670208289AC00DECF80 /* 224_BasicCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E08F66F208289AC00DECF80 /* 224_BasicCalculator.swift */; };
 		0E13753A1DFC5EA20058A502 /* 64_MinimumPathSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1375391DFC5EA20058A502 /* 64_MinimumPathSum.swift */; };
 		0E13753C1DFC62720058A502 /* 55_JumpGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E13753B1DFC62720058A502 /* 55_JumpGame.swift */; };
 		0E13753E1DFC69D80058A502 /* 300_LongestIncreasingSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E13753D1DFC69D80058A502 /* 300_LongestIncreasingSubsequence.swift */; };
@@ -160,6 +161,7 @@
 
 /* Begin PBXFileReference section */
 		0E06AE361F0F21680058DAD2 /* 482_LicenseKeyFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = 482_LicenseKeyFormatting.swift; path = Google/482_LicenseKeyFormatting.swift; sourceTree = "<group>"; };
+		0E08F66F208289AC00DECF80 /* 224_BasicCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 224_BasicCalculator.swift; sourceTree = "<group>"; };
 		0E1375391DFC5EA20058A502 /* 64_MinimumPathSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 64_MinimumPathSum.swift; sourceTree = "<group>"; };
 		0E13753B1DFC62720058A502 /* 55_JumpGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 55_JumpGame.swift; sourceTree = "<group>"; };
 		0E13753D1DFC69D80058A502 /* 300_LongestIncreasingSubsequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 300_LongestIncreasingSubsequence.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 				0EC1CF3B1DD2CF1F005A1604 /* 94_BinaryTreeInorderTraversal.swift */,
 				0E6D9CE21DD191740068A56A /* 144_BinaryTreePreorderTraversal.swift */,
 				0EC1CF3F1DD2F9B4005A1604 /* 145_BinaryTreePostorderTraversal.swift */,
+				0E08F66F208289AC00DECF80 /* 224_BasicCalculator.swift */,
 			);
 			name = Stack;
 			sourceTree = "<group>";
@@ -884,6 +887,7 @@
 				0E9C91F71D7B09230022BC93 /* 162_FindAPeakElement.swift in Sources */,
 				0E61C9731D60CCF60014C2D2 /* 14_LongestCommonPrefix.swift in Sources */,
 				0E6FADC11D58172200C8D71D /* 98_ValidateBinarySearchTree.swift in Sources */,
+				0E08F670208289AC00DECF80 /* 224_BasicCalculator.swift in Sources */,
 				0EB7AD5A1D7E0B4B00278C48 /* 9_PalindromeNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
