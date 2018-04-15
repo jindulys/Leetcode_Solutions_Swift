@@ -16,39 +16,90 @@ import Foundation
  */
 
 class LowestCommonAncestorOfABinarySearchTree_Solution {
-  func lowestCommonAncestorForRoot(_ root: TreeNode,
-                                   p: TreeNode,
-                                   q: TreeNode) -> TreeNode? {
-    if let result = lowestCommonAncestorForRoot_Helper(root, p: p, q: q)
-      , result.val != p.val && result.val != q.val {
-      return result
+//  func lowestCommonAncestorForRoot(_ root: TreeNode,
+//                                   p: TreeNode,
+//                                   q: TreeNode) -> TreeNode? {
+//    // This implementation has a bug where p or q itself is the answer.
+//    if let result = lowestCommonAncestorForRoot_Helper(root, p: p, q: q)
+//      , result.val != p.val && result.val != q.val {
+//      return result
+//    }
+//    return nil
+//  }
+//  func lowestCommonAncestorForRoot_Helper(_ root: TreeNode,
+//                                          p: TreeNode,
+//                                          q: TreeNode) -> TreeNode? {
+//    if root.val == p.val || root.val == q.val {
+//      return root
+//    }
+//    var leftResult: TreeNode?
+//    if let left = root.left {
+//      leftResult = lowestCommonAncestorForRoot_Helper(left, p: p, q: q)
+//    }
+//    var rightResult: TreeNode?
+//    if let right = root.right {
+//      rightResult = lowestCommonAncestorForRoot_Helper(right, p: p, q: q)
+//    }
+//    if let _ = leftResult, let _ = rightResult {
+//      return root
+//    }
+//    if let left = leftResult {
+//      return left
+//    }
+//    if let right = rightResult {
+//      return right
+//    }
+//    return nil
+//  }
+
+  func lowestCommonAncestorForRootCorrect(_ root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode? {
+    let (resultNode, count) = lowestCommonAncestorForRootHelperCorrect(root, p: p, q: q, found: 0)
+    if count == 2 {
+      return resultNode
     }
     return nil
   }
-  func lowestCommonAncestorForRoot_Helper(_ root: TreeNode,
-                                          p: TreeNode,
-                                          q: TreeNode) -> TreeNode? {
+
+  func lowestCommonAncestorForRootHelperCorrect(_ root: TreeNode,
+                                                   p: TreeNode,
+                                                   q: TreeNode,
+                                                   found: Int) -> (TreeNode?, Int) {
+    var currentFound: Int = 0
     if root.val == p.val || root.val == q.val {
-      return root
+      if found == 1 {
+        return (root, 2)
+      }
+      currentFound = 1
     }
     var leftResult: TreeNode?
-    if let left = root.left {
-      leftResult = lowestCommonAncestorForRoot_Helper(left, p: p, q: q)
-    }
+    var leftFound: Int = 0
     var rightResult: TreeNode?
+    var rightFound: Int = 0
+    if let left = root.left {
+      (leftResult, leftFound) = lowestCommonAncestorForRootHelperCorrect(left, p: p, q: q, found: currentFound)
+      if leftFound == 2 {
+        return (leftResult, leftFound)
+      }
+    }
     if let right = root.right {
-      rightResult = lowestCommonAncestorForRoot_Helper(right, p: p, q: q)
+      (rightResult, rightFound) = lowestCommonAncestorForRootHelperCorrect(right, p: p , q: q, found: currentFound)
+      if rightFound == 2 {
+        return (rightResult, rightFound)
+      }
     }
-    if let _ = leftResult, let _ = rightResult {
-      return root
+    if (currentFound + leftFound + rightFound) == 2 {
+      return (root, 2)
     }
-    if let left = leftResult {
-      return left
+    if leftFound == 1 {
+      return (leftResult, 1)
     }
-    if let right = rightResult {
-      return right
+    if rightFound == 1 {
+      return (rightResult, 1)
     }
-    return nil
+    if currentFound == 1 {
+      return (root, 1)
+    }
+    return (nil, 0)
   }
   
   func test() {
