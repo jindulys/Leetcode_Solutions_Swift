@@ -7,7 +7,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *116*
+Current Finished: *120*
 
 ## [String](Sources/String)(*19*)
 
@@ -78,6 +78,12 @@ Current Finished: *116*
 [236 Lowest Common Ancestor of a Binary Tree]( https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/) |  Tree |  Medium |  O(n) |  O(n)|
 [337 House Robber III](https://leetcode.com/problems/house-robber-iii/) | Tree | Medium | O(n) | O(n)|
 
+## [Graph](Sources/Graph)(*1*)
+
+|Problem         |    Category           |    Difficulty   |    Space           | Time   |
+|--------------- |  -------------------- | --------------- | -------------------|--------|
+[207 Course Schedule]( https://leetcode.com/problems/course-schedule) |  Graph |  Medium |  O(|V| + |E|) |  O(|V| + |E|)|
+
 ## [Search](Sources/Search)(*9*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |     
@@ -127,7 +133,7 @@ Current Finished: *116*
 [322 Coin Change]( https://leetcode.com/problems/coin-change/) |  DP |  Medium |  O(n^2) |  O(n)|
 [377 Combination Sum IV]( https://leetcode.com/problems/combination-sum-iv/) |  Dynamic Programming |  Medium |  O(N) | O(n^(target/min(n)))|
 
-## [Stack](Sources/Stack)(*4*)
+## [Stack](Sources/Stack)(*7*)
 |Problem         |    Category           |    Difficulty   |    Space           | Time    |    
 |--------------- |  -------------------- | --------------- | -------------------|--------|
 [20 Valid Parentheses]( https://leetcode.com/problems/valid-parentheses/) |  Stack |  Easy |  O(N) |  O(N)|
