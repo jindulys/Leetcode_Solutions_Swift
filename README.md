@@ -136,6 +136,7 @@ Current Finished: *116*
 [145 Binary Tree Post Order Traversal]( https://leetcode.com/problems/binary-tree-postorder-traversal/) |  Stack |  Hard |  O(N) |  O(N)|
 [224 Basic Calculator]( https://leetcode.com/problems/basic-calculator/description/) |  Stack |  Hard |  O(N) |  O(N)|
 [227 Basic Calculator II]( https://leetcode.com/problems/basic-calculator-ii/description/) |  Stack |  Medium |  O(N) |  O(N)|
+[772 Basic Calculator III]( https://leetcode.com/problems/basic-calculator-iii/description/) |  Stack |  Hard |  O(N) |  O(N)|
 ## [Heap](Sources/Heap)(*2*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time     |   
