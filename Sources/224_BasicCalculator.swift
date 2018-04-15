@@ -90,4 +90,46 @@ class BasicCalculation {
     }
   }
 
+  // An eaiser solution.
+  // We can just use a result to store current one since we only have +/- and a sign to
+  // indicate that.
+  func better_calculate(_ s: String) -> Int {
+    var result: Int = 0
+    var sign: Int = 1
+    var stack: [Int] = []
+
+    var index = s.startIndex
+    while index != s.endIndex {
+      if s[index] == "(" {
+        // We need to push current result to stack
+        stack.append(result)
+        stack.append(sign)
+        result = 0
+        sign = 1
+      } else if s[index] == ")" {
+        // We need to pop stack
+        let previousSign = stack.removeLast()
+        let previousResult = stack.removeLast()
+        result = previousResult + previousSign * result
+      } else if s[index] == "+" {
+        sign = 1
+      } else if s[index] == "-" {
+        sign = -1
+      } else if s[index] != " " {
+        var localIndex = index
+        var currentString = ""
+        while localIndex < s.endIndex && (s[localIndex] >= "0" && s[localIndex] <= "9") {
+          currentString += String(s[localIndex])
+          localIndex = s.index(after: localIndex)
+        }
+        if let validNumber = Int(currentString) {
+          result += sign * validNumber
+        }
+        index = s.index(before: localIndex)
+      }
+      index = s.index(after: index)
+    }
+    return result
+  }
+
 }
