@@ -634,6 +634,33 @@ public extension Array where Element: Comparable {
   }
 }
 
+public extension Array {
+  /**
+   * Find the minimum index in an array, where all elements above that index (including
+   * that index) can fulfill `condition`.
+   *
+   */
+  public func findMinimumIndex(_ condition: (Element) -> Bool) -> Int? {
+    guard self.count > 0 else {
+      return nil
+    }
+    var startIndex = self.startIndex
+    var endIndex = self.endIndex
+    while startIndex < endIndex {
+      let midIndex = startIndex + (endIndex - startIndex) / 2
+      if condition(self[midIndex]) {
+        endIndex = midIndex
+      } else {
+        startIndex = midIndex + 1
+      }
+    }
+    if startIndex == self.endIndex {
+      return nil
+    }
+    return condition(self[startIndex]) ? startIndex : nil
+  }
+}
+
 public extension Array where Element: Equatable {
   public func LCS(_ other: [Element]) -> [Element] {
     let table =
