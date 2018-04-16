@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    let palindrome = LongestPalindrome()
+    print(palindrome.longestPalindrome("abccccdd"))
   }
 
   override func didReceiveMemoryWarning() {
