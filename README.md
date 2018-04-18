@@ -7,7 +7,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *120*
+Current Finished: *124*
 
 ## [String](Sources/String)(*19*)
 
@@ -56,7 +56,7 @@ Current Finished: *120*
 [350 Intersection of two arrays II]( https://leetcode.com/problems/intersection-of-two-arrays-ii/) |  Array |  Easy |  O(n) |  O(n)|
 [361 Bomb Enemy :lock:]( https://leetcode.com/problems/bomb-enemy/) |  Array |  Medium |  O(N) |  O(MN)|
 
-## [Tree](Sources/Tree)(*16*)
+## [Tree](Sources/Tree)(*18*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |    
 |--------------- |  -------------------- | --------------- | -------------------|--------|
@@ -99,7 +99,7 @@ Current Finished: *120*
 [162 Find Peak Element]( https://leetcode.com/problems/find-peak-element/) |  Search |  Medium |  O(1) |  O(lgn)|
 [278 First Bad Version]( https://leetcode.com/problems/first-bad-version/) |  Binary Search |  Easy |  O(1) |  O(lgn)|
 
-## [Linked List](Sources/LinkedList)(*7*)
+## [Linked List](Sources/LinkedList)(*8*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |    
 |--------------- |  -------------------- | --------------- | -------------------|--------|
@@ -110,6 +110,7 @@ Current Finished: *120*
 [86 Partition List]( https://leetcode.com/problems/partition-list/) |  Linked List |  Medium |  O(1) |  O(N)|
 [141 Reorder List]( https://leetcode.com/problems/reorder-list/) |  Linked List |  Medium |  O(1) |  O(N)|
 [206 Reverse LinkedList]( https://leetcode.com/problems/reverse-linked-list/) |  Linked List |  Easy |  O(1) |  O(N)|
+[445 Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/) |  Linked List |  Medium |  O(1) |  O(N)|
 
 ## [DynamicProgramming](Sources/DynamicProgramming)(*18*)
 
