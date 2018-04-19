@@ -68,4 +68,47 @@ class AddTwoNumbersII {
     }
     return currentHead
   }
+
+  func addTwoNumbers_stack(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+    var l1Stack: [Int] = []
+    var l2Stack: [Int] = []
+
+    var currentL1 = l1
+    while let valid = currentL1 {
+      l1Stack.append(valid.val)
+      currentL1 = valid.next
+    }
+
+    var currentL2 = l2
+    while let valid = currentL2 {
+      l2Stack.append(valid.val)
+      currentL2 = valid.next
+    }
+
+    var flag: Int = 0
+    var result: ListNode? = nil
+    while l1Stack.count != 0 || l2Stack.count != 0 {
+      var one = 0
+      if l1Stack.count != 0 {
+        one = l1Stack.removeLast()
+      }
+      var two = 0
+      if l2Stack.count != 0 {
+        two = l2Stack.removeLast()
+      }
+      let current = one + two + flag
+      let currentNode = ListNode(current % 10)
+      currentNode.next = result
+      result = currentNode
+      flag = current / 10
+    }
+
+    if flag > 0 {
+      let newNode = ListNode(flag)
+      newNode.next = result
+      result = newNode
+    }
+    return result
+  }
+
 }
