@@ -7,7 +7,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *124*
+Current Finished: *125*
 
 ## [String](Sources/String)(*19*)
 
@@ -56,7 +56,7 @@ Current Finished: *124*
 [350 Intersection of two arrays II]( https://leetcode.com/problems/intersection-of-two-arrays-ii/) |  Array |  Easy |  O(n) |  O(n)|
 [361 Bomb Enemy :lock:]( https://leetcode.com/problems/bomb-enemy/) |  Array |  Medium |  O(N) |  O(MN)|
 
-## [Tree](Sources/Tree)(*18*)
+## [Tree](Sources/Tree)(*19*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |    
 |--------------- |  -------------------- | --------------- | -------------------|--------|
@@ -78,6 +78,7 @@ Current Finished: *124*
 [236 Lowest Common Ancestor of a Binary Tree]( https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/) |  Tree |  Medium |  O(n) |  O(n)|
 [337 House Robber III](https://leetcode.com/problems/house-robber-iii/) | Tree | Medium | O(n) | O(n)|
 [437 Path Sum III]( https://leetcode.com/problems/path-sum-iii/) |  Tree |  Easy |  O(n) |  O(n)|
+[450 Delete Node in a BST]( https://leetcode.com/problems/delete-node-in-a-bst/) |  Tree |  Medium |  O(1) |  O(lgn)|
 
 ## [Graph](Sources/Graph)(*1*)
 
