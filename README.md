@@ -55,6 +55,7 @@ Current Finished: *125*
 [349 Intersection of two arrays]( https://leetcode.com/problems/intersection-of-two-arrays/) |  Array |  Easy |  O(n) |  O(n)| 
 [350 Intersection of two arrays II]( https://leetcode.com/problems/intersection-of-two-arrays-ii/) |  Array |  Easy |  O(n) |  O(n)|
 [361 Bomb Enemy :lock:]( https://leetcode.com/problems/bomb-enemy/) |  Array |  Medium |  O(N) |  O(MN)|
+[621 Task Scheduler]( https://leetcode.com/problems/task-scheduler/) |  Array |  Medium |  O(1) |  O(N)|
 
 ## [Tree](Sources/Tree)(*19*)
 
