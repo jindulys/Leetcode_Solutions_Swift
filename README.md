@@ -7,7 +7,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *125*
+Current Finished: *127*
 
 ## [String](Sources/String)(*19*)
 
@@ -33,7 +33,7 @@ Current Finished: *125*
 [394 Decode String]( https://leetcode.com/problems/decode-string/) |  String |  Medium |  O(N) |  O(N)|
 [418 Sentence Screen Fitting :lock:]( https://leetcode.com/problems/sentence-screen-fitting/) |  String |  Medium |  O(1) |  O(row * col)|
 
-## [Array](Sources/Array)(*18*)
+## [Array](Sources/Array)(*20*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |     
 |--------------- |  -------------------- | --------------- | -------------------|--------|
@@ -55,6 +55,7 @@ Current Finished: *125*
 [349 Intersection of two arrays]( https://leetcode.com/problems/intersection-of-two-arrays/) |  Array |  Easy |  O(n) |  O(n)| 
 [350 Intersection of two arrays II]( https://leetcode.com/problems/intersection-of-two-arrays-ii/) |  Array |  Easy |  O(n) |  O(n)|
 [361 Bomb Enemy :lock:]( https://leetcode.com/problems/bomb-enemy/) |  Array |  Medium |  O(N) |  O(MN)|
+[457 Circular Array Loop]( https://leetcode.com/problems/circular-array-loop) |  Array |  Medium |  O(1) |  O(N)|
 [621 Task Scheduler]( https://leetcode.com/problems/task-scheduler/) |  Array |  Medium |  O(1) |  O(N)|
 
 ## [Tree](Sources/Tree)(*19*)
