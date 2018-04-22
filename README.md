@@ -7,7 +7,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *128*
+Current Finished: *129*
 
 ## [String](Sources/String)(*19*)
 
@@ -33,7 +33,7 @@ Current Finished: *128*
 [394 Decode String]( https://leetcode.com/problems/decode-string/) |  String |  Medium |  O(N) |  O(N)|
 [418 Sentence Screen Fitting :lock:]( https://leetcode.com/problems/sentence-screen-fitting/) |  String |  Medium |  O(1) |  O(row * col)|
 
-## [Array](Sources/Array)(*20*)
+## [Array](Sources/Array)(*21*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |     
 |--------------- |  -------------------- | --------------- | -------------------|--------|
