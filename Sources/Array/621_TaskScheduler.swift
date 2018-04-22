@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- Title:361 Bomb Enemy
+ Title: 621 Task Scheduler
  URL: https://leetcode.com/problems/task-scheduler/
  Space: O(1)
  Time: O(N)

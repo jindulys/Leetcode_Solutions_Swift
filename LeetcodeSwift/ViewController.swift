@@ -14,9 +14,8 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     let palindrome = LongestPalindrome()
     print(palindrome.longestPalindrome("abccccdd"))
-    let shopping = ShoppingOffers()
-    let res = shopping.shoppingOffers([2, 5], [[3, 0, 5], [1, 2, 10]], [3, 2])
-    print(res)
+    let setM = SetMismatch()
+    setM.findErrorNums([1, 2, 2, 4])
   }
 
   override func didReceiveMemoryWarning() {
