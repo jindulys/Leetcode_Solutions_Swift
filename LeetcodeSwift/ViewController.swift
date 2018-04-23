@@ -14,8 +14,15 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     let palindrome = LongestPalindrome()
     print(palindrome.longestPalindrome("abccccdd"))
-    let setM = SetMismatch()
-    setM.findErrorNums([1, 2, 2, 4])
+    let pT = PrintBinaryTree()
+    let testRoot = TreeNode(1)
+    let left = TreeNode(2)
+    let right = TreeNode(3)
+    let leftRight = TreeNode(4)
+    left.right = leftRight
+    testRoot.left = left
+    testRoot.right = right
+    print(pT.printTree(testRoot))
   }
 
   override func didReceiveMemoryWarning() {

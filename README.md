@@ -7,7 +7,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *129*
+Current Finished: *130*
 
 ## [String](Sources/String)(*19*)
 
@@ -58,7 +58,7 @@ Current Finished: *129*
 [457 Circular Array Loop]( https://leetcode.com/problems/circular-array-loop) |  Array |  Medium |  O(1) |  O(N)|
 [621 Task Scheduler]( https://leetcode.com/problems/task-scheduler/) |  Array |  Medium |  O(1) |  O(N)|
 [645 Set Mismatch]( https://leetcode.com/problems/set-mismatch) |  Array |  Medium |  O(N) |  O(N)|
-## [Tree](Sources/Tree)(*19*)
+## [Tree](Sources/Tree)(*20*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |    
 |--------------- |  -------------------- | --------------- | -------------------|--------|
@@ -81,6 +81,7 @@ Current Finished: *129*
 [337 House Robber III](https://leetcode.com/problems/house-robber-iii/) | Tree | Medium | O(n) | O(n)|
 [437 Path Sum III]( https://leetcode.com/problems/path-sum-iii/) |  Tree |  Easy |  O(n) |  O(n)|
 [450 Delete Node in a BST]( https://leetcode.com/problems/delete-node-in-a-bst/) |  Tree |  Medium |  O(1) |  O(lgn)|
+[655 Print Binary Tree]( https://leetcode.com/problems/print-binary-tree/) |  Tree |  Medium |  O(N) |  O(N)|
 
 ## [Graph](Sources/Graph)(*1*)
 
