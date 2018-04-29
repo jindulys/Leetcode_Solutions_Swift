@@ -7,7 +7,7 @@
 # [Leetcode Solutions Swift](https://leetcode.com)
 Leetcode solutions in Swift
 
-Current Finished: *130*
+Current Finished: *131*
 
 ## [String](Sources/String)(*19*)
 
@@ -33,7 +33,7 @@ Current Finished: *130*
 [394 Decode String]( https://leetcode.com/problems/decode-string/) |  String |  Medium |  O(N) |  O(N)|
 [418 Sentence Screen Fitting :lock:]( https://leetcode.com/problems/sentence-screen-fitting/) |  String |  Medium |  O(1) |  O(row * col)|
 
-## [Array](Sources/Array)(*21*)
+## [Array](Sources/Array)(*22*)
 
 |Problem         |    Category           |    Difficulty   |    Space           | Time   |     
 |--------------- |  -------------------- | --------------- | -------------------|--------|
@@ -48,6 +48,7 @@ Current Finished: *130*
 [189 Rotate Array]( https://leetcode.com/problems/rotate-array/) |  Array |  Easy |  O(1) |  O(n)|
 [217 Contains Duplicate]( https://leetcode.com/problems/contains-duplicate/) |  Array |  Easy |  O(n) |  O(n) |
 [228 Summary Ranges]( https://leetcode.com/problems/summary-ranges/) |  Array |  Medium |  O(n) |  O(n)|
+[260 Single Number III]( https://leetcode.com/problems/single-number-iii/) |  Array/Bit |  Medium |  O(1) |  O(n)|
 [283 Move Zeroes]( https://leetcode.com/problems/move-zeroes/) |  Array |  Easy |  O(1) |  O(n)|
 [303 Range Sum Query - Immutable]( https://leetcode.com/problems/range-sum-query-immutable/) |  Array |  Easy |  O(N) |  O(N)|
 [304 Range Sum Query 2D - Immutable]( https://leetcode.com/problems/range-sum-query-2d-immutable/) |  Array |  Medium |  O(N^2) |  O(N^2)|
